@@ -1,0 +1,171 @@
+.login {
+  background: #fff;
+  border-radius: 6px;
+  margin: 0 auto;
+  position: relative;
+  max-width: 470px;
+  z-index: 682;
+  max-width: 100%;
+  width: 480px;
+  box-shadow: 0 25px 75px rgb(16 30 54 / 25%);
+  padding: 30px 60px 26px;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 16px;
+}
+.profile-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 24px 0;
+}
+
+.btn.facebook {
+  color: #fff;
+  background-color: #3b5998;
+}
+.btn.zalo {
+  color: #fff;
+  background-color: #03a5fa;
+}
+.btn.google {
+  color: #fff;
+  background-color: #4285f4;
+}
+.form-register {
+  margin: 20px 0;
+}
+.group-input {
+  margin-bottom: 16px;
+}
+.register-title {
+  margin-bottom: 8px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  display: block;
+}
+.register-input {
+  display: block;
+  padding: 7px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  background: #fefefe;
+  padding: 7px;
+  line-height: 1.4em;
+  font-size: 16px;
+  font-family: arial;
+  max-width: 100%;
+}
+.btn-login {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.btn.meta {
+  color: #fff;
+  background-color: #da251c;
+}
+.login-policies {
+  text-align: center;
+  padding: 16px 0;
+}
+.login-actions {
+  color: #525252;
+  text-align: center;
+  border-top: 1px solid #eee;
+  padding: 16px 0;
+}
+.login-actions .login-actions__login {
+  color: #1d4ed8;
+}
+.login-social__item,
+.profile-social__item {
+  margin: 0 8px;
+}
+.login-social__item .social-item__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+.profile-social__item .social-item__icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+.login-social__item .fb-auth,
+.profile-social__item .fb-auth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: #1093f4;
+  position: relative;
+}
+.login-social__item .gg-auth,
+.profile-social__item .gg-auth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: #bd091d;
+  position: relative;
+}
+.login-social__item .zalo-auth,
+.profile-social__item .zalo-auth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: #48bbf7;
+  position: relative;
+}
+.login-social__item .zalo-auth::after {
+  content: ' ';
+  background: url('/images/zalo.png') no-repeat;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  display: block;
+}
+.profile-social__item .zalo-auth::after {
+  content: ' ';
+  background: url('/images/zalo.png') no-repeat;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  display: block;
+}
+.or-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 16px 0;
+}
+.or-section__name {
+  padding: 0 16px;
+}
+.or-section__hr {
+  border-top: 1px solid #eee;
+  flex: 1;
+}
+.forgot-password a {
+  display: block;
+  text-align: right;
+  color: #1d4ed8;
+  padding-bottom: 12px;
+}

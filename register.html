@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font icon -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./css/authent.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Quangtrimang</title>
+  </head>
+  <body>
+    <div class="login">
+      <h1 class="login-title">Đăng ký tài khoản</h1>
+      <div class="form-register">
+        <form class="form form-signup" method="post">
+          <input type="hidden" name="state" />
+          <p class="group-input">
+            <label class="register-title">Email <span class="import-star">*</span></label>
+            <input
+              id="email"
+              name="email"
+              class="register-input"
+              type="text"
+              title="Nhập email của bạn"
+              placeholder="Nhập email của bạn"
+              required=""
+            />
+            <!-- <span
+              class="field-validation-valid"
+              data-valmsg-for="email"
+              data-valmsg-replace="true"
+            ></span> -->
+          </p>
+          <p class="group-input">
+            <label class="register-title">Mật khẩu <span class="import-star">*</span></label>
+            <input
+              id="password"
+              name="password"
+              class="register-input"
+              type="password"
+              title="Nhập mật khẩu của bạn"
+              placeholder="Nhập mật khẩu của bạn"
+              required=""
+            />
+            <!-- <span
+              class="field-validation-valid"
+              data-valmsg-for="email"
+              data-valmsg-replace="true"
+            ></span> -->
+          </p>
+          <p>
+            <button id="btnnext" class="btn btn-login">Đăng ký</button>
+          </p>
+        </form>
+      </div>
+      <div class="or-register">
+        <span class="or-register__hr"></span>
+          <span class="or-register__name" >hoặc</span>
+          <span class="or-register__hr"></span>
+
+      </div>
+      <div class="login-social">
+        <p class="login-social__item">
+          <a class="social-item__icon hover-up fb-auth"  href="#"
+            ><i class="fa fa-facebook-f"></i>
+          </a>
+        </p>
+        <p class="login-social__item">
+          <a
+            class="social-item__icon hover-up gg-auth"
+            href="#"
+            ><i class="fa fa-google"></i></i
+          ></a>
+        </p>
+        <p class="login-social__item">
+          <a
+          class="social-item__icon hover-up zalo-auth"
+         
+          href="#"
+        ></a>
+        </p>
+      </div>
+      <!-- <div class="login-policies">
+        <label
+          >Bằng việc đăng ký tài khoản<br />
+          Tôi đồng ý với
+          <a href="/support/terms" target="_blank" rel="nofollow"
+            >Chính sách và quy định sử dụng</a
+          ></label
+        >
+      </div> -->
+      <div class="login-actions">
+        Bạn đã có tài khoản?
+        <a class="login-actions__login" href="/Login.html">Đăng nhập</a>
+      </div>
+    </div>
+  </body>
+  <script src="./js/main.js"></script>
+</html>

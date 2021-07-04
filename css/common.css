@@ -197,7 +197,9 @@ textarea {
   line-height: 1.15; /* 1 */
   margin: 0; /* 2 */
 }
-
+textarea {
+  width: 100%;
+}
 /**
 Remove the inheritance of text transform in Edge and Firefox.
 1. Remove the inheritance of text transform in Firefox.
@@ -421,7 +423,8 @@ summary {
   transition: all 0.2s ease; */
 /* Hover */
 .hover-up:hover {
-  transform: translateY(-5px);
+  transition: all 0.2s ease;
+  transform: translateY(-3px);
   box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.2), 0 0 0 transparent;
 }
 .hover-up-2:hover {
@@ -474,4 +477,92 @@ summary {
   position: relative;
   width: 100%;
   min-height: 1px;
+}
+.import-star {
+  color: red;
+}
+/* heading title */
+.profile-heading,
+.posts-heading__name,
+.login-title {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-weight: 600;
+  text-align: center;
+}
+.btn {
+  display: inline-block;
+  box-sizing: border-box;
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  -webkit-appearance: none;
+  text-decoration: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: #fff;
+}
+.not-found {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 40px 0;
+}
+.not-found .not-found__img {
+  height: 100%;
+  width: 30%;
+  min-width: 200px;
+  object-fit: contain;
+}
+.not-found .not-found__mess {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-top: 16px;
+  color: #333;
+}
+.post-action {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.btn-cancel {
+  border: 1px solid #eee;
+  color: #2563eb;
+  background-color: #f3f4f6;
+  margin-right: 8px;
+}
+.btn-save {
+}
+.sec-title {
+  margin-bottom: 8px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  display: block;
+}
+.sec-input {
+  display: block;
+  padding: 7px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  background: #fefefe;
+  padding: 7px;
+  line-height: 1.4em;
+  font-size: 16px;
+  font-family: arial;
+  max-width: 100%;
+  width: 100%;
 }

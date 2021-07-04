@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font icon -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/authent.css" />
+    <link rel="stylesheet" href="./css/profile.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Quangtrimang</title>
+  </head>
+  <body>
+    <section id="main">
+      <section id="header">
+        <div class="section-box">
+          <div class="header-topnav">
+            <a href="/account/login" class="btn-login" data-loaded="true"
+              >Đăng nhập</a
+            >
+          </div>
+          <div class="header-left">
+            <h1>
+              <a href="/" id="logo" title="Quantrimang.com">quantrimang.com</a>
+            </h1>
+          </div>
+          <div class="header-search">
+            <form action="" method="get" id="cse-search-box">
+              <div>
+                <input
+                  type="text"
+                  name=""
+                  size="55"
+                  id="searchBox"
+                  placeholder="Tìm kiếm"
+                  autocomplete="off"
+                />
+                <input id="btn-find" type="submit" value="Tìm" />
+              </div>
+            </form>
+          </div>
+          <a class="toggle menu"></a> <a class="toggle search"></a>
+        </div>
+        <a class="toggle search"></a>
+      </section>
+      <section id="menu">
+        <div class="section-box">
+          <ul id="topnav" class="menu-navigation">
+            <li class="item menu-home">
+              <a href="/"
+                ><img
+                  src="https://st.quantrimang.com/photos/image/icon/home-black-24.svg"
+                  alt="🏠"
+              /></a>
+            </li>
+            <li class="item">
+              <a href="/cong-nghe">
+                <img
+                  src="https://st.quantrimang.com/photos/image/2020/10/05/cong-nghe-size-24x24-znd.svg"
+                  alt="❖"
+                />
+                Công nghệ
+              </a>
+            </li>
+            <li class="item">
+              <a href="/windows-10-os">
+                <img
+                  src="https://st.quantrimang.com/photos/image/2020/10/05/windows-10-size-24x24-znd.svg"
+                  alt="❖"
+                />
+                Windows
+              </a>
+            </li>
+            <li class="item">
+              <a href="/ios">
+                <img
+                  src="https://st.quantrimang.com/photos/image/2020/10/05/iPhone-size-24x24-znd.svg"
+                  alt="❖"
+                />
+                iPhone
+              </a>
+            </li>
+            <li class="item">
+              <a href="/android">
+                <img
+                  src="https://st.quantrimang.com/photos/image/2020/10/05/Android-size-24x24-znd.svg"
+                  alt="❖"
+                />
+                Android
+              </a>
+            </li>
+            <li class="item">
+              <a href="/lang-cong-nghe">
+                <img
+                  src="https://st.quantrimang.com/photos/image/2020/10/05/lang-cong-nghe-size-24x24-znd.svg"
+                  alt="❖"
+                />
+                Làng công nghệ
+              </a>
+            </li>
+
+            <li class="item">
+              <a href="/tien-ich-online">
+                <img
+                  src="https://st.quantrimang.com/photos/image/2020/10/07/tien-ich-online-size-24x24-znd.svg"
+                  alt="❖"
+                />
+                Tiện ích
+              </a>
+            </li>
+            <li class="item">
+              <a href="/ung-dung">
+                <img
+                  src="https://st.quantrimang.com/photos/image/2020/10/05/ung-dung-size-24x24-znd.svg"
+                  alt="❖"
+                />
+                Ứng dụng
+              </a>
+            </li>
+            <li class="item">
+              <a href="/lap-trinh">
+                <img
+                  src="https://st.quantrimang.com/photos/image/2020/10/05/lap-trinh-size-24x24-znd.svg"
+                  alt="❖"
+                />
+                Lập trình
+              </a>
+            </li>
+            <li class="item">
+              <a href="/dien-may">
+                <img
+                  src="https://st.quantrimang.com/photos/image/2020/10/26/dien-may-size-24x24-znd.svg"
+                  alt="❖"
+                />
+                Điện máy
+              </a>
+            </li>
+            <li class="item">
+              <a href="/video">
+                <img
+                  src="https://st.quantrimang.com/photos/image/icon/Video-size-24x24-znd.png"
+                  alt="❖"
+                />
+                Video
+              </a>
+            </li>
+            <li class="all-menu"><a class="toggle-all">Tất cả</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="list-posts">
+        <div class="posts-heading">
+          <h1 class="posts-heading__name">Bài viết</h1>
+          <a href="" class="btn posts-heading__create">Tạo bài viết</a>
+        </div>
+        <div class="posts-main__wrap">
+          <!-- <div class="not-found">
+            <img
+              class="not-found__img"
+              src="/images/not-found.svg"
+              alt="Không có dữ liệu"
+            />
+            <span class="not-found__mess">Không có dữ liệu</span>
+          </div> -->
+          <ul class="posts-main__list col-row">
+            <li class="posts-main__item-wrap">
+              <div class="posts-main__item">
+                <a href="" class="">
+                  <img
+                    class="posts-main__img"
+                    src="https://cdn.tgdd.vn/hoi-dap/1326233/ux-ui-la-gi-lam-the-nao-de-tro-thanh-ux-ui-designer-chuyen-01.jpg"
+                    alt=""
+                  />
+                </a>
+                <div class="posts-main__content">
+                  <h3 class="posts-main__title">
+                    <a href="">Hacker mũ trắng</a>
+                  </h3>
+                  <p class="posts-main__desc">Hacker mũ trắng</p>
+                  <div class="posts-main__bottom">
+                    <span class="posts-main__date text-gray-600"
+                      >7 giờ trước</span
+                    >
+                    <a href="" class="btn posts-main__edit">
+                      <span><i class="fa fa-pencil"></i></span
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="posts-main__item-wrap">
+              <div class="posts-main__item">
+                <a href="" class="">
+                  <img
+                    class="posts-main__img"
+                    src="https://cdn.tgdd.vn/hoi-dap/1326233/ux-ui-la-gi-lam-the-nao-de-tro-thanh-ux-ui-designer-chuyen-01.jpg"
+                    alt=""
+                  />
+                </a>
+                <div class="posts-main__content">
+                  <h3 class="posts-main__title">
+                    <a href="">Hacker mũ trắng</a>
+                  </h3>
+                  <p class="posts-main__desc">Hacker mũ trắng</p>
+                  <div class="posts-main__bottom">
+                    <span class="posts-main__date text-gray-600"
+                      >7 giờ trước</span
+                    >
+                    <a href="" class="btn posts-main__edit">
+                      <span><i class="fa fa-pencil"></i></span
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="posts-main__item-wrap">
+              <div class="posts-main__item">
+                <a href="" class="">
+                  <img
+                    class="posts-main__img"
+                    src="https://cdn.tgdd.vn/hoi-dap/1326233/ux-ui-la-gi-lam-the-nao-de-tro-thanh-ux-ui-designer-chuyen-01.jpg"
+                    alt=""
+                  />
+                </a>
+                <div class="posts-main__content">
+                  <h3 class="posts-main__title">
+                    <a href="">Hacker mũ trắng</a>
+                  </h3>
+                  <p class="posts-main__desc">Hacker mũ trắng</p>
+                  <div class="posts-main__bottom">
+                    <span class="posts-main__date text-gray-600"
+                      >7 giờ trước</span
+                    >
+                    <a href="" class="btn posts-main__edit">
+                      <span><i class="fa fa-pencil"></i></span
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="posts-main__item-wrap">
+              <div class="posts-main__item">
+                <a href="" class="">
+                  <img
+                    class="posts-main__img"
+                    src="https://cdn.tgdd.vn/hoi-dap/1326233/ux-ui-la-gi-lam-the-nao-de-tro-thanh-ux-ui-designer-chuyen-01.jpg"
+                    alt=""
+                  />
+                </a>
+                <div class="posts-main__content">
+                  <h3 class="posts-main__title">
+                    <a href="">Hacker mũ trắng</a>
+                  </h3>
+                  <p class="posts-main__desc">Hacker mũ trắng</p>
+                  <div class="posts-main__bottom">
+                    <span class="posts-main__date text-gray-600"
+                      >7 giờ trước</span
+                    >
+                    <a href="" class="btn posts-main__edit">
+                      <span><i class="fa fa-pencil"></i></span
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="posts-main__item-wrap">
+              <div class="posts-main__item">
+                <a href="" class="">
+                  <img
+                    class="posts-main__img"
+                    src="https://cdn.tgdd.vn/hoi-dap/1326233/ux-ui-la-gi-lam-the-nao-de-tro-thanh-ux-ui-designer-chuyen-01.jpg"
+                    alt=""
+                  />
+                </a>
+                <div class="posts-main__content">
+                  <h3 class="posts-main__title">
+                    <a href="">Hacker mũ trắng</a>
+                  </h3>
+                  <p class="posts-main__desc">Hacker mũ trắng</p>
+                  <div class="posts-main__bottom">
+                    <span class="posts-main__date text-gray-600"
+                      >7 giờ trước</span
+                    >
+                    <a href="" class="btn posts-main__edit">
+                      <span><i class="fa fa-pencil"></i></span
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <section id="footer">
+        <div class="section-box footer-top">
+          <div class="footer-wrap">
+            <ul class="footer-navigation">
+              <li class="tax-lang-cong-nghe">
+                <a class="category-x" href="/lang-cong-nghe">
+                  Làng Công nghệ
+                </a>
+                <ul>
+                  <li class="tax-tan-cong-mang">
+                    <a href="/tan-cong-mang"> Tấn công mạng </a>
+                  </li>
+                  <li class="tax-chuyen-cong-nghe">
+                    <a href="/chuyen-cong-nghe"> Chuyện công nghệ </a>
+                  </li>
+                  <li class="tax-cong-nghe-moi">
+                    <a href="/cong-nghe-moi"> Công nghệ mới </a>
+                  </li>
+                  <li class="tax-ai">
+                    <a href="/ai"> Trí tuệ nhân tạo (AI) </a>
+                  </li>
+                  <li class="tax-anh-tai-cong-nghe hassub">
+                    <a href="/anh-tai-cong-nghe"> Anh tài công nghệ </a>
+                  </li>
+                  <li class="tax-binh-luan-cong-nghe">
+                    <a href="/binh-luan-cong-nghe"> Bình luận công nghệ </a>
+                  </li>
+                  <li class="tax-trac-nghiem-cong-nghe-thong-tin">
+                    <a href="/trac-nghiem-cong-nghe-thong-tin">
+                      Quiz công nghệ
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="tax-cong-nghe">
+                <a class="category-x" href="/cong-nghe"> Công nghệ </a>
+                <ul>
+                  <li class="tax-ung-dung hassub">
+                    <a href="/ung-dung"> Ứng dụng </a>
+                  </li>
+                  <li class="tax-he-thong hassub">
+                    <a href="/he-thong"> Hệ thống </a>
+                  </li>
+                  <li class="tax-game-tro-choi hassub">
+                    <a href="/game-tro-choi"> Game - Trò chơi </a>
+                  </li>
+                  <li class="tax-ios hassub">
+                    <a href="/ios"> iPhone </a>
+                  </li>
+                  <li class="tax-android hassub">
+                    <a href="/android"> Android </a>
+                  </li>
+                  <li class="tax-linux-os">
+                    <a href="/linux-os"> Linux </a>
+                  </li>
+                  <li class="tax-dong-ho-thong-minh">
+                    <a href="/dong-ho-thong-minh"> Đồng hồ thông minh </a>
+                  </li>
+                  <li class="tax-may-anh-may-quay">
+                    <a href="/may-anh-may-quay"> Chụp ảnh - Quay phim </a>
+                  </li>
+                  <li class="tax-mac-os-x hassub">
+                    <a href="/mac-os-x"> macOS </a>
+                  </li>
+                  <li class="tax-phan-cung hassub">
+                    <a href="/phan-cung"> Phần cứng </a>
+                  </li>
+                  <li class="tax-thu-thuat-seo">
+                    <a href="/thu-thuat-seo"> Thủ thuật SEO </a>
+                  </li>
+                  <li class="tax-kien-thuc-co-ban">
+                    <a href="/kien-thuc-co-ban"> Kiến thức cơ bản </a>
+                  </li>
+                  <li class="tax-raspberry-pi">
+                    <a href="/raspberry-pi"> Raspberry Pi </a>
+                  </li>
+                  <li class="tax-dich-vu-ngan-hang">
+                    <a href="/dich-vu-ngan-hang"> Dịch vụ ngân hàng </a>
+                  </li>
+                  <li class="tax-lap-trinh hassub">
+                    <a href="/lap-trinh"> Lập trình </a>
+                  </li>
+                  <li class="tax-dich-vu-cong-truc-tuyen">
+                    <a href="/dich-vu-cong-truc-tuyen">
+                      Dịch vụ công trực tuyến
+                    </a>
+                  </li>
+                  <li class="tax-dich-vu-nha-mang">
+                    <a href="/dich-vu-nha-mang"> Dịch vụ nhà mạng </a>
+                  </li>
+                  <li class="tax-nha-thong-minh-smarthome">
+                    <a href="/nha-thong-minh-smarthome"> Nhà thông minh </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="tax-khoa-hoc">
+                <a class="category-x" href="/khoa-hoc"> Khoa học </a>
+                <ul>
+                  <li class="tax-thi-nghiem-khoa-hoc">
+                    <a href="/thi-nghiem-khoa-hoc"> Khoa học vui </a>
+                  </li>
+                  <li class="tax-kham-pha-khoa-hoc">
+                    <a href="/kham-pha-khoa-hoc"> Khám phá khoa học </a>
+                  </li>
+                  <li class="tax-bi-an-chuyen-la">
+                    <a href="/bi-an-chuyen-la"> Bí ẩn - Chuyện lạ </a>
+                  </li>
+                  <li class="tax-suc-khoe hassub">
+                    <a href="/suc-khoe"> Chăm sóc Sức khỏe </a>
+                  </li>
+                  <li class="tax-khoa-hoc-vu-tru">
+                    <a href="/khoa-hoc-vu-tru"> Khoa học Vũ trụ </a>
+                  </li>
+                  <li class="tax-kham-pha-thien-nhien hassub">
+                    <a href="/kham-pha-thien-nhien"> Khám phá thiên nhiên </a>
+                  </li>
+                  <li class="tax-moi-truong">
+                    <a href="/moi-truong"> Môi trường </a>
+                  </li>
+                  <li class="tax-y-hoc hassub">
+                    <a href="/y-hoc"> Y học </a>
+                  </li>
+                  <li class="tax-khao-co-hoc">
+                    <a href="/khao-co-hoc"> Khảo cổ học </a>
+                  </li>
+                  <li class="tax-phat-minh-khoa-hoc hassub">
+                    <a href="/phat-minh-khoa-hoc"> Phát minh khoa học </a>
+                  </li>
+                  <li class="tax-cau-chuyen-khoa-hoc">
+                    <a href="/cau-chuyen-khoa-hoc"> Câu chuyện Khoa học </a>
+                  </li>
+                  <li class="tax-khoa-hoc-cong-nghe">
+                    <a href="/khoa-hoc-cong-nghe"> Khoa học công nghệ </a>
+                  </li>
+                  <li class="tax-anh-dep-khoa-hoc">
+                    <a href="/anh-dep-khoa-hoc"> Ảnh đẹp Khoa học </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="tax-dien-may">
+                <a class="category-x" href="/dien-may"> Điện máy </a>
+                <ul>
+                  <li class="tax-tivi hassub">
+                    <a href="/tivi"> Tivi </a>
+                  </li>
+                  <li class="tax-tu-lanh">
+                    <a href="/tu-lanh"> Tủ lạnh </a>
+                  </li>
+                  <li class="tax-dieu-hoa">
+                    <a href="/dieu-hoa"> Điều hòa </a>
+                  </li>
+                  <li class="tax-may-giat">
+                    <a href="/may-giat"> Máy giặt </a>
+                  </li>
+                  <li class="tax-quat-cac-loai">
+                    <a href="/quat-cac-loai"> Quạt các loại </a>
+                  </li>
+                  <li class="tax-may-hut-mui">
+                    <a href="/may-hut-mui"> Máy hút mùi </a>
+                  </li>
+                  <li class="tax-binh-nuoc-nong-may-nuoc-nong">
+                    <a href="/binh-nuoc-nong-may-nuoc-nong">
+                      Bình nước nóng, Máy nước nóng
+                    </a>
+                  </li>
+                  <li class="tax-may-cong-cu">
+                    <a href="/may-cong-cu"> Máy công cụ </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="tax-cuoc-song">
+                <a class="category-x" href="/cuoc-song"> Cuộc sống </a>
+                <ul>
+                  <li class="tax-ky-nang hassub">
+                    <a href="/ky-nang"> Kỹ năng </a>
+                  </li>
+                  <li class="tax-am-thuc hassub">
+                    <a href="/am-thuc"> Món ngon mỗi ngày </a>
+                  </li>
+                  <li class="tax-lam-dep">
+                    <a href="/lam-dep"> Làm đẹp </a>
+                  </li>
+                  <li class="tax-nuoi-day-con">
+                    <a href="/nuoi-day-con"> Nuôi dạy con </a>
+                  </li>
+                  <li class="tax-nha-cua">
+                    <a href="/nha-cua"> Chăm sóc Nhà cửa </a>
+                  </li>
+                  <li class="tax-kinh-nghiem-du-lich">
+                    <a href="/kinh-nghiem-du-lich"> Kinh nghiệm Du lịch </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="info-company">
+            <div class="info-company__links">
+              <a href="/support/about">Giới thiệu</a> |
+              <a href="/support/terms">Điều khoản</a> |
+              <a href="/support/privacy">Bảo mật</a> |
+              <a href="/support/help">Hướng dẫn</a> |
+              <a href="/support/apps/">Ứng dụng</a> |
+              <a href="/support/contact">Liên hệ</a> |
+              <a href="/support/ads">Quảng cáo</a> |
+              <a
+                href="https://www.facebook.com/quantrimang.com.vn"
+                rel="nofollow noopener"
+                target="_blank"
+                >Facebook</a
+              >
+              |
+              <a
+                href="https://www.youtube.com/c/quantrimang"
+                rel="nofollow noopener"
+                target="_blank"
+                >Youtube</a
+              >
+              |
+              <a
+                href="//www.dmca.com/Protection/Status.aspx?ID=9d523b74-7299-4834-8990-8c157b6e8fc7"
+                target="_blank"
+                rel="nofollow noreferrer"
+                title="DMCA.com Protection Status"
+                class="dmca-badge"
+                >DMCA</a
+              >
+            </div>
+            <div>
+              Giấy phép số 362/GP-BTTTT. Bộ Thông tin và Truyền thông cấp ngày
+              30/06/2016. Cơ quan chủ quản: CÔNG TY CỔ PHẦN MẠNG TRỰC TUYẾN
+              META. Địa chỉ: 56 Duy Tân, Dịch Vọng Hậu, Cầu Giấy, Hà Nội. Điện
+              thoại: <a>024 2242 6188</a>. Email: info@meta.vn. Chịu trách nhiệm
+              nội dung: Lê Ngọc Lam.
+            </div>
+          </div>
+          <div class="copyright">
+            Bản quyền © 2003-2021 QuanTriMang.com. Giữ toàn quyền. Không được
+            sao chép hoặc sử dụng hoặc phát hành lại bất kỳ nội dung nào thuộc
+            QuanTriMang.com khi chưa được phép.
+          </div>
+        </div>
+      </section>
+    </section>
+  </body>
+  <script src="./js/main.js"></script>
+</html>

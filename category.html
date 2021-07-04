@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="./css/all.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/common.css" />
-    <link rel="stylesheet" href="./css/authent.css" />
-    <link rel="stylesheet" href="./css/profile.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
     <link
       rel="stylesheet"
@@ -18,214 +16,14 @@
     <title>Quangtrimang</title>
   </head>
   <body>
-
     <section id="main">
       <section id="header">
         <div class="section-box">
           <div class="header-topnav">
-            <a
-            class="btn-login"
-            data-toggle="modal" href="javascript:void(0)" onclick="openLoginModal();">Đăng nhập</a
+            <a href="/account/login" class="btn-login" data-loaded="true"
+              >Đăng nhập</a
             >
           </div>
-
-<!-- Modal -->
-<div class="login" id="loginModal">
-  <div class="modal-dialog login animated">
-    <div class="modal-content">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-    <h4 class="login-title">Đăng nhập tài khoản</h4>
-</div>
-<div class="modal-body">  
-  <div class="form-register registerBox" style="display:none;">
-    <form class="form form-signup" method="post">
-      <input type="hidden" name="state" />
-      <p class="group-input">
-        <label class="register-title">Email <span class="import-star">*</span></label>
-        <input
-          id="email"
-          name="email"
-          class="register-input"
-          type="text"
-          title="Nhập email của bạn"
-          placeholder="Nhập email của bạn"
-          required=""
-        />
-        <!-- <span
-          class="field-validation-valid"
-          data-valmsg-for="email"
-          data-valmsg-replace="true"
-        ></span> -->
-      </p>
-      <p class="group-input">
-        <label class="register-title">Mật khẩu <span class="import-star">*</span></label>
-        <input
-          id="password"
-          name="password"
-          class="register-input"
-          type="password"
-          title="Nhập mật khẩu của bạn"
-          placeholder="Nhập mật khẩu của bạn"
-          required=""
-        />
-        <!-- <span
-          class="field-validation-valid"
-          data-valmsg-for="email"
-          data-valmsg-replace="true"
-        ></span> -->
-      </p>
-      <p class="group-input">
-        <label class="register-title">Mật khẩu <span class="import-star">*</span></label>
-        <input
-          id="password"
-          name="password"
-          class="register-input"
-          type="password"
-          title="Nhập mật khẩu của bạn"
-          placeholder="Nhập mật khẩu của bạn"
-          required=""
-        />
-        <!-- <span
-          class="field-validation-valid"
-          data-valmsg-for="email"
-          data-valmsg-replace="true"
-        ></span> -->
-      </p>
-      <p class="forgot-password">
-        <a href="">Quên mật khẩu?</a>
-      </p>
-      <p>
-        <button id="btnnext" class="btn btn-login">Đăng nhập</button>
-      </p>
-    </form>
-  </div>
-  <div class="form-register loginBox">
-    <form class="form form-signup" method="post">
-      <input type="hidden" name="state" />
-      <p class="group-input">
-        <label class="register-title">Email <span class="import-star">*</span></label>
-        <input
-          id="email"
-          name="email"
-          class="register-input"
-          type="text"
-          title="Nhập email của bạn"
-          placeholder="Nhập email của bạn"
-          required=""
-        />
-        <!-- <span
-          class="field-validation-valid"
-          data-valmsg-for="email"
-          data-valmsg-replace="true"
-        ></span> -->
-      </p>
-      <p class="group-input">
-        <label class="register-title">Mật khẩu <span class="import-star">*</span></label>
-        <input
-          id="password"
-          name="password"
-          class="register-input"
-          type="password"
-          title="Nhập mật khẩu của bạn"
-          placeholder="Nhập mật khẩu của bạn"
-          required=""
-        />
-        <!-- <span
-          class="field-validation-valid"
-          data-valmsg-for="email"
-          data-valmsg-replace="true"
-        ></span> -->
-      </p>
-      <p class="group-input">
-        <label class="register-title">Mật khẩu <span class="import-star">*</span></label>
-        <input
-          id="password"
-          name="password"
-          class="register-input"
-          type="password"
-          title="Nhập mật khẩu của bạn"
-          placeholder="Nhập mật khẩu của bạn"
-          required=""
-        />
-        <!-- <span
-          class="field-validation-valid"
-          data-valmsg-for="email"
-          data-valmsg-replace="true"
-        ></span> -->
-      </p>
-      <p class="forgot-password">
-        <a href="">Quên mật khẩu?</a>
-      </p>
-      <p>
-        <button id="btnnext" class="btn btn-login">Đăng nhập</button>
-      </p>
-    </form>
-  </div>
-  <div class="or-register">
-    <span class="or-register__hr"></span>
-      <span class="or-register__name" >hoặc</span>
-      <span class="or-register__hr"></span>
-
-  </div>
-  <div class="login-social">
-    <p class="login-social__item">
-      <a class="social-item__icon hover-up fb-auth"  href="#"
-        ><i class="fa fa-facebook-f"></i>
-      </a>
-    </p>
-    <p class="login-social__item">
-      <a
-        class="social-item__icon hover-up gg-auth"
-        href="#"
-        ><i class="fa fa-google"></i></i
-      ></a>
-    </p>
-    <p class="login-social__item">
-      <a
-      class="social-item__icon hover-up zalo-auth"
-     
-      href="#"
-    ></a>
-    </p>
-  </div>
-  <!-- <div class="login-policies">
-    <label
-      >Bằng việc đăng ký tài khoản<br />
-      Tôi đồng ý với
-      <a href="/support/terms" target="_blank" rel="nofollow"
-        >Chính sách và quy định sử dụng</a
-      ></label
-    >
-  </div> -->
-  <div class="modal-footer">
-    <div class="forgot login-footer">
-        <span>Looking to 
-             <a href="javascript: showRegisterForm();">create an account</a>
-        ?</span>
-    </div>
-    <div class="forgot register-footer" style="display:none">
-         <span>Already have an account?</span>
-         <a href="javascript: showLoginForm();">Login</a>
-    </div>
-</div>   
-  <!-- <div class="login-actions">
-    Bạn chưa có tài khoản?
-    <a class="login-actions__login" href="/register.html">Đăng ký</a>
-  </div> -->
-</div>
-</div>
-</div>
-</div>
-<!-- End Modal -->
-
-
-
-
-
-
-
-
           <div class="header-left">
             <h1>
               <a href="/" id="logo" title="Quantrimang.com">quantrimang.com</a>
@@ -356,168 +154,175 @@
         </div>
       </section>
       <section class="section-box">
-        <div class="main-content__first">
-          <div class="main-content__first-one mb-30">
-            <div
-              class="relative post-thumb hover-up border-radius-10"
-              style="
-                margin-right: 16px;
-                position: relative;
-                left: 0px;
-                top: 0px;
-                z-index: 999;
-                opacity: 1;
-              "
-            >
-              <div
-                class="thumb-overlay img-hover-slides relative"
-                style="
-                  background-image: url('https://dbk.vn/uploads/ckfinder/images/tranh-anh/Anh-thien-nhien-3.jpg');
-                "
-              >
-                <a class="img-link" href="single.html.htm" tabindex="0"></a>
-
-                <div class="post-content-overlay text-white ml-30 mr-30 pb-30">
-                  <h3 class="post-title font-weight-900 mb-20">
-                    <a class="text-white" href="single.html.htm" tabindex="0"
-                      >Beachmaster Elephant Seal Fights off Rival Male, The
-                      match is uncompromising</a
-                    >
-                  </h3>
-                  <div class="post-time">
-                    <span class="post-on">20 minutes ago</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <article class="main-content__first-many">
-            <div
-              class="main-content__first-many--card border-radius-10 hover-up"
-            >
-              <div
-                class="post-thumb thumb-overlay img-hover-slide relative"
-                style="
-                  background-image: url('https://lazi.vn/uploads/photo/lazi_5eed7c083417a_1592622088_83.jpg');
-                "
-              >
-                <a class="img-link" href="single.html.htm"></a>
-              </div>
-              <div class="main-content__first-many-card-text">
-                <div class="post-card-content">
-                  <h5 class="post-title">
-                    <a href="single.html.htm"
-                      >Want fluffy Japanese pancakes but can’t fly to Tokyo?</a
-                    >
-                  </h5>
-                  <p class="post-desc">
-                    Beachmaster Elephant Seal Fights off Rival Male, The match
-                    is uncompromising
-                  </p>
-                  <div class="post-time text-gray-600">
-                    <span class="post-on">27 August</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </article>
-          <article class="main-content__first-many">
-            <div
-              class="main-content__first-many--card border-radius-10 hover-up"
-            >
-              <div
-                class="post-thumb thumb-overlay img-hover-slide relative"
-                style="
-                  background-image: url('https://lazi.vn/uploads/photo/lazi_5eed7c083417a_1592622088_83.jpg');
-                "
-              >
-                <a class="img-link" href="single.html.htm"></a>
-              </div>
-              <div class="main-content__first-many-card-text">
-                <div class="post-card-content">
-                  <h5 class="post-title">
-                    <a href="single.html.htm"
-                      >Want fluffy Japanese pancakes but can’t fly to Tokyo?</a
-                    >
-                  </h5>
-                  <p class="post-desc">
-                    Beachmaster Elephant Seal Fights off Rival Male, The match
-                    is uncompromising
-                  </p>
-                  <div class="post-time text-gray-600">
-                    <span class="post-on">27 August</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </article>
-          <article class="main-content__first-many">
-            <div
-              class="main-content__first-many--card border-radius-10 hover-up"
-            >
-              <div
-                class="post-thumb thumb-overlay img-hover-slide relative"
-                style="
-                  background-image: url('https://lazi.vn/uploads/photo/lazi_5eed7c083417a_1592622088_83.jpg');
-                "
-              >
-                <a class="img-link" href="single.html.htm"></a>
-              </div>
-              <div class="main-content__first-many-card-text">
-                <div class="post-card-content">
-                  <h5 class="post-title">
-                    <a href="single.html.htm"
-                      >Want fluffy Japanese pancakes but can’t fly to Tokyo?</a
-                    >
-                  </h5>
-                  <p class="post-desc">
-                    Beachmaster Elephant Seal Fights off Rival Male, The match
-                    is uncompromising
-                  </p>
-                  <div class="post-time text-gray-600">
-                    <span class="post-on">27 August</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </article>
-          <article class="main-content__first-many">
-            <div
-              class="main-content__first-many--card border-radius-10 hover-up"
-            >
-              <div
-                class="post-thumb thumb-overlay img-hover-slide relative"
-                style="
-                  background-image: url('https://lazi.vn/uploads/photo/lazi_5eed7c083417a_1592622088_83.jpg');
-                "
-              >
-                <a class="img-link" href="single.html.htm"></a>
-              </div>
-              <div class="main-content__first-many-card-text">
-                <div class="post-card-content">
-                  <h5 class="post-title">
-                    <a href="single.html.htm"
-                      >Want fluffy Japanese pancakes but can’t fly to Tokyo?</a
-                    >
-                  </h5>
-                  <p class="post-desc">
-                    Beachmaster Elephant Seal Fights off Rival Male, The match
-                    is uncompromising
-                  </p>
-                  <div class="post-time text-gray-600">
-                    <span class="post-on">27 August</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <!-- End -->
-        </div>
         <div id="main-content" class="p-4">
           <div class="main-content__left">
-            <div class="main-content__post">
+            <div class="category-wrap">
+              <div class="detail-breadcrumbs info-detail">
+                <span class="first breadcrumb"> </span>
+                <span class="breadcrumb">
+                  <a href="/lang-cong-nghe"> Làng Công nghệ </a>
+                </span>
+              </div>
+              <ul class="category-list">
+                <li class="category-list__item">
+                  <a title="Khoa học vui" href="/thi-nghiem-khoa-hoc">
+                    <img
+                      class="category-list__item-img"
+                      loading="lazy"
+                      data-src="https://st.quantrimang.com/photos/image/icon/khoahoc/TestTube.png"
+                      src="https://st.quantrimang.com/photos/image/icon/khoahoc/TestTube.png"
+                      alt="Khoa học vui"
+                    />
+                    <span>Khoa học vui</span>
+                  </a>
+                </li>
+                <li class="category-list__item">
+                  <a title="Khám phá khoa học" href="/kham-pha-khoa-hoc">
+                    <img
+                      class="category-list__item-img"
+                      loading="lazy"
+                      data-src="https://st.quantrimang.com/photos/image/icon/khoahoc/earth.png"
+                      src="https://st.quantrimang.com/photos/image/icon/khoahoc/earth.png"
+                      alt="Khám phá khoa học"
+                    />
+                    <span>Khám phá khoa học</span>
+                  </a>
+                </li>
+                <li class="category-list__item">
+                  <a title="Bí ẩn - Chuyện lạ" href="/bi-an-chuyen-la">
+                    <img
+                      class="category-list__item-img"
+                      loading="lazy"
+                      data-src="https://st.quantrimang.com/photos/image/icon/khoahoc/Martian.png"
+                      src="https://st.quantrimang.com/photos/image/icon/khoahoc/Martian.png"
+                      alt="Bí ẩn - Chuyện lạ"
+                    />
+                    <span>Bí ẩn - Chuyện lạ</span>
+                  </a>
+                </li>
+                <li class="category-list__item">
+                  <a title="Chăm sóc Sức khỏe" href="/suc-khoe">
+                    <img
+                      class="category-list__item-img"
+                      loading="lazy"
+                      data-src="https://st.quantrimang.com/photos/image/icon/Health.png"
+                      src="https://st.quantrimang.com/photos/image/icon/Health.png"
+                      alt="Chăm sóc Sức khỏe"
+                    />
+                    <span>Chăm sóc Sức khỏe</span>
+                  </a>
+                </li>
+                <li class="category-list__item">
+                  <a title="Khoa học Vũ trụ" href="/khoa-hoc-vu-tru">
+                    <img
+                      class="category-list__item-img"
+                      loading="lazy"
+                      data-src="https://st.quantrimang.com/photos/image/icon/khoahoc/WaxingCrescent.png"
+                      src="https://st.quantrimang.com/photos/image/icon/khoahoc/WaxingCrescent.png"
+                      alt="Khoa học Vũ trụ"
+                    />
+                    <span>Khoa học Vũ trụ</span>
+                  </a>
+                </li>
+                <li class="category-list__item">
+                  <a title="Khám phá thiên nhiên" href="/kham-pha-thien-nhien">
+                    <img
+                      class="category-list__item-img"
+                      loading="lazy"
+                      data-src="https://st.quantrimang.com/photos/image/icon/khoahoc/NaturalFood.png"
+                      src="https://st.quantrimang.com/photos/image/icon/khoahoc/NaturalFood.png"
+                      alt="Khám phá thiên nhiên"
+                    />
+                    <span>Khám phá thiên nhiên</span>
+                  </a>
+                </li>
+                <li class="category-list__item">
+                  <a title="Môi trường" href="/moi-truong">
+                    <img
+                      class="category-list__item-img"
+                      loading="lazy"
+                      data-src="https://st.quantrimang.com/photos/image/icon/moi-truong-icon-32.png"
+                      src="https://st.quantrimang.com/photos/image/icon/moi-truong-icon-32.png"
+                      alt="Môi trường"
+                    />
+                    <span>Môi trường</span>
+                  </a>
+                </li>
+                <li class="category-list__item">
+                  <a title="Y học" href="/y-hoc">
+                    <img
+                      class="category-list__item-img"
+                      loading="lazy"
+                      data-src="https://st.quantrimang.com/photos/image/icon/khoahoc/hospital.png"
+                      src="https://st.quantrimang.com/photos/image/icon/khoahoc/hospital.png"
+                      alt="Y học"
+                    />
+                    <span>Y học</span>
+                  </a>
+                </li>
+                <li class="category-list__item">
+                  <a title="Khảo cổ học" href="/khao-co-hoc">
+                    <img
+                      class="category-list__item-img"
+                      loading="lazy"
+                      data-src="https://st.quantrimang.com/photos/image/icon/khoahoc/pharaoh.png"
+                      src="https://st.quantrimang.com/photos/image/icon/khoahoc/pharaoh.png"
+                      alt="Khảo cổ học"
+                    />
+                    <span>Khảo cổ học</span>
+                  </a>
+                </li>
+                <li class="category-list__item">
+                  <a title="Phát minh khoa học" href="/phat-minh-khoa-hoc">
+                    <img
+                      class="category-list__item-img"
+                      loading="lazy"
+                      data-src="https://st.quantrimang.com/photos/image/icon/khoahoc/idea.png"
+                      src="https://st.quantrimang.com/photos/image/icon/khoahoc/idea.png"
+                      alt="Phát minh khoa học"
+                    />
+                    <span>Phát minh khoa học</span>
+                  </a>
+                </li>
+                <li class="category-list__item">
+                  <a title="Câu chuyện Khoa học" href="/cau-chuyen-khoa-hoc">
+                    <img
+                      class="category-list__item-img"
+                      loading="lazy"
+                      data-src="https://st.quantrimang.com/photos/image/icon/khoahoc/Einstein.png"
+                      src="https://st.quantrimang.com/photos/image/icon/khoahoc/Einstein.png"
+                      alt="Câu chuyện Khoa học"
+                    />
+                    <span>Câu chuyện Khoa học</span>
+                  </a>
+                </li>
+                <li class="category-list__item">
+                  <a title="Khoa học công nghệ" href="/khoa-hoc-cong-nghe">
+                    <img
+                      class="category-list__item-img"
+                      loading="lazy"
+                      data-src="https://st.quantrimang.com/photos/image/icon/khoa-hoc-cong-nghe-logo.png"
+                      src="https://st.quantrimang.com/photos/image/icon/khoa-hoc-cong-nghe-logo.png"
+                      alt="Khoa học công nghệ"
+                    />
+                    <span>Khoa học công nghệ</span>
+                  </a>
+                </li>
+                <li class="category-list__item">
+                  <a title="Ảnh đẹp Khoa học" href="/anh-dep-khoa-hoc">
+                    <img
+                      class="category-list__item-img"
+                      loading="lazy"
+                      data-src="https://st.quantrimang.com/photos/image/icon/khoahoc/Image.png"
+                      src="https://st.quantrimang.com/photos/image/icon/khoahoc/Image.png"
+                      alt="Ảnh đẹp Khoa học"
+                    />
+                    <span>Ảnh đẹp Khoa học</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="main-content__post main-content__post--res">
               <article class="main-content__item hover-up-2 transition-normal">
                 <div class="main-content__item-wrap list-style-2">
                   <div class="main-content__item-img">
@@ -751,7 +556,7 @@
           <div class="main-content__right">
             <div class="main-content__item mb-4">
               <div class="content-heading">
-                <h3 class="main-content__title">Được đề cử</h3>
+                <h3 class="main-content__title">Bài viết liên quan</h3>
               </div>
               <div id="main-content__article">
                 <li class="main-content__article-wrap">
@@ -912,369 +717,18 @@
                 </li>
               </div>
             </div>
-            <div class="main-content__item mb-4">
-              <div class="content-heading">
-                <h3 class="main-content__title">Ngày này năm xưa</h3>
-              </div>
-              <div id="main-content__article">
-                <li class="main-content__article-wrap">
-                  <div
-                    class="
-                      hover-up-2
-                      transition-normal
-                      main-content__article-item
-                    "
-                  >
-                    <div
-                      class="
-                        main-content__article-thumb
-                        border-radius-6
-                        img-hover-scale
-                        main-content__article-img
-                      "
-                    >
-                      <a class="color-white" href="single.html.htm">
-                        <img
-                          src="https://st.quantrimang.com/photos/image/2020/06/30/TikTok-200-size-80x80-znd.jpg"
-                          alt=""
-                        />
-                      </a>
-                    </div>
-                    <div class="main-content__article-text">
-                      <h6 class="main-content__article-text-title">
-                        <a href="single.html.htm">
-                          Đảo ngược công nghệ của TikTok, kỹ sư phần mềm phát
-                          hiện ra điều đáng sợ</a
-                        >
-                      </h6>
-                      <div
-                        class="main-content__article-text-time text-gray-600"
-                      >
-                        <span class="post-on">27 Jan</span>
-                        <span class="post-by has-dot">13k views</span>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="main-content__article-wrap">
-                  <div
-                    class="
-                      hover-up-2
-                      transition-normal
-                      main-content__article-item
-                    "
-                  >
-                    <div
-                      class="
-                        main-content__article-thumb
-                        border-radius-6
-                        img-hover-scale
-                        main-content__article-img
-                      "
-                    >
-                      <a class="color-white" href="single.html.htm">
-                        <img
-                          src="https://st.quantrimang.com/photos/image/2020/06/30/TikTok-200-size-80x80-znd.jpg"
-                          alt=""
-                        />
-                      </a>
-                    </div>
-                    <div class="main-content__article-text">
-                      <h6 class="main-content__article-text-title">
-                        <a href="single.html.htm">
-                          Đảo ngược công nghệ của TikTok, kỹ sư phần mềm phát
-                          hiện ra điều đáng sợ</a
-                        >
-                      </h6>
-                      <div
-                        class="main-content__article-text-time text-gray-600"
-                      >
-                        <span class="post-on">27 Jan</span>
-                        <span class="post-by has-dot">13k views</span>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="main-content__article-wrap">
-                  <div
-                    class="
-                      hover-up-2
-                      transition-normal
-                      main-content__article-item
-                    "
-                  >
-                    <div
-                      class="
-                        main-content__article-thumb
-                        border-radius-6
-                        img-hover-scale
-                        main-content__article-img
-                      "
-                    >
-                      <a class="color-white" href="single.html.htm">
-                        <img
-                          src="https://st.quantrimang.com/photos/image/2020/06/30/TikTok-200-size-80x80-znd.jpg"
-                          alt=""
-                        />
-                      </a>
-                    </div>
-                    <div class="main-content__article-text">
-                      <h6 class="main-content__article-text-title">
-                        <a href="single.html.htm">
-                          Đảo ngược công nghệ của TikTok, kỹ sư phần mềm phát
-                          hiện ra điều đáng sợ</a
-                        >
-                      </h6>
-                      <div
-                        class="main-content__article-text-time text-gray-600"
-                      >
-                        <span class="post-on">27 Jan</span>
-                        <span class="post-by has-dot">13k views</span>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="main-content__article-wrap">
-                  <div
-                    class="
-                      hover-up-2
-                      transition-normal
-                      main-content__article-item
-                    "
-                  >
-                    <div
-                      class="
-                        main-content__article-thumb
-                        border-radius-6
-                        img-hover-scale
-                        main-content__article-img
-                      "
-                    >
-                      <a class="color-white" href="single.html.htm">
-                        <img
-                          src="https://st.quantrimang.com/photos/image/2020/06/30/TikTok-200-size-80x80-znd.jpg"
-                          alt=""
-                        />
-                      </a>
-                    </div>
-                    <div class="main-content__article-text">
-                      <h6 class="main-content__article-text-title">
-                        <a href="single.html.htm">
-                          Đảo ngược công nghệ của TikTok, kỹ sư phần mềm phát
-                          hiện ra điều đáng sợ</a
-                        >
-                      </h6>
-                      <div
-                        class="main-content__article-text-time text-gray-600"
-                      >
-                        <span class="post-on">27 Jan</span>
-                        <span class="post-by has-dot">13k views</span>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="main-content__article-wrap">
-                  <div
-                    class="
-                      hover-up-2
-                      transition-normal
-                      main-content__article-item
-                    "
-                  >
-                    <div
-                      class="
-                        main-content__article-thumb
-                        border-radius-6
-                        img-hover-scale
-                        main-content__article-img
-                      "
-                    >
-                      <a class="color-white" href="single.html.htm">
-                        <img
-                          src="https://st.quantrimang.com/photos/image/2020/06/30/TikTok-200-size-80x80-znd.jpg"
-                          alt=""
-                        />
-                      </a>
-                    </div>
-                    <div class="main-content__article-text">
-                      <h6 class="main-content__article-text-title">
-                        <a href="single.html.htm">
-                          Đảo ngược công nghệ của TikTok, kỹ sư phần mềm phát
-                          hiện ra điều đáng sợ</a
-                        >
-                      </h6>
-                      <div
-                        class="main-content__article-text-time text-gray-600"
-                      >
-                        <span class="post-on">27 Jan</span>
-                        <span class="post-by has-dot">13k views</span>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </div>
-            </div>
-            <div class="main-content__item mb-4">
-              <div class="content-heading">
-                <h3 class="main-content__title">Có thể bạn quan tâm</h3>
-              </div>
-              <div id="main-content__article">
-                <li class="main-content__article-wrap">
-                  <div
-                    class="
-                      hover-up-2
-                      transition-normal
-                      main-content__article-item
-                    "
-                  >
-                    <div
-                      class="
-                        main-content__article-thumb
-                        border-radius-6
-                        img-hover-scale
-                        main-content__article-img
-                      "
-                    >
-                      <a class="color-white" href="single.html.htm">
-                        <img
-                          src="https://st.quantrimang.com/photos/image/2020/06/30/TikTok-200-size-80x80-znd.jpg"
-                          alt=""
-                        />
-                      </a>
-                    </div>
-                    <div class="main-content__article-text">
-                      <h6 class="main-content__article-text-title">
-                        <a href="single.html.htm">
-                          Đảo ngược công nghệ của TikTok, kỹ sư phần mềm phát
-                          hiện ra điều đáng sợ</a
-                        >
-                      </h6>
-                      <div
-                        class="main-content__article-text-time text-gray-600"
-                      >
-                        <span class="post-on">27 Jan</span>
-                        <span class="post-by has-dot">13k views</span>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="main-content__article-wrap">
-                  <div
-                    class="
-                      hover-up-2
-                      transition-normal
-                      main-content__article-item
-                    "
-                  >
-                    <div
-                      class="
-                        main-content__article-thumb
-                        border-radius-6
-                        img-hover-scale
-                        main-content__article-img
-                      "
-                    >
-                      <a class="color-white" href="single.html.htm">
-                        <img
-                          src="https://st.quantrimang.com/photos/image/2020/06/30/TikTok-200-size-80x80-znd.jpg"
-                          alt=""
-                        />
-                      </a>
-                    </div>
-                    <div class="main-content__article-text">
-                      <h6 class="main-content__article-text-title">
-                        <a href="single.html.htm">
-                          Đảo ngược công nghệ của TikTok, kỹ sư phần mềm phát
-                          hiện ra điều đáng sợ</a
-                        >
-                      </h6>
-                      <div
-                        class="main-content__article-text-time text-gray-600"
-                      >
-                        <span class="post-on">27 Jan</span>
-                        <span class="post-by has-dot">13k views</span>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="main-content__article-wrap">
-                  <div
-                    class="
-                      hover-up-2
-                      transition-normal
-                      main-content__article-item
-                    "
-                  >
-                    <div
-                      class="
-                        main-content__article-thumb
-                        border-radius-6
-                        img-hover-scale
-                        main-content__article-img
-                      "
-                    >
-                      <a class="color-white" href="single.html.htm">
-                        <img
-                          src="https://st.quantrimang.com/photos/image/2020/06/30/TikTok-200-size-80x80-znd.jpg"
-                          alt=""
-                        />
-                      </a>
-                    </div>
-                    <div class="main-content__article-text">
-                      <h6 class="main-content__article-text-title">
-                        <a href="single.html.htm">
-                          Đảo ngược công nghệ của TikTok, kỹ sư phần mềm phát
-                          hiện ra điều đáng sợ</a
-                        >
-                      </h6>
-                      <div
-                        class="main-content__article-text-time text-gray-600"
-                      >
-                        <span class="post-on">27 Jan</span>
-                        <span class="post-by has-dot">13k views</span>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="main-content__article-wrap">
-                  <div
-                    class="
-                      hover-up-2
-                      transition-normal
-                      main-content__article-item
-                    "
-                  >
-                    <div
-                      class="
-                        main-content__article-thumb
-                        border-radius-6
-                        img-hover-scale
-                        main-content__article-img
-                      "
-                    >
-                      <a class="color-white" href="single.html.htm">
-                        <img
-                          src="https://st.quantrimang.com/photos/image/2020/06/30/TikTok-200-size-80x80-znd.jpg"
-                          alt=""
-                        />
-                      </a>
-                    </div>
-                    <div class="main-content__article-text">
-                      <h6 class="main-content__article-text-title">
-                        <a href="single.html.htm">
-                          Đảo ngược công nghệ của TikTok, kỹ sư phần mềm phát
-                          hiện ra điều đáng sợ</a
-                        >
-                      </h6>
-                      <div
-                        class="main-content__article-text-time text-gray-600"
-                      >
-                        <span class="post-on">27 Jan</span>
-                        <span class="post-by has-dot">13k views</span>
-                      </div>
-                    </div>
-                  </div>
-                </li>
+
+            <div class="ads-list">
+              <div class="ads-list__wrap">
+                <a rel="nofollow noopener" href="" target="_blank"
+                  ><img
+                    src="https://as.gamevui.com/data/File/2020/04/may-rua-bat-336x600.png"
+                    width="336"
+                    height="600"
+                    loading="lazy"
+                    alt="🖼️"
+                    style="width: 336px; height: 600px" /></a
+                ><a class="adslogo"><i></i></a>
               </div>
             </div>
           </div>
@@ -1526,6 +980,5 @@
       </section>
     </section>
   </body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="./js/main.js"></script>
 </html>
