@@ -1,65 +1,86 @@
 $(document).ready(function () {
-  console.log('heloo')
-  openLoginModal()
+  // MODAL LOGIN
+
+  $('.sign-in-modal').click(function () {
+    $('.sign-in-modal').removeClass('active')
+    $('.inner--sign-in-modal').removeClass('active')
+  })
+
+  $('.inner--sign-in-modal').click(function (e) {
+    e.stopPropagation()
+  })
+
+  $('.close-x').click(function () {
+    $('.sign-in-modal').removeClass('active')
+    $('.inner--sign-in-modal').removeClass('active')
+  })
+  $('.close-login').click(function () {
+    $('.sign-in-modal').removeClass('active')
+    $('.inner--sign-in-modal').removeClass('active')
+  })
+
+  /* MODAL */
+  $('.modal-sign').click(function () {
+    $('.sign-in-modal').addClass('active')
+    $('.inner--sign-in-modal').addClass('active')
+    setTimeout(function () {
+      $('.overlay').removeClass('sign-up-side')
+      $('.overlay').addClass('sign-in-side')
+      $('.tab-sign-up').removeClass('active')
+      $('.tab-sign-in').addClass('active')
+      $('.content-sign-up').removeClass('active')
+      $('.content-sign-in').addClass('active')
+    }, 400)
+  })
+
+  $('.inner--sign-in-modal .close-modal').click(function () {
+    $('.sign-in-modal').removeClass('active')
+    $('.inner--sign-in-modal').removeClass('active')
+  })
+
+  $('.val-info .tabs').click(function () {
+    if ($(this).hasClass('tab-sign-in') == true) {
+      $('.overlay').removeClass('sign-up-side')
+      $('.overlay').addClass('sign-in-side')
+      $('.tab-sign-up').removeClass('active')
+      $('.tab-sign-in').addClass('active')
+      $('.content-sign-up').removeClass('active')
+      $('.content-sign-in').addClass('active')
+    } else {
+      $('.overlay').removeClass('sign-in-side')
+      $('.overlay').addClass('sign-up-side')
+      $('.tab-sign-in').removeClass('active')
+      $('.tab-sign-up').addClass('active')
+      $('.content-sign-in').removeClass('active')
+      $('.content-sign-up').addClass('active')
+    }
+  })
+
+  //Greetings
+  $('.input-firstname').keyup(function () {
+    var getText = $(this).val()
+    console.log(getText)
+    $('.greetings-name').html(getText)
+  })
+
+  $('.input-lastname').keyup(function () {
+    var getText = $(this).val()
+    console.log(getText)
+    $('.greetings-surname').html(getText)
+  })
+  // TOGGLE HAMBURGER & COLLAPSE NAV
+  $('.nav-toggle').on('click', function () {
+    $('#body').toggleClass('showmenu')
+    // $(this).toggleClass('open')
+    // $('.menu-left').toggleClass('collapse')
+  })
+  // REMOVE X & COLLAPSE NAV ON ON CLICK
+  $('.close-menu').on('click', function () {
+    $('#body').removeClass('showmenu')
+    // $('.menu-left').removeClass('collapse')
+  })
+  $('.footer-navigation a').on('click', function () {
+    $('#body').removeClass('showmenu')
+    // $('.menu-left').removeClass('collapse')
+  })
 })
-
-function showRegisterForm() {
-  $('.loginBox').fadeOut('fast', function () {
-    $('.registerBox').fadeIn('fast')
-    $('.login-footer').fadeOut('fast', function () {
-      $('.register-footer').fadeIn('fast')
-    })
-    $('.login-title').html('Đăng ký tài khoản')
-  })
-  $('.error').removeClass('alert alert-danger').html('')
-}
-function showLoginForm() {
-  $('#loginModal .registerBox').fadeOut('fast', function () {
-    $('.loginBox').fadeIn('fast')
-    $('.register-footer').fadeOut('fast', function () {
-      $('.login-footer').fadeIn('fast')
-    })
-
-    $('.login-title').html('Login with')
-  })
-  $('.error').removeClass('alert alert-danger').html('')
-}
-
-function openLoginModal() {
-  showLoginForm()
-  setTimeout(function () {
-    $('#loginModal').show()
-  }, 230)
-}
-function openRegisterModal() {
-  showRegisterForm()
-  setTimeout(function () {
-    $('#loginModal').show()
-  }, 230)
-}
-
-function loginAjax() {
-  /*   Remove this comments when moving to server
-    $.post( "/login", function( data ) {
-            if(data == 1){
-                window.location.replace("/home");            
-            } else {
-                 shakeModal(); 
-            }
-        });
-    */
-
-  /*   Simulate error message from the server   */
-  shakeModal()
-}
-
-function shakeModal() {
-  $('#loginModal .modal-dialog').addClass('shake')
-  $('.error')
-    .addClass('alert alert-danger')
-    .html('Invalid email/password combination')
-  $('input[type="password"]').val('')
-  setTimeout(function () {
-    $('#loginModal .modal-dialog').removeClass('shake')
-  }, 1000)
-}

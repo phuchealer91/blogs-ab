@@ -408,13 +408,7 @@ summary {
 .rounded-full {
   border-radius: 50%;
 }
-/* Frame box */
-.section-box {
-  margin: 0 auto;
-  max-width: 1080px;
-  position: relative;
-  display: block;
-}
+
 /* hover */
 /* color: rgb(240, 34, 34); */
 /* color: #5869da */
@@ -507,7 +501,7 @@ summary {
   font-size: 1rem;
   -webkit-appearance: none;
   text-decoration: none;
-  border-radius: 8px;
+  border-radius: 6px;
   background: #2563eb;
   color: #fff;
 }

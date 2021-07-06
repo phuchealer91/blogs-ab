@@ -16,7 +16,7 @@
     <title>Quangtrimang</title>
   </head>
   <body>
-    <section id="main">
+    <section id="main" class="overlay">
       <section id="header">
         <div class="section-box">
           <div class="header-topnav">
@@ -149,7 +149,12 @@
                 Video
               </a>
             </li>
-            <li class="all-menu"><a class="toggle-all">Tất cả</a></li>
+            <li class="all-menu nav-toggle">
+              <a class="toggle-all">
+                <i class="fa fa-bars"></i>
+                <i class="fa fa-times"></i>
+              </a>
+            </li>
           </ul>
         </div>
       </section>
@@ -737,197 +742,929 @@
       <section id="footer">
         <div class="section-box footer-top">
           <div class="footer-wrap">
-            <ul class="footer-navigation">
-              <li class="tax-lang-cong-nghe">
-                <a class="category-x" href="/lang-cong-nghe">
-                  Làng Công nghệ
-                </a>
-                <ul>
-                  <li class="tax-tan-cong-mang">
-                    <a href="/tan-cong-mang"> Tấn công mạng </a>
-                  </li>
-                  <li class="tax-chuyen-cong-nghe">
-                    <a href="/chuyen-cong-nghe"> Chuyện công nghệ </a>
-                  </li>
-                  <li class="tax-cong-nghe-moi">
-                    <a href="/cong-nghe-moi"> Công nghệ mới </a>
-                  </li>
-                  <li class="tax-ai">
-                    <a href="/ai"> Trí tuệ nhân tạo (AI) </a>
-                  </li>
-                  <li class="tax-anh-tai-cong-nghe hassub">
-                    <a href="/anh-tai-cong-nghe"> Anh tài công nghệ </a>
-                  </li>
-                  <li class="tax-binh-luan-cong-nghe">
-                    <a href="/binh-luan-cong-nghe"> Bình luận công nghệ </a>
-                  </li>
-                  <li class="tax-trac-nghiem-cong-nghe-thong-tin">
-                    <a href="/trac-nghiem-cong-nghe-thong-tin">
-                      Quiz công nghệ
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="tax-cong-nghe">
-                <a class="category-x" href="/cong-nghe"> Công nghệ </a>
-                <ul>
-                  <li class="tax-ung-dung hassub">
-                    <a href="/ung-dung"> Ứng dụng </a>
-                  </li>
-                  <li class="tax-he-thong hassub">
-                    <a href="/he-thong"> Hệ thống </a>
-                  </li>
-                  <li class="tax-game-tro-choi hassub">
-                    <a href="/game-tro-choi"> Game - Trò chơi </a>
-                  </li>
-                  <li class="tax-ios hassub">
-                    <a href="/ios"> iPhone </a>
-                  </li>
-                  <li class="tax-android hassub">
-                    <a href="/android"> Android </a>
-                  </li>
-                  <li class="tax-linux-os">
-                    <a href="/linux-os"> Linux </a>
-                  </li>
-                  <li class="tax-dong-ho-thong-minh">
-                    <a href="/dong-ho-thong-minh"> Đồng hồ thông minh </a>
-                  </li>
-                  <li class="tax-may-anh-may-quay">
-                    <a href="/may-anh-may-quay"> Chụp ảnh - Quay phim </a>
-                  </li>
-                  <li class="tax-mac-os-x hassub">
-                    <a href="/mac-os-x"> macOS </a>
-                  </li>
-                  <li class="tax-phan-cung hassub">
-                    <a href="/phan-cung"> Phần cứng </a>
-                  </li>
-                  <li class="tax-thu-thuat-seo">
-                    <a href="/thu-thuat-seo"> Thủ thuật SEO </a>
-                  </li>
-                  <li class="tax-kien-thuc-co-ban">
-                    <a href="/kien-thuc-co-ban"> Kiến thức cơ bản </a>
-                  </li>
-                  <li class="tax-raspberry-pi">
-                    <a href="/raspberry-pi"> Raspberry Pi </a>
-                  </li>
-                  <li class="tax-dich-vu-ngan-hang">
-                    <a href="/dich-vu-ngan-hang"> Dịch vụ ngân hàng </a>
-                  </li>
-                  <li class="tax-lap-trinh hassub">
-                    <a href="/lap-trinh"> Lập trình </a>
-                  </li>
-                  <li class="tax-dich-vu-cong-truc-tuyen">
-                    <a href="/dich-vu-cong-truc-tuyen">
-                      Dịch vụ công trực tuyến
-                    </a>
-                  </li>
-                  <li class="tax-dich-vu-nha-mang">
-                    <a href="/dich-vu-nha-mang"> Dịch vụ nhà mạng </a>
-                  </li>
-                  <li class="tax-nha-thong-minh-smarthome">
-                    <a href="/nha-thong-minh-smarthome"> Nhà thông minh </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="tax-khoa-hoc">
-                <a class="category-x" href="/khoa-hoc"> Khoa học </a>
-                <ul>
-                  <li class="tax-thi-nghiem-khoa-hoc">
-                    <a href="/thi-nghiem-khoa-hoc"> Khoa học vui </a>
-                  </li>
-                  <li class="tax-kham-pha-khoa-hoc">
-                    <a href="/kham-pha-khoa-hoc"> Khám phá khoa học </a>
-                  </li>
-                  <li class="tax-bi-an-chuyen-la">
-                    <a href="/bi-an-chuyen-la"> Bí ẩn - Chuyện lạ </a>
-                  </li>
-                  <li class="tax-suc-khoe hassub">
-                    <a href="/suc-khoe"> Chăm sóc Sức khỏe </a>
-                  </li>
-                  <li class="tax-khoa-hoc-vu-tru">
-                    <a href="/khoa-hoc-vu-tru"> Khoa học Vũ trụ </a>
-                  </li>
-                  <li class="tax-kham-pha-thien-nhien hassub">
-                    <a href="/kham-pha-thien-nhien"> Khám phá thiên nhiên </a>
-                  </li>
-                  <li class="tax-moi-truong">
-                    <a href="/moi-truong"> Môi trường </a>
-                  </li>
-                  <li class="tax-y-hoc hassub">
-                    <a href="/y-hoc"> Y học </a>
-                  </li>
-                  <li class="tax-khao-co-hoc">
-                    <a href="/khao-co-hoc"> Khảo cổ học </a>
-                  </li>
-                  <li class="tax-phat-minh-khoa-hoc hassub">
-                    <a href="/phat-minh-khoa-hoc"> Phát minh khoa học </a>
-                  </li>
-                  <li class="tax-cau-chuyen-khoa-hoc">
-                    <a href="/cau-chuyen-khoa-hoc"> Câu chuyện Khoa học </a>
-                  </li>
-                  <li class="tax-khoa-hoc-cong-nghe">
-                    <a href="/khoa-hoc-cong-nghe"> Khoa học công nghệ </a>
-                  </li>
-                  <li class="tax-anh-dep-khoa-hoc">
-                    <a href="/anh-dep-khoa-hoc"> Ảnh đẹp Khoa học </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="tax-dien-may">
-                <a class="category-x" href="/dien-may"> Điện máy </a>
-                <ul>
-                  <li class="tax-tivi hassub">
-                    <a href="/tivi"> Tivi </a>
-                  </li>
-                  <li class="tax-tu-lanh">
-                    <a href="/tu-lanh"> Tủ lạnh </a>
-                  </li>
-                  <li class="tax-dieu-hoa">
-                    <a href="/dieu-hoa"> Điều hòa </a>
-                  </li>
-                  <li class="tax-may-giat">
-                    <a href="/may-giat"> Máy giặt </a>
-                  </li>
-                  <li class="tax-quat-cac-loai">
-                    <a href="/quat-cac-loai"> Quạt các loại </a>
-                  </li>
-                  <li class="tax-may-hut-mui">
-                    <a href="/may-hut-mui"> Máy hút mùi </a>
-                  </li>
-                  <li class="tax-binh-nuoc-nong-may-nuoc-nong">
-                    <a href="/binh-nuoc-nong-may-nuoc-nong">
-                      Bình nước nóng, Máy nước nóng
-                    </a>
-                  </li>
-                  <li class="tax-may-cong-cu">
-                    <a href="/may-cong-cu"> Máy công cụ </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="tax-cuoc-song">
-                <a class="category-x" href="/cuoc-song"> Cuộc sống </a>
-                <ul>
-                  <li class="tax-ky-nang hassub">
-                    <a href="/ky-nang"> Kỹ năng </a>
-                  </li>
-                  <li class="tax-am-thuc hassub">
-                    <a href="/am-thuc"> Món ngon mỗi ngày </a>
-                  </li>
-                  <li class="tax-lam-dep">
-                    <a href="/lam-dep"> Làm đẹp </a>
-                  </li>
-                  <li class="tax-nuoi-day-con">
-                    <a href="/nuoi-day-con"> Nuôi dạy con </a>
-                  </li>
-                  <li class="tax-nha-cua">
-                    <a href="/nha-cua"> Chăm sóc Nhà cửa </a>
-                  </li>
-                  <li class="tax-kinh-nghiem-du-lich">
-                    <a href="/kinh-nghiem-du-lich"> Kinh nghiệm Du lịch </a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
+            <div class="footer-navbox footer-sidenav">
+              <ul class="footer-navigation">
+                <li class="tax-lang-cong-nghe">
+                  <a class="parentitems" href="/lang-cong-nghe">
+                    <img
+                      class="lazy loaded"
+                      data-src="https://st.quantrimang.com/photos/image/2020/10/05/lang-cong-nghe-size-24x24-znd.svg"
+                      src="https://st.quantrimang.com/photos/image/2020/10/05/lang-cong-nghe-size-24x24-znd.svg"
+                      alt="❖"
+                      data-was-processed="true"
+                    />
+                    Làng Công nghệ
+                  </a>
+                  <ul>
+                    <li class="tax-tan-cong-mang">
+                      <a href="/tan-cong-mang">
+                        <img
+                          class="lazy loaded"
+                          data-src="https://st.quantrimang.com/photos/image/2020/10/05/tan-cong-mang-size-24x24-znd.svg"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/tan-cong-mang-size-24x24-znd.svg"
+                          alt="❖"
+                          data-was-processed="true"
+                        />
+                        Tấn công mạng
+                      </a>
+                    </li>
+                    <li class="tax-chuyen-cong-nghe">
+                      <a href="/chuyen-cong-nghe">
+                        <img
+                          class="lazy loaded"
+                          data-src="https://st.quantrimang.com/photos/image/2020/10/05/chuyen-cong-nghe-size-24x24-znd.svg"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/chuyen-cong-nghe-size-24x24-znd.svg"
+                          alt="❖"
+                          data-was-processed="true"
+                        />
+                        Chuyện công nghệ
+                      </a>
+                    </li>
+                    <li class="tax-cong-nghe-moi">
+                      <a href="/cong-nghe-moi">
+                        <img
+                          class="lazy loaded"
+                          data-src="https://st.quantrimang.com/photos/image/2020/10/05/cong-nghe-moi-size-24x24-znd.svg"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/cong-nghe-moi-size-24x24-znd.svg"
+                          alt="❖"
+                          data-was-processed="true"
+                        />
+                        Công nghệ mới
+                      </a>
+                    </li>
+                    <li class="tax-ai">
+                      <a href="/ai">
+                        <img
+                          class="lazy loaded"
+                          data-src="https://st.quantrimang.com/photos/image/2020/10/05/tri-tue-nhan-tao-size-24x24-znd.svg"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/tri-tue-nhan-tao-size-24x24-znd.svg"
+                          alt="❖"
+                          data-was-processed="true"
+                        />
+                        Trí tuệ nhân tạo (AI)
+                      </a>
+                    </li>
+                    <li class="tax-anh-tai-cong-nghe hassub">
+                      <a href="/anh-tai-cong-nghe">
+                        <img
+                          class="lazy loaded"
+                          data-src="https://st.quantrimang.com/photos/image/2020/10/05/anh-tai-cong-nghe-size-24x24-znd.svg"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/anh-tai-cong-nghe-size-24x24-znd.svg"
+                          alt="❖"
+                          data-was-processed="true"
+                        />
+                        Anh tài công nghệ
+                      </a>
+                    </li>
+                    <li class="tax-binh-luan-cong-nghe">
+                      <a href="/binh-luan-cong-nghe">
+                        <img
+                          class="lazy loaded"
+                          data-src="https://st.quantrimang.com/photos/image/2020/10/05/binh-luan-cong-nghe-size-24x24-znd.svg"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/binh-luan-cong-nghe-size-24x24-znd.svg"
+                          alt="❖"
+                          data-was-processed="true"
+                        />
+                        Bình luận công nghệ
+                      </a>
+                    </li>
+                    <li class="tax-trac-nghiem-cong-nghe-thong-tin">
+                      <a href="/trac-nghiem-cong-nghe-thong-tin">
+                        <img
+                          class="lazy loaded"
+                          data-src="https://st.quantrimang.com/photos/image/2020/10/05/quiz-cong-nghe-size-24x24-znd.svg"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/quiz-cong-nghe-size-24x24-znd.svg"
+                          alt="❖"
+                          data-was-processed="true"
+                        />
+                        Quiz công nghệ
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="tax-cong-nghe active">
+                  <a class="parentitems" href="/cong-nghe">
+                    <img
+                      class="lazy loaded"
+                      data-src="https://st.quantrimang.com/photos/image/2020/10/05/cong-nghe-size-24x24-znd.svg"
+                      src="https://st.quantrimang.com/photos/image/2020/10/05/cong-nghe-size-24x24-znd.svg"
+                      alt="❖"
+                      data-was-processed="true"
+                    />
+                    Công nghệ
+                  </a>
+                  <ul>
+                    <li class="tax-ung-dung hassub">
+                      <a href="/ung-dung">
+                        <img
+                          class="lazy loaded"
+                          data-src="https://st.quantrimang.com/photos/image/2020/10/05/ung-dung-size-24x24-znd.svg"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/ung-dung-size-24x24-znd.svg"
+                          alt="❖"
+                          data-was-processed="true"
+                        />
+                        Ứng dụng
+                      </a>
+                    </li>
+                    <li class="tax-he-thong hassub active">
+                      <a href="/he-thong">
+                        <img
+                          class="lazy loaded"
+                          data-src="https://st.quantrimang.com/photos/image/2020/10/05/he-thong-size-24x24-znd.svg"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/he-thong-size-24x24-znd.svg"
+                          alt="❖"
+                          data-was-processed="true"
+                        />
+                        Hệ thống
+                      </a>
+                    </li>
+                    <li class="tax-game-tro-choi hassub">
+                      <a href="/game-tro-choi">
+                        <img
+                          class="lazy loaded"
+                          data-src="https://st.quantrimang.com/photos/image/2020/10/05/game-tro-choi-size-24x24-znd.svg"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/game-tro-choi-size-24x24-znd.svg"
+                          alt="❖"
+                          data-was-processed="true"
+                        />
+                        Game - Trò chơi
+                      </a>
+                    </li>
+                    <li class="tax-ios hassub">
+                      <a href="/ios">
+                        <img
+                          class="lazy loaded"
+                          data-src="https://st.quantrimang.com/photos/image/2020/10/05/iPhone-size-24x24-znd.svg"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/iPhone-size-24x24-znd.svg"
+                          alt="❖"
+                          data-was-processed="true"
+                        />
+                        iPhone
+                      </a>
+                    </li>
+                    <li class="tax-android hassub">
+                      <a href="/android">
+                        <img
+                          class="lazy loaded"
+                          data-src="https://st.quantrimang.com/photos/image/2020/10/05/Android-size-24x24-znd.svg"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/Android-size-24x24-znd.svg"
+                          alt="❖"
+                          data-was-processed="true"
+                        />
+                        Android
+                      </a>
+                    </li>
+                    <li class="tax-linux-os">
+                      <a href="/linux-os">
+                        <img
+                          class="lazy loaded"
+                          data-src="https://st.quantrimang.com/photos/image/2020/10/05/Linux-size-24x24-znd.svg"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/Linux-size-24x24-znd.svg"
+                          alt="❖"
+                          data-was-processed="true"
+                        />
+                        Linux
+                      </a>
+                    </li>
+                    <li class="tax-dong-ho-thong-minh">
+                      <a href="/dong-ho-thong-minh">
+                        <img
+                          class="lazy"
+                          data-src="https://st.quantrimang.com/photos/image/2020/10/05/dong-ho-thong-minh-size-24x24-znd.svg"
+                          src="https://st.quantrimang.com/photos/image/holder.png"
+                          alt="❖"
+                        />
+                        Đồng hồ thông minh
+                      </a>
+                    </li>
+                    <li class="tax-may-anh-may-quay">
+                      <a href="/may-anh-may-quay">
+                        <img
+                          class="lazy"
+                          data-src="https://st.quantrimang.com/photos/image/2020/10/05/camera-size-24x24-znd.svg"
+                          src="https://st.quantrimang.com/photos/image/holder.png"
+                          alt="❖"
+                        />
+                        Chụp ảnh - Quay phim
+                      </a>
+                    </li>
+                    <li class="tax-mac-os-x hassub">
+                      <a href="/mac-os-x">
+                        <img
+                          class="lazy"
+                          data-src="https://st.quantrimang.com/photos/image/2020/10/05/mac-size-24x24-znd.svg"
+                          src="https://st.quantrimang.com/photos/image/holder.png"
+                          alt="❖"
+                        />
+                        macOS
+                      </a>
+                    </li>
+                    <li class="tax-phan-cung hassub">
+                      <a href="/phan-cung">
+                        <img
+                          class="lazy"
+                          data-src="https://st.quantrimang.com/photos/image/2020/10/05/phan-cung-size-24x24-znd.svg"
+                          src="https://st.quantrimang.com/photos/image/holder.png"
+                          alt="❖"
+                        />
+                        Phần cứng
+                      </a>
+                    </li>
+                    <li class="tax-thu-thuat-seo">
+                      <a href="/thu-thuat-seo">
+                        <img
+                          class="lazy loaded"
+                          data-src="https://st.quantrimang.com/photos/image/2020/10/05/thu-thuat-seo-size-24x24-znd.svg"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/thu-thuat-seo-size-24x24-znd.svg"
+                          alt="❖"
+                          data-was-processed="true"
+                        />
+                        Thủ thuật SEO
+                      </a>
+                    </li>
+                    <li class="tax-kien-thuc-co-ban">
+                      <a href="/kien-thuc-co-ban">
+                        <img
+                          class="lazy loaded"
+                          data-src="https://st.quantrimang.com/photos/image/2020/10/05/kien-thuc-co-ban-size-24x24-znd.svg"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/kien-thuc-co-ban-size-24x24-znd.svg"
+                          alt="❖"
+                          data-was-processed="true"
+                        />
+                        Kiến thức cơ bản
+                      </a>
+                    </li>
+                    <li class="tax-raspberry-pi">
+                      <a href="/raspberry-pi">
+                        <img
+                          class="lazy loaded"
+                          data-src="https://st.quantrimang.com/photos/image/2020/10/05/raspberry-pi-icon-size-24x24-znd.svg"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/raspberry-pi-icon-size-24x24-znd.svg"
+                          alt="❖"
+                          data-was-processed="true"
+                        />
+                        Raspberry Pi
+                      </a>
+                    </li>
+                    <li class="tax-dich-vu-ngan-hang">
+                      <a href="/dich-vu-ngan-hang">
+                        <img
+                          class="lazy loaded"
+                          data-src="https://st.quantrimang.com/photos/image/2020/10/05/dich-vu-ngan-hang-size-24x24-znd.svg"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/dich-vu-ngan-hang-size-24x24-znd.svg"
+                          alt="❖"
+                          data-was-processed="true"
+                        />
+                        Dịch vụ ngân hàng
+                      </a>
+                    </li>
+                    <li class="tax-lap-trinh hassub">
+                      <a href="/lap-trinh">
+                        <img
+                          class="lazy loaded"
+                          data-src="https://st.quantrimang.com/photos/image/2020/10/05/lap-trinh-size-24x24-znd.svg"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/lap-trinh-size-24x24-znd.svg"
+                          alt="❖"
+                          data-was-processed="true"
+                        />
+                        Lập trình
+                      </a>
+                    </li>
+                    <li class="tax-dich-vu-cong-truc-tuyen">
+                      <a href="/dich-vu-cong-truc-tuyen">
+                        <img
+                          class="lazy loaded"
+                          data-src="https://st.quantrimang.com/photos/image/2020/10/05/dich-vu-cong-truc-tuyen-size-24x24-znd.svg"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/dich-vu-cong-truc-tuyen-size-24x24-znd.svg"
+                          alt="❖"
+                          data-was-processed="true"
+                        />
+                        Dịch vụ công trực tuyến
+                      </a>
+                    </li>
+                    <li class="tax-dich-vu-nha-mang">
+                      <a href="/dich-vu-nha-mang">
+                        <img
+                          class="lazy loaded"
+                          data-src="https://st.quantrimang.com/photos/image/2020/10/05/dich-vu-nha-mang-size-24x24-znd.svg"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/dich-vu-nha-mang-size-24x24-znd.svg"
+                          alt="❖"
+                          data-was-processed="true"
+                        />
+                        Dịch vụ nhà mạng
+                      </a>
+                    </li>
+                    <li class="tax-nha-thong-minh-smarthome">
+                      <a href="/nha-thong-minh-smarthome">
+                        <img
+                          class="lazy loaded"
+                          data-src="https://st.quantrimang.com/photos/image/2020/10/05/nha-thong-minh-size-24x24-znd.svg"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/nha-thong-minh-size-24x24-znd.svg"
+                          alt="❖"
+                          data-was-processed="true"
+                        />
+                        Nhà thông minh
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="tax-khoa-hoc">
+                  <a class="parentitems" href="/khoa-hoc">
+                    <img
+                      class="lazy loaded"
+                      data-src="https://st.quantrimang.com/photos/image/2020/10/05/khoa-hoc-size-24x24-znd.svg"
+                      src="https://st.quantrimang.com/photos/image/2020/10/05/khoa-hoc-size-24x24-znd.svg"
+                      alt="❖"
+                      data-was-processed="true"
+                    />
+                    Khoa học
+                  </a>
+                  <ul>
+                    <li class="tax-thi-nghiem-khoa-hoc">
+                      <a href="/thi-nghiem-khoa-hoc">
+                        <img
+                          class="lazy loaded"
+                          data-src="https://st.quantrimang.com/photos/image/icon/khoahoc/TestTube-size-24x24-znd.png"
+                          src="https://st.quantrimang.com/photos/image/icon/khoahoc/TestTube-size-24x24-znd.png"
+                          alt="❖"
+                          data-was-processed="true"
+                        />
+                        Khoa học vui
+                      </a>
+                    </li>
+                    <li class="tax-kham-pha-khoa-hoc">
+                      <a href="/kham-pha-khoa-hoc">
+                        <img
+                          class="lazy loaded"
+                          data-src="https://st.quantrimang.com/photos/image/icon/khoahoc/earth-size-24x24-znd.png"
+                          src="https://st.quantrimang.com/photos/image/icon/khoahoc/earth-size-24x24-znd.png"
+                          alt="❖"
+                          data-was-processed="true"
+                        />
+                        Khám phá khoa học
+                      </a>
+                    </li>
+                    <li class="tax-bi-an-chuyen-la">
+                      <a href="/bi-an-chuyen-la">
+                        <img
+                          class="lazy loaded"
+                          data-src="https://st.quantrimang.com/photos/image/icon/khoahoc/Martian-size-24x24-znd.png"
+                          src="https://st.quantrimang.com/photos/image/icon/khoahoc/Martian-size-24x24-znd.png"
+                          alt="❖"
+                          data-was-processed="true"
+                        />
+                        Bí ẩn - Chuyện lạ
+                      </a>
+                    </li>
+                    <li class="tax-suc-khoe hassub">
+                      <a href="/suc-khoe">
+                        <img
+                          class="lazy loaded"
+                          data-src="https://st.quantrimang.com/photos/image/icon/Health-size-24x24-znd.png"
+                          src="https://st.quantrimang.com/photos/image/icon/Health-size-24x24-znd.png"
+                          alt="❖"
+                          data-was-processed="true"
+                        />
+                        Chăm sóc Sức khỏe
+                      </a>
+                    </li>
+                    <li class="tax-khoa-hoc-vu-tru">
+                      <a href="/khoa-hoc-vu-tru">
+                        <img
+                          class="lazy loaded"
+                          data-src="https://st.quantrimang.com/photos/image/icon/khoahoc/WaxingCrescent-size-24x24-znd.png"
+                          src="https://st.quantrimang.com/photos/image/icon/khoahoc/WaxingCrescent-size-24x24-znd.png"
+                          alt="❖"
+                          data-was-processed="true"
+                        />
+                        Khoa học Vũ trụ
+                      </a>
+                    </li>
+                    <li class="tax-kham-pha-thien-nhien hassub">
+                      <a href="/kham-pha-thien-nhien">
+                        <img
+                          class="lazy loaded"
+                          data-src="https://st.quantrimang.com/photos/image/icon/khoahoc/NaturalFood-size-24x24-znd.png"
+                          src="https://st.quantrimang.com/photos/image/icon/khoahoc/NaturalFood-size-24x24-znd.png"
+                          alt="❖"
+                          data-was-processed="true"
+                        />
+                        Khám phá thiên nhiên
+                      </a>
+                    </li>
+                    <li class="tax-moi-truong">
+                      <a href="/moi-truong">
+                        <img
+                          class="lazy"
+                          data-src="https://st.quantrimang.com/photos/image/icon/moi-truong-icon-32-size-24x24-znd.png"
+                          src="https://st.quantrimang.com/photos/image/holder.png"
+                          alt="❖"
+                        />
+                        Môi trường
+                      </a>
+                    </li>
+                    <li class="tax-y-hoc hassub">
+                      <a href="/y-hoc">
+                        <img
+                          class="lazy"
+                          data-src="https://st.quantrimang.com/photos/image/icon/khoahoc/hospital-size-24x24-znd.png"
+                          src="https://st.quantrimang.com/photos/image/holder.png"
+                          alt="❖"
+                        />
+                        Y học
+                      </a>
+                    </li>
+                    <li class="tax-khao-co-hoc">
+                      <a href="/khao-co-hoc">
+                        <img
+                          class="lazy"
+                          data-src="https://st.quantrimang.com/photos/image/icon/khoahoc/pharaoh-size-24x24-znd.png"
+                          src="https://st.quantrimang.com/photos/image/holder.png"
+                          alt="❖"
+                        />
+                        Khảo cổ học
+                      </a>
+                    </li>
+                    <li class="tax-phat-minh-khoa-hoc hassub">
+                      <a href="/phat-minh-khoa-hoc">
+                        <img
+                          class="lazy"
+                          data-src="https://st.quantrimang.com/photos/image/icon/khoahoc/idea-size-24x24-znd.png"
+                          src="https://st.quantrimang.com/photos/image/holder.png"
+                          alt="❖"
+                        />
+                        Phát minh khoa học
+                      </a>
+                    </li>
+                    <li class="tax-cau-chuyen-khoa-hoc">
+                      <a href="/cau-chuyen-khoa-hoc">
+                        <img
+                          class="lazy loaded"
+                          data-src="https://st.quantrimang.com/photos/image/icon/khoahoc/Einstein-size-24x24-znd.png"
+                          src="https://st.quantrimang.com/photos/image/icon/khoahoc/Einstein-size-24x24-znd.png"
+                          alt="❖"
+                          data-was-processed="true"
+                        />
+                        Câu chuyện Khoa học
+                      </a>
+                    </li>
+                    <li class="tax-khoa-hoc-cong-nghe">
+                      <a href="/khoa-hoc-cong-nghe">
+                        <img
+                          class="lazy loaded"
+                          data-src="https://st.quantrimang.com/photos/image/icon/khoa-hoc-cong-nghe-logo-size-24x24-znd.png"
+                          src="https://st.quantrimang.com/photos/image/icon/khoa-hoc-cong-nghe-logo-size-24x24-znd.png"
+                          alt="❖"
+                          data-was-processed="true"
+                        />
+                        Khoa học công nghệ
+                      </a>
+                    </li>
+                    <li class="tax-anh-dep-khoa-hoc">
+                      <a href="/anh-dep-khoa-hoc">
+                        <img
+                          class="lazy loaded"
+                          data-src="https://st.quantrimang.com/photos/image/icon/khoahoc/Image-size-24x24-znd.png"
+                          src="https://st.quantrimang.com/photos/image/icon/khoahoc/Image-size-24x24-znd.png"
+                          alt="❖"
+                          data-was-processed="true"
+                        />
+                        Ảnh đẹp Khoa học
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="tax-dien-may">
+                  <a class="parentitems" href="/dien-may">
+                    <img
+                      class="lazy loaded"
+                      data-src="https://st.quantrimang.com/photos/image/2020/10/26/dien-may-size-24x24-znd.svg"
+                      src="https://st.quantrimang.com/photos/image/2020/10/26/dien-may-size-24x24-znd.svg"
+                      alt="❖"
+                      data-was-processed="true"
+                    />
+                    Điện máy
+                  </a>
+                  <ul>
+                    <li class="tax-tivi hassub">
+                      <a href="/tivi">
+                        <img
+                          class="lazy loaded"
+                          data-src="https://st.quantrimang.com/photos/image/2020/10/26/tivi-size-24x24-znd.svg"
+                          src="https://st.quantrimang.com/photos/image/2020/10/26/tivi-size-24x24-znd.svg"
+                          alt="❖"
+                          data-was-processed="true"
+                        />
+                        Tivi
+                      </a>
+                    </li>
+                    <li class="tax-tu-lanh">
+                      <a href="/tu-lanh">
+                        <img
+                          class="lazy loaded"
+                          data-src="https://st.quantrimang.com/photos/image/2020/10/26/tu-lanh-size-24x24-znd.svg"
+                          src="https://st.quantrimang.com/photos/image/2020/10/26/tu-lanh-size-24x24-znd.svg"
+                          alt="❖"
+                          data-was-processed="true"
+                        />
+                        Tủ lạnh
+                      </a>
+                    </li>
+                    <li class="tax-dieu-hoa">
+                      <a href="/dieu-hoa">
+                        <img
+                          class="lazy loaded"
+                          data-src="https://st.quantrimang.com/photos/image/2020/10/26/dieu-hoa-size-24x24-znd.svg"
+                          src="https://st.quantrimang.com/photos/image/2020/10/26/dieu-hoa-size-24x24-znd.svg"
+                          alt="❖"
+                          data-was-processed="true"
+                        />
+                        Điều hòa
+                      </a>
+                    </li>
+                    <li class="tax-may-giat">
+                      <a href="/may-giat">
+                        <img
+                          class="lazy loaded"
+                          data-src="https://st.quantrimang.com/photos/image/2020/10/26/may-giat-size-24x24-znd.svg"
+                          src="https://st.quantrimang.com/photos/image/2020/10/26/may-giat-size-24x24-znd.svg"
+                          alt="❖"
+                          data-was-processed="true"
+                        />
+                        Máy giặt
+                      </a>
+                    </li>
+                    <li class="tax-quat-cac-loai">
+                      <a href="/quat-cac-loai">
+                        <img
+                          class="lazy loaded"
+                          data-src="https://st.quantrimang.com/photos/image/2020/10/26/quat-size-24x24-znd.svg"
+                          src="https://st.quantrimang.com/photos/image/2020/10/26/quat-size-24x24-znd.svg"
+                          alt="❖"
+                          data-was-processed="true"
+                        />
+                        Quạt các loại
+                      </a>
+                    </li>
+                    <li class="tax-may-hut-mui">
+                      <a href="/may-hut-mui">
+                        <img
+                          class="lazy loaded"
+                          data-src="https://st.quantrimang.com/photos/image/2020/10/26/may-hut-mui-size-24x24-znd.svg"
+                          src="https://st.quantrimang.com/photos/image/2020/10/26/may-hut-mui-size-24x24-znd.svg"
+                          alt="❖"
+                          data-was-processed="true"
+                        />
+                        Máy hút mùi
+                      </a>
+                    </li>
+                    <li class="tax-binh-nuoc-nong-may-nuoc-nong">
+                      <a href="/binh-nuoc-nong-may-nuoc-nong">
+                        <img
+                          class="lazy loaded"
+                          data-src="https://st.quantrimang.com/photos/image/2020/10/26/binh-nong-lanh-size-24x24-znd.svg"
+                          src="https://st.quantrimang.com/photos/image/2020/10/26/binh-nong-lanh-size-24x24-znd.svg"
+                          alt="❖"
+                          data-was-processed="true"
+                        />
+                        Bình nước nóng, Máy nước nóng
+                      </a>
+                    </li>
+                    <li class="tax-may-cong-cu">
+                      <a href="/may-cong-cu">
+                        <img
+                          class="lazy loaded"
+                          data-src="https://st.quantrimang.com/photos/image/2020/10/26/cong-cu-dung-cu-size-24x24-znd.svg"
+                          src="https://st.quantrimang.com/photos/image/2020/10/26/cong-cu-dung-cu-size-24x24-znd.svg"
+                          alt="❖"
+                          data-was-processed="true"
+                        />
+                        Máy công cụ
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="tax-cuoc-song">
+                  <a class="parentitems" href="/cuoc-song">
+                    <img
+                      class="lazy loaded"
+                      data-src="https://st.quantrimang.com/photos/image/2020/10/05/cuoc-song-size-24x24-znd.svg"
+                      src="https://st.quantrimang.com/photos/image/2020/10/05/cuoc-song-size-24x24-znd.svg"
+                      alt="❖"
+                      data-was-processed="true"
+                    />
+                    Cuộc sống
+                  </a>
+                  <ul>
+                    <li class="tax-ky-nang hassub">
+                      <a href="/ky-nang">
+                        <img
+                          class="lazy loaded"
+                          data-src="https://st.quantrimang.com/photos/image/2020/10/26/ky-nang-size-24x24-znd.svg"
+                          src="https://st.quantrimang.com/photos/image/2020/10/26/ky-nang-size-24x24-znd.svg"
+                          alt="❖"
+                          data-was-processed="true"
+                        />
+                        Kỹ năng
+                      </a>
+                    </li>
+                    <li class="tax-am-thuc hassub">
+                      <a href="/am-thuc">
+                        <img
+                          class="lazy loaded"
+                          data-src="https://st.quantrimang.com/photos/image/2020/10/26/mon-ngon-moi-ngay-size-24x24-znd.svg"
+                          src="https://st.quantrimang.com/photos/image/2020/10/26/mon-ngon-moi-ngay-size-24x24-znd.svg"
+                          alt="❖"
+                          data-was-processed="true"
+                        />
+                        Món ngon mỗi ngày
+                      </a>
+                    </li>
+                    <li class="tax-lam-dep">
+                      <a href="/lam-dep">
+                        <img
+                          class="lazy"
+                          data-src="https://st.quantrimang.com/photos/image/2020/10/26/lam-dep-size-24x24-znd.svg"
+                          src="https://st.quantrimang.com/photos/image/holder.png"
+                          alt="❖"
+                        />
+                        Làm đẹp
+                      </a>
+                    </li>
+                    <li class="tax-nuoi-day-con">
+                      <a href="/nuoi-day-con">
+                        <img
+                          class="lazy"
+                          data-src="https://st.quantrimang.com/photos/image/2020/10/26/nuoi-day-con-size-24x24-znd.svg"
+                          src="https://st.quantrimang.com/photos/image/holder.png"
+                          alt="❖"
+                        />
+                        Nuôi dạy con
+                      </a>
+                    </li>
+                    <li class="tax-nha-cua">
+                      <a href="/nha-cua">
+                        <img
+                          class="lazy"
+                          data-src="https://st.quantrimang.com/photos/image/2020/10/26/cham-soc-nha-cua-size-24x24-znd.svg"
+                          src="https://st.quantrimang.com/photos/image/holder.png"
+                          alt="❖"
+                        />
+                        Chăm sóc Nhà cửa
+                      </a>
+                    </li>
+                    <li class="tax-kinh-nghiem-du-lich">
+                      <a href="/kinh-nghiem-du-lich">
+                        <img
+                          class="lazy"
+                          data-src="https://st.quantrimang.com/photos/image/2020/10/26/kinh-nghiem-du-lich-size-24x24-znd.svg"
+                          src="https://st.quantrimang.com/photos/image/holder.png"
+                          alt="❖"
+                        />
+                        Kinh nghiệm Du lịch
+                      </a>
+                    </li>
+                    <li class="tax-diy-handmade">
+                      <a href="/diy-handmade">
+                        <img
+                          class="lazy loaded"
+                          data-src="https://st.quantrimang.com/photos/image/2020/10/26/hand-made-size-24x24-znd.svg"
+                          src="https://st.quantrimang.com/photos/image/2020/10/26/hand-made-size-24x24-znd.svg"
+                          alt="❖"
+                          data-was-processed="true"
+                        />
+                        DIY - Handmade
+                      </a>
+                    </li>
+                    <li class="tax-tet-trung-thu">
+                      <a href="/tet-trung-thu">
+                        <img
+                          class="lazy loaded"
+                          data-src="https://st.quantrimang.com/photos/image/2020/10/26/trung-thu-size-24x24-znd.svg"
+                          src="https://st.quantrimang.com/photos/image/2020/10/26/trung-thu-size-24x24-znd.svg"
+                          alt="❖"
+                          data-was-processed="true"
+                        />
+                        Tết Trung thu
+                      </a>
+                    </li>
+                    <li class="tax-cuoi-hoi">
+                      <a href="/cuoi-hoi">
+                        <img
+                          class="lazy loaded"
+                          data-src="https://st.quantrimang.com/photos/image/2020/10/26/cuoi-hoi-size-24x24-znd.svg"
+                          src="https://st.quantrimang.com/photos/image/2020/10/26/cuoi-hoi-size-24x24-znd.svg"
+                          alt="❖"
+                          data-was-processed="true"
+                        />
+                        Cưới hỏi
+                      </a>
+                    </li>
+                    <li class="tax-halloween">
+                      <a href="/halloween">
+                        <img
+                          class="lazy loaded"
+                          data-src="https://st.quantrimang.com/photos/image/2020/10/26/halloween-size-24x24-znd.svg"
+                          src="https://st.quantrimang.com/photos/image/2020/10/26/halloween-size-24x24-znd.svg"
+                          alt="❖"
+                          data-was-processed="true"
+                        />
+                        Halloween
+                      </a>
+                    </li>
+                    <li class="tax-meo-vat">
+                      <a href="/meo-vat">
+                        <img
+                          class="lazy loaded"
+                          data-src="https://st.quantrimang.com/photos/image/2020/10/26/meo-vat-size-24x24-znd.svg"
+                          src="https://st.quantrimang.com/photos/image/2020/10/26/meo-vat-size-24x24-znd.svg"
+                          alt="❖"
+                          data-was-processed="true"
+                        />
+                        Mẹo vặt
+                      </a>
+                    </li>
+                    <li class="tax-giang-sinh-noel">
+                      <a href="/giang-sinh-noel">
+                        <img
+                          class="lazy loaded"
+                          data-src="https://st.quantrimang.com/photos/image/2020/10/26/giang-sinh-size-24x24-znd.svg"
+                          src="https://st.quantrimang.com/photos/image/2020/10/26/giang-sinh-size-24x24-znd.svg"
+                          alt="❖"
+                          data-was-processed="true"
+                        />
+                        Giáng sinh - Noel
+                      </a>
+                    </li>
+                    <li class="tax-tet">
+                      <a href="/tet">
+                        <img
+                          class="lazy loaded"
+                          data-src="https://st.quantrimang.com/photos/image/icon/Tet-icon-size-24x24-znd.png"
+                          src="https://st.quantrimang.com/photos/image/icon/Tet-icon-size-24x24-znd.png"
+                          alt="❖"
+                          data-was-processed="true"
+                        />
+                        Tết 2021
+                      </a>
+                    </li>
+                    <li class="tax-valentine">
+                      <a href="/valentine">
+                        <img
+                          class="lazy loaded"
+                          data-src="https://st.quantrimang.com/photos/image/2020/10/26/valentine-size-24x24-znd.svg"
+                          src="https://st.quantrimang.com/photos/image/2020/10/26/valentine-size-24x24-znd.svg"
+                          alt="❖"
+                          data-was-processed="true"
+                        />
+                        Valentine
+                      </a>
+                    </li>
+                    <li class="tax-chon-qua-tang">
+                      <a href="/chon-qua-tang">
+                        <img
+                          class="lazy loaded"
+                          data-src="https://st.quantrimang.com/photos/image/2020/10/26/qua-tang-size-24x24-znd.svg"
+                          src="https://st.quantrimang.com/photos/image/2020/10/26/qua-tang-size-24x24-znd.svg"
+                          alt="❖"
+                          data-was-processed="true"
+                        />
+                        Quà tặng
+                      </a>
+                    </li>
+                    <li class="tax-giai-tri">
+                      <a href="/giai-tri">
+                        <img
+                          class="lazy loaded"
+                          data-src="https://st.quantrimang.com/photos/image/2020/10/26/giai-tri-size-24x24-znd.svg"
+                          src="https://st.quantrimang.com/photos/image/2020/10/26/giai-tri-size-24x24-znd.svg"
+                          alt="❖"
+                          data-was-processed="true"
+                        />
+                        Giải trí
+                      </a>
+                    </li>
+                    <li class="tax-la-gi">
+                      <a href="/la-gi">
+                        <img
+                          class="lazy loaded"
+                          data-src="https://st.quantrimang.com/photos/image/2020/10/26/la-gi-size-24x24-znd.svg"
+                          src="https://st.quantrimang.com/photos/image/2020/10/26/la-gi-size-24x24-znd.svg"
+                          alt="❖"
+                          data-was-processed="true"
+                        />
+                        Là gì?
+                      </a>
+                    </li>
+                    <li class="tax-nha-dep">
+                      <a href="/nha-dep">
+                        <img
+                          class="lazy loaded"
+                          data-src="https://st.quantrimang.com/photos/image/2020/10/26/nha-dep-size-24x24-znd.svg"
+                          src="https://st.quantrimang.com/photos/image/2020/10/26/nha-dep-size-24x24-znd.svg"
+                          alt="❖"
+                          data-was-processed="true"
+                        />
+                        Nhà đẹp
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="tax-video">
+                  <a class="parentitems" href="/category.html">
+                    <img
+                      class="lazy loaded"
+                      data-src="https://st.quantrimang.com/photos/image/icon/Video-size-24x24-znd.png"
+                      src="https://st.quantrimang.com/photos/image/icon/Video-size-24x24-znd.png"
+                      alt="❖"
+                      data-was-processed="true"
+                    />
+                    Video
+                  </a>
+                  <ul>
+                    <li class="tax-video-huong-dan">
+                      <a href="/video-huong-dan">
+                        <img
+                          class="lazy loaded"
+                          data-src="https://st.quantrimang.com/photos/image/icon/technology-size-24x24-znd.png"
+                          src="https://st.quantrimang.com/photos/image/icon/technology-size-24x24-znd.png"
+                          alt="❖"
+                          data-was-processed="true"
+                        />
+                        Công nghệ
+                      </a>
+                    </li>
+                    <li class="tax-cisco-lab">
+                      <a href="/cisco-lab">
+                        <img
+                          class="lazy loaded"
+                          data-src="https://st.quantrimang.com/photos/image/icon/Cisco-size-24x24-znd.png"
+                          src="https://st.quantrimang.com/photos/image/icon/Cisco-size-24x24-znd.png"
+                          alt="❖"
+                          data-was-processed="true"
+                        />
+                        Cisco Lab
+                      </a>
+                    </li>
+                    <li class="tax-microsoft-lab">
+                      <a href="/microsoft-lab">
+                        <img
+                          class="lazy"
+                          data-src="https://st.quantrimang.com/photos/image/icon/RunCommand-size-24x24-znd.png"
+                          src="https://st.quantrimang.com/photos/image/holder.png"
+                          alt="❖"
+                        />
+                        Microsoft Lab
+                      </a>
+                    </li>
+                    <li class="tax-video-khoa-hoc">
+                      <a href="/video-khoa-hoc">
+                        <img
+                          class="lazy"
+                          data-src="https://st.quantrimang.com/photos/image/icon/khoahoc/VideoPlaylist-size-24x24-znd.png"
+                          src="https://st.quantrimang.com/photos/image/holder.png"
+                          alt="❖"
+                        />
+                        Video Khoa học
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="tax-o-to-xe-may">
+                  <a class="parentitems" href="/o-to-xe-may">
+                    <img
+                      class="lazy"
+                      data-src="https://st.quantrimang.com/photos/image/2019/03/25/O-to-xe-may-size-24x24-znd.png"
+                      src="https://st.quantrimang.com/photos/image/holder.png"
+                      alt="❖"
+                    />
+                    Ô tô, Xe máy
+                  </a>
+                </li>
+                <li class="tax-tong-hop">
+                  <a class="parentitems" href="/tong-hop">
+                    <img
+                      class="lazy"
+                      data-src="https://st.quantrimang.com/photos/image/icon/News-size-24x24-znd.png"
+                      src="https://st.quantrimang.com/photos/image/holder.png"
+                      alt="❖"
+                    />
+                    Tổng hợp
+                  </a>
+                </li>
+                <li class="tax-tien-ich-online">
+                  <a class="parentitems" href="/tien-ich-online">
+                    <img
+                      class="lazy"
+                      data-src="https://st.quantrimang.com/photos/image/2020/10/07/tien-ich-online-size-24x24-znd.svg"
+                      src="https://st.quantrimang.com/photos/image/holder.png"
+                      alt="❖"
+                    />
+                    Tiện ích
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="footer-bottom">
@@ -980,5 +1717,6 @@
       </section>
     </section>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="./js/main.js"></script>
 </html>
