@@ -342,6 +342,20 @@
   .btn-ques {
     width: 100%;
   }
+  .service-contact__action {
+    margin-top: 16px;
+  }
+  .btn-ol.btn-ol__contact {
+    padding: 0.625rem 1rem;
+    width: 100%;
+  }
+
+  .service-faq__wrap {
+    margin-top: 16px;
+  }
+  .service-faq__img {
+    margin-bottom: 16px;
+  }
 }
 
 @media (max-width: 768px) {

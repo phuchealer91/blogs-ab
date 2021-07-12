@@ -1485,3 +1485,103 @@
   position: absolute;
   max-width: 1080px;
 }
+.service-contact {
+  max-width: 1080px;
+  margin: 0 auto;
+  background-color: var(--blue-500);
+}
+.service-contact__wrap {
+  padding: 3rem 16px;
+  align-items: center;
+}
+.service-contact__title {
+  font-size: 1.5rem;
+  color: var(--white-color);
+  line-height: 1.6;
+  font-weight: 600;
+}
+.service-contact__desc {
+  font-size: 0.875rem;
+  color: var(--white-color);
+  line-height: 1.6;
+  font-weight: 400;
+}
+.service-contact__action {
+  text-align: center;
+}
+.btn-ol.btn-ol__contact {
+  padding: 1rem 4rem;
+  font-size: 1.2rem;
+}
+
+/* FAQ */
+.service-faq {
+  max-width: 1080px;
+  margin: 5rem auto;
+  padding: 0 16px;
+}
+.service-faq__img img {
+  object-fit: contain;
+}
+.b-faq {
+  margin: 5px auto;
+}
+.b-faq .faq__title {
+  position: relative;
+  display: block;
+  padding: 13px 60px 15px 13px;
+  margin-bottom: 2px;
+  color: var(--text-color);
+  font-size: 1rem;
+  line-height: 1.6;
+  text-decoration: none;
+  background-color: var(--blue-100);
+  border-radius: 3px;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+.faq__text {
+  display: block;
+  padding-left: 3rem;
+}
+.b-faq .faq__title:hover {
+  background-color: var(--blue-100);
+  transition: all 0.5s ease-out;
+}
+.b-faq .faq__active {
+  background-color: var(--blue-400);
+}
+.b-faq .faq__title .faq__spoiler {
+  position: absolute;
+  top: 13px;
+  /* right: 10px; */
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  color: var(--blue-600);
+  line-height: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-right: 5px;
+  background-color: var(--white-color);
+  border-radius: 50%;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.b-faq .faq__rotate {
+  transform: rotate(225deg);
+}
+.b-faq .faq__content {
+  padding: 20px;
+  margin-bottom: 2px;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  font-weight: 400;
+  display: none;
+  background-color: var(--gray-100);
+}
+.b-faq .faq__symbol {
+  font-weight: 700;
+}
