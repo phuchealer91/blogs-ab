@@ -18,16 +18,47 @@
     />
     <title>Quangtrimang</title>
   </head>
-  <body id="body" class="">
-    <div class="overlay"></div>
+  <body>
     <section id="main" class="">
       <section id="header">
         <div class="section-box">
           <div class="header-topnav">
-            <button
+            <!-- <button
               class="btn btn-login modal-sign"
-              >Đăng nhập</button
-            >
+              >Đăng nhập</button> -->
+                <div class="user-setting">
+                  <a href="/member" class="user-info">
+                    <span class="user-info__avt"><img src="https://st.quantrimang.com/photos/avatars/2021/63760594584260812751-size-32x32-znd.png"></span>
+                    <span class="user-info__name">Minh Phúc</span>
+                </a>
+            
+                  <div class="drop-wrap">
+                    <div class="dropOut">
+                      <div class="triangle"></div>
+                      <ul class="drop-list">
+                        <li class="drop-item"><a href="">
+                          <span><i class="fa fa-user-circle"></i></span>
+                       <span>Minh phuc</span> 
+                        </a></li>
+                        <li class="drop-item"><a href="">
+                          <span><i class="fa fa-pencil"></i></span>
+                       <span>Đăng bài viết mới</span> 
+                        </a></li>
+                        <li class="drop-item"><a href="">
+                          <span><i class="fa fa-bookmark"></i></span>
+                       <span>Bài viết đã lưu</span> 
+                        </a></li>
+                        <li class="drop-item"><a href="">
+                          <span><i class="fa fa-sign-out"></i></span>
+                       <span>Đăng xuất</span> 
+                        </a></li>
+                        
+                        
+                      </ul>
+                    </div>
+                  </div>
+            
+                </div>
           </div>
 
           <!-- Modal -->
@@ -42,7 +73,6 @@
                         class="close-x"
                         
                       >
-                        &times;
                       </button>
                       <h4 class="login-title">Đăng nhập tài khoản</h4>
                     </div>
@@ -155,7 +185,6 @@
                         class="close-x"
                         
                       >
-                        &times;
                       </button>
                       <h4 class="login-title">Đăng ký tài khoản</h4>
                     </div>
@@ -278,7 +307,9 @@
                   placeholder="Tìm kiếm"
                   autocomplete="off"
                 />
-                <input id="btn-find" type="submit" value="Tìm" />
+                <button id="btn-find" class="btn-find__mobile" type="submit">
+                  <i class="fa fa-search fa-lg btn-find__submit"></i>
+                </button>
               </div>
             </form>
           </div>
@@ -288,9 +319,11 @@
               <!-- <i class="fa fa-times"></i> -->
             </a>
           </div>
-           <a class="toggle search"></a>
+           <a href="#" class="toggle search">
+             <i class="fa fa-search fa-lg"></i>
+             <i class="close-search"></i>
+            </a>
         </div>
-        <a class="toggle search"></a>
       </section>
       <section id="menu">
         <div class="section-box">
@@ -396,7 +429,7 @@
             <li class="all-menu nav-toggle">
               <a class="toggle-all">
                 <i class="fa fa-bars"></i>
-                <i class="fa fa-times"></i>
+                <i class="close-x"></i>
               </a>
             </li>
           </ul>
@@ -1327,6 +1360,7 @@
         </div>
       </section>
       <section id="footer">
+        <canvas id ="chain" width="800" height="800">        </canvas>
         <div class="section-box footer-top">
           <div class="footer-wrap">
             <div class="footer-navbox footer-sidenav">
@@ -1473,7 +1507,9 @@
           </div>
         </div>
       </section>
+      <div class="overlay"></div>
     </section>
+
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="./js/main.js"></script>

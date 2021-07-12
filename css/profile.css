@@ -161,6 +161,7 @@
   max-width: 23%;
   flex: 0 0 23%;
   margin: 0 8px 12px;
+  list-style: none;
 }
 .posts-main__item {
   border-radius: 8px;

@@ -442,6 +442,9 @@ button:focus {
   width: 32px;
   height: 32px;
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .modal-header button.close-x:hover {
   background-color: #e5e7eb;
@@ -449,6 +452,7 @@ button:focus {
   align-items: center;
   justify-content: center;
   transition: all 0.2s ease;
+  cursor: pointer;
 }
 .sign-in-modal .inner--sign-in-modal .content-info .content-sign-up.active {
   transition: 0.6s;

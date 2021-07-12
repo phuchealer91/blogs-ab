@@ -8,7 +8,15 @@ Document
 /**
 Use a better box model (opinionated).
 */
-
+:root {
+  --yellow-color: #ffa400;
+  --white-color: #ffffff;
+  --gray-400: #4b5563;
+  --gray-300: #d1d5db;
+  --blue-600: #2563eb;
+  --bg-200: #f9f9f9;
+  --text-color: #333;
+}
 *,
 ::before,
 ::after {
@@ -34,8 +42,8 @@ p {
 }
 html {
   font-size: 100%;
-  font-family: Arial, sans-serif;
-  line-height: 1.25; /* 1 */
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
@@ -131,7 +139,6 @@ li,
 ol {
   padding: 0;
   margin: 0;
-  list-style: none;
 }
 /**
 Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
@@ -177,6 +184,10 @@ h6 {
   margin: 0;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
 /*
 Forms
 =====
@@ -313,7 +324,10 @@ Add the correct display in Chrome and Safari.
 summary {
   display: list-item;
 }
-
+/* Background */
+.bg-gray-800 {
+  background-color: #1f2937;
+}
 .text-white {
   color: white;
 }
@@ -404,6 +418,10 @@ summary {
 }
 .m-8 {
   padding: 2rem;
+}
+.my-section {
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 .rounded-full {
   border-radius: 50%;
@@ -497,13 +515,37 @@ summary {
   -ms-user-select: none;
   user-select: none;
   border: 1px solid transparent;
-  padding: 0.5rem 1rem;
+  padding: 0.625rem 1rem;
   font-size: 1rem;
   -webkit-appearance: none;
   text-decoration: none;
   border-radius: 6px;
-  background: #2563eb;
+  background-color: var(--blue-600);
   color: #fff;
+  outline: none;
+  border: 0;
+}
+.btn-ol {
+  display: inline-block;
+  box-sizing: border-box;
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 0.625rem 1rem;
+  font-size: 1rem;
+  -webkit-appearance: none;
+  text-decoration: none;
+  border-radius: 6px;
+  background-color: var(--white-color);
+  color: var(--blue-600);
+  outline: none;
+  border: 1px solid var(--blue-600);
 }
 .not-found {
   display: flex;
@@ -559,4 +601,188 @@ summary {
   font-family: arial;
   max-width: 100%;
   width: 100%;
+}
+.heading-title__sup {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 32px;
+  color: var(--blue-600);
+}
+.heading-title {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 32px;
+}
+.heading-title__imp {
+  color: var(--blue-600);
+}
+.heading-title__desc {
+  color: var(--text-color);
+  font-style: italic;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-top: 8px;
+}
+.heading-desc {
+  color: var(--text-color);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-top: 8px;
+}
+.heading-title__cate {
+  color: var(--text-color);
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.6;
+  margin-top: 8px;
+  text-transform: uppercase;
+}
+.heading-desc__item {
+  padding-left: 16px;
+}
+.heading-desc__li {
+  padding: 8px 0 0 16px;
+  list-style: disc;
+}
+.heading-desc__bold {
+  padding: 8px 0 0 16px;
+  font-weight: 600;
+}
+.heading-title__link {
+  color: var(--blue-600);
+}
+.heading-title__update {
+  display: block;
+  color: var(--text-color);
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-align: right;
+  padding: 16px 0;
+}
+
+/* Grid system */
+.row-x {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -12px;
+  margin-right: -12px;
+}
+.col-x {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.xl-0 {
+  display: none;
+}
+.xl-1,
+.xl-2,
+.xl-3,
+.xl-4,
+.xl-5,
+.xl-6,
+.xl-7,
+.xl-8,
+.xl-9,
+.xl-10,
+.xl-11,
+.xl-12 {
+  display: block;
+}
+.xl-1 {
+  flex: 0 0 8.33333%;
+  max-width: 8.33333%;
+}
+.xl-2 {
+  flex: 0 0 16.66667%;
+  max-width: 16.66667%;
+}
+.xl-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+.xl-4 {
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%;
+}
+.xl-5 {
+  flex: 0 0 41.66667%;
+  max-width: 41.66667%;
+}
+.xl-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.xl-7 {
+  flex: 0 0 58.33333%;
+  max-width: 58.33333%;
+}
+.xl-8 {
+  flex: 0 0 66.66667%;
+  max-width: 66.66667%;
+}
+.xl-9 {
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+.xl-10 {
+  flex: 0 0 83.33333%;
+  max-width: 83.33333%;
+}
+.xl-11 {
+  flex: 0 0 91.66667%;
+  max-width: 91.66667%;
+}
+.xl-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+/* Close -x */
+.close-x {
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  width: 24px;
+  height: 24px;
+  opacity: 0.8;
+}
+.close-search {
+  position: relative;
+  right: 24px;
+  display: none;
+}
+.close-x:hover,
+.close-search:hover {
+  opacity: 1;
+}
+.close-x:before,
+.close-x:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 20px;
+  width: 2px;
+  background-color: #333;
+}
+.close-search:before,
+.close-search:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 20px;
+  width: 3px;
+  background-color: #fff;
+}
+.close-x:before,
+.close-search:before {
+  transform: rotate(45deg);
+}
+.close-x:after,
+.close-search:after {
+  transform: rotate(-45deg);
 }
