@@ -5,9 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- font icon -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/all.min.css" />
-    <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/authent.css" />
     <link rel="stylesheet" href="./css/profile.css" />
     <link rel="stylesheet" href="./css/modal.css" />
@@ -16,49 +22,59 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <title>Quangtrimang</title>
+    <title>VinabiTech</title>
   </head>
   <body>
     <section id="main" class="">
       <section id="header">
         <div class="section-box">
           <div class="header-topnav">
-            <!-- <button
-              class="btn btn-login modal-sign"
-              >Đăng nhập</button> -->
-                <div class="user-setting">
-                  <a href="/member" class="user-info">
-                    <span class="user-info__avt"><img src="https://st.quantrimang.com/photos/avatars/2021/63760594584260812751-size-32x32-znd.png"></span>
-                    <span class="user-info__name">Minh Phúc</span>
-                </a>
-            
-                  <div class="drop-wrap">
-                    <div class="dropOut">
-                      <div class="triangle"></div>
-                      <ul class="drop-list">
-                        <li class="drop-item"><a href="">
-                          <span><i class="fa fa-user-circle"></i></span>
-                       <span>Minh phuc</span> 
-                        </a></li>
-                        <li class="drop-item"><a href="">
-                          <span><i class="fa fa-pencil"></i></span>
-                       <span>Đăng bài viết mới</span> 
-                        </a></li>
-                        <li class="drop-item"><a href="">
-                          <span><i class="fa fa-bookmark"></i></span>
-                       <span>Bài viết đã lưu</span> 
-                        </a></li>
-                        <li class="drop-item"><a href="">
-                          <span><i class="fa fa-sign-out"></i></span>
-                       <span>Đăng xuất</span> 
-                        </a></li>
-                        
-                        
-                      </ul>
-                    </div>
-                  </div>
-            
+            <button class="btn btn-login hover-up-1 modal-sign" type="button">
+              <div class="btn-wrap">
+                <span class="btn-wrap__text">Đăng nhập</span>
+              </div>
+            </button>
+            <!-- <div class="user-setting">
+              <a href="/member" class="user-info">
+                <span class="user-info__avt"
+                  ><img
+                    src="https://st.quantrimang.com/photos/avatars/2021/63760594584260812751-size-32x32-znd.png"
+                /></span>
+                <span class="user-info__name">Minh Phúc</span>
+              </a>
+
+              <div class="drop-wrap">
+                <div class="dropOut">
+                  <div class="triangle"></div>
+                  <ul class="drop-list">
+                    <li class="drop-item">
+                      <a href="">
+                        <span><i class="fa fa-user-circle"></i></span>
+                        <span>Minh phuc</span>
+                      </a>
+                    </li>
+                    <li class="drop-item">
+                      <a href="">
+                        <span><i class="fa fa-pencil"></i></span>
+                        <span>Đăng bài viết mới</span>
+                      </a>
+                    </li>
+                    <li class="drop-item">
+                      <a href="">
+                        <span><i class="fa fa-bookmark"></i></span>
+                        <span>Bài viết đã lưu</span>
+                      </a>
+                    </li>
+                    <li class="drop-item">
+                      <a href="">
+                        <span><i class="fa fa-sign-out"></i></span>
+                        <span>Đăng xuất</span>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
+              </div>
+            </div> -->
           </div>
 
           <!-- Modal -->
@@ -66,21 +82,16 @@
             <div class="inner--sign-in-modal">
               <div class="content-info">
                 <div class="content-sign-in">
+                  <button type="button" class="close-x"></button>
                   <div class="login wrap--content-sign-in">
                     <div class="modal-header">
-                      <button
-                        type="button"
-                        class="close-x"
-                        
-                      >
-                      </button>
                       <h4 class="login-title">Đăng nhập tài khoản</h4>
                     </div>
 
                     <div class="form-register loginBox">
                       <form class="form form-signup" method="post">
                         <input type="hidden" name="state" />
-                        <p class="group-input">
+                        <div class="group-input">
                           <label class="register-title"
                             >Email <span class="import-star">*</span></label
                           >
@@ -93,13 +104,13 @@
                             placeholder="Nhập email của bạn"
                             required=""
                           />
-                          <!-- <span
-                            class="field-validation-valid"
-                            data-valmsg-for="email"
-                            data-valmsg-replace="true"
-                          ></span> -->
-                        </p>
-                        <p class="group-input">
+                          <!-- <p class="mess-validation">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Eius, soluta dolor sit amet consectetur,
+                            adipisicing elit. Eius, soluta.
+                          </p> -->
+                        </div>
+                        <div class="group-input">
                           <label class="register-title"
                             >Mật khẩu <span class="import-star">*</span></label
                           >
@@ -112,87 +123,70 @@
                             placeholder="Nhập mật khẩu của bạn"
                             required=""
                           />
-                          <!-- <span
-                            class="field-validation-valid"
-                            data-valmsg-for="email"
-                            data-valmsg-replace="true"
-                          ></span> -->
-                        </p>
+                          <!-- <p class="mess-validation">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Eius, soluta dolor sit amet consectetur,
+                            adipisicing elit. Eius, soluta.
+                          </p> -->
+                        </div>
 
                         <p class="forgot-password">
-                          <a href="">Quên mật khẩu?</a>
+                          <a href="" class="hover-underline">Quên mật khẩu?</a>
                         </p>
                         <div class="form-actions">
-                          <button id="btnnext" class="btn btn-login">
-                            Đăng nhập
+                          <button
+                            id="btnnext"
+                            class="btn btn-authen hover-up-1 modal-sign"
+                            type="button"
+                          >
+                            <div class="btn-wrap">
+                              <span class="btn-wrap__text">Đăng nhập</span>
+                            </div>
                           </button>
                         </div>
                       </form>
                     </div>
                     <div class="or-section">
                       <span class="or-section__hr"></span>
-                        <span class="or-section__name" >hoặc</span>
-                        <span class="or-section__hr"></span>
-              
+                      <span class="or-section__name">hoặc</span>
+                      <span class="or-section__hr"></span>
                     </div>
                     <div class="login-social">
                       <p class="login-social__item">
-                        <a class="social-item__icon hover-up fb-auth"  href="#"
+                        <a class="social-item__icon hover-up fb-auth" href="#"
                           ><i class="fa fa-facebook-f"></i>
                         </a>
                       </p>
                       <p class="login-social__item">
-                        <a
-                          class="social-item__icon hover-up gg-auth"
-                          href="#"
-                          ><i class="fa fa-google"></i></i
+                        <a class="social-item__icon hover-up gg-auth" href="#"
+                          ><i class="fa fa-google"></i
                         ></a>
                       </p>
                       <p class="login-social__item">
                         <a
-                        class="social-item__icon hover-up zalo-auth"
-                       
-                        href="#"
-                      ></a>
+                          class="social-item__icon hover-up zalo-auth"
+                          href="#"
+                        ></a>
                       </p>
                     </div>
-                    <!-- <div class="login-policies">
-                      <label
-                        >Bằng việc đăng ký tài khoản<br />
-                        Tôi đồng ý với
-                        <a href="/support/terms" target="_blank" rel="nofollow"
-                          >Chính sách và quy định sử dụng</a
-                        ></label
-                      >
-                    </div> -->
+
                     <div class="forgot login-footer val-info">
                       <span>Bạn chưa có tài khoản?</span>
-                        <div class="tabs tab-sign-up">Đăng ký</div>
-                  </div>
-
-                   
-                   
-                    <!-- <div class="close-login">
-            Sair <span>[</span><span>x</span><span>]</span>
-          </div> -->
+                      <div class="tabs tab-sign-up hover-text">Đăng ký</div>
+                    </div>
                   </div>
                 </div>
                 <div class="content-sign-up">
+                  <button type="button" class="close-x"></button>
                   <div class="login wrap--content-sign-up">
                     <div class="modal-header">
-                      <button
-                        type="button"
-                        class="close-x"
-                        
-                      >
-                      </button>
                       <h4 class="login-title">Đăng ký tài khoản</h4>
                     </div>
 
                     <div class="form-register registerBox">
                       <form class="form form-signup" method="post">
                         <input type="hidden" name="state" />
-                        <p class="group-input">
+                        <div class="group-input">
                           <label class="register-title"
                             >Email <span class="import-star">*</span></label
                           >
@@ -205,14 +199,14 @@
                             placeholder="Nhập email của bạn"
                             required=""
                           />
-                          <!-- <span
-                            class="field-validation-valid"
-                            data-valmsg-for="email"
-                            data-valmsg-replace="true"
-                          ></span> -->
-                        </p>
-                        
-                        <p class="group-input">
+                          <!-- <p class="mess-validation">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Eius, soluta dolor sit amet consectetur,
+                            adipisicing elit. Eius, soluta.
+                          </p> -->
+                        </div>
+
+                        <div class="group-input">
                           <label class="register-title"
                             >Mật khẩu <span class="import-star">*</span></label
                           >
@@ -225,65 +219,55 @@
                             placeholder="Nhập mật khẩu của bạn"
                             required=""
                           />
-                          <!-- <span
-                            class="field-validation-valid"
-                            data-valmsg-for="email"
-                            data-valmsg-replace="true"
-                          ></span> -->
-                        </p>
+                          <!-- <p class="mess-validation">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Eius, soluta dolor sit amet consectetur,
+                            adipisicing elit. Eius, soluta.
+                          </p> -->
+                        </div>
 
-                        <div  class="form-actions">
-                          <button id="btnnext" class="btn btn-login">
-                            Đăng ký
+                        <div class="form-actions">
+                          <button
+                            class="btn btn-authen hover-up-1"
+                            type="button"
+                          >
+                            <div class="btn-wrap">
+                              <span class="btn-wrap__text">Đăng ký</span>
+                            </div>
                           </button>
                         </div>
                       </form>
                     </div>
                     <div class="or-section">
                       <span class="or-section__hr"></span>
-                        <span class="or-section__name" >hoặc</span>
-                        <span class="or-section__hr"></span>
-              
+                      <span class="or-section__name">hoặc</span>
+                      <span class="or-section__hr"></span>
                     </div>
                     <div class="login-social">
                       <p class="login-social__item">
-                        <a class="social-item__icon hover-up fb-auth"  href="#"
+                        <a class="social-item__icon hover-up fb-auth" href="#"
                           ><i class="fa fa-facebook-f"></i>
                         </a>
                       </p>
                       <p class="login-social__item">
-                        <a
-                          class="social-item__icon hover-up gg-auth"
-                          href="#"
-                          ><i class="fa fa-google"></i></i
-                        ></a>
+                        <a class="social-item__icon hover-up gg-auth" href="#"
+                          ><i class="fa fa-google"></i>
+                        </a>
                       </p>
                       <p class="login-social__item">
                         <a
-                        class="social-item__icon hover-up zalo-auth"
-                       
-                        href="#"
-                      ></a>
+                          class="social-item__icon hover-up zalo-auth"
+                          href="#"
+                        ></a>
                       </p>
                     </div>
-                    <!-- <div class="login-policies">
-                      <label
-                        >Bằng việc đăng ký tài khoản<br />
-                        Tôi đồng ý với
-                        <a href="/support/terms" target="_blank" rel="nofollow"
-                          >Chính sách và quy định sử dụng</a
-                        ></label
-                      >
-                    </div> -->
+
                     <div class="forgot login-footer val-info">
                       <span>Bạn đã có tài khoản?</span>
-                        <div class="tabs tab-sign-in active">Đăng nhập</div>
-                  </div>
-
-                   
-                    <!-- <div class="close-login">
-            Sair <span>[</span><span>x</span><span>]</span>
-          </div> -->
+                      <div class="tabs tab-sign-in active hover-text">
+                        Đăng nhập
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -293,7 +277,7 @@
 
           <div class="header-left">
             <h1>
-              <a href="/" id="logo" title="Quantrimang.com">quantrimang.com</a>
+              <a href="/" id="logo" title="VinabiTech">VinabiTech</a>
             </h1>
           </div>
           <div class="header-search">
@@ -319,21 +303,17 @@
               <!-- <i class="fa fa-times"></i> -->
             </a>
           </div>
-           <a href="#" class="toggle search">
-             <i class="fa fa-search fa-lg"></i>
-             <i class="close-search"></i>
-            </a>
+          <a href="#" class="toggle search">
+            <i class="fa fa-search fa-lg"></i>
+            <i class="close-search"></i>
+          </a>
         </div>
       </section>
       <section id="menu">
         <div class="section-box">
           <ul id="topnav" class="menu-navigation">
             <li class="item menu-home">
-              <a href="/"
-                ><img
-                  src="https://st.quantrimang.com/photos/image/icon/home-black-24.svg"
-                  alt="🏠"
-              /></a>
+              <a href="/"><img src="/images/home.svg" alt="🏠" /></a>
             </li>
             <li class="item">
               <a href="/cong-nghe">
@@ -437,60 +417,56 @@
       </section>
       <section class="section-box">
         <div class="main-content__first">
-          <div class="main-content__first-one mb-30">
-            <div
-              class="relative post-thumb hover-up border-radius-10"
-              style="
-                margin-right: 16px;
-                position: relative;
-                left: 0px;
-                top: 0px;
-                opacity: 1;
-              "
+          <div class="relative hover-up main-content__first-one mb-30">
+            <a
+              href="/dia-com-tam-binh-dan-sai-gon-sao-bay-gio-lai-xa-xi-den-vay-m7yHfeXNVAqq.html"
+              class="main-content__first-one__img"
             >
-              <div
-                class="thumb-overlay img-hover-slides relative"
-                style="
-                  background-image: url('https://dbk.vn/uploads/ckfinder/images/tranh-anh/Anh-thien-nhien-3.jpg');
-                "
-              >
-                <a class="img-link" href="single.html.htm" tabindex="0"></a>
-
-                <div class="post-content-overlay text-white ml-30 mr-30 pb-30">
-                  <h3 class="post-title font-weight-900 mb-20">
-                    <a class="text-white" href="single.html.htm" tabindex="0"
-                      >Beachmaster Elephant Seal Fights off Rival Male, The
-                      match is uncompromising</a
-                    >
+              <div class="thumb-overlay rounded main-content__first-one__box">
+                <img
+                  alt='Dĩa cơm tấm bình dân Sài Gòn, sao bây giờ lại "xa xỉ" đến vậy! '
+                  title='Dĩa cơm tấm bình dân Sài Gòn, sao bây giờ lại "xa xỉ" đến vậy! '
+                  src="https://media.viezone.vn/prod/2021/7/13/small_1626178064841_e5d27b4be6.jpeg"
+                  class="rounded object-cover"
+                />
+                <div class="post-content-overlay">
+                  <h3 class="post-title limit-row">
+                    Beachmaster Elephant Seal Fights off Rival Male, The match
+                    is uncomprs uncomprs uncompromising >
                   </h3>
                   <div class="post-time">
                     <span class="post-on">20 minutes ago</span>
                   </div>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
 
           <article class="main-content__first-many">
             <div
               class="main-content__first-many--card border-radius-10 hover-up"
             >
-              <div
-                class="post-thumb thumb-overlay img-hover-slide relative"
-                style="
-                  background-image: url('https://lazi.vn/uploads/photo/lazi_5eed7c083417a_1592622088_83.jpg');
-                "
+              <a
+                href="/dia-com-tam-binh-dan-sai-gon-sao-bay-gio-lai-xa-xi-den-vay-m7yHfeXNVAqq.html"
+                class="main-content__first-many-img"
               >
-                <a class="img-link" href="single.html.htm"></a>
-              </div>
+                <div class="main-content__first-many-box">
+                  <img
+                    alt='Dĩa cơm tấm bình dân Sài Gòn, sao bây giờ lại "xa xỉ" đến vậy! '
+                    title='Dĩa cơm tấm bình dân Sài Gòn, sao bây giờ lại "xa xỉ" đến vậy! '
+                    src="https://media.viezone.vn/prod/2021/7/13/small_1626178064841_e5d27b4be6.jpeg"
+                    class="rounded-t object-cover"
+                  />
+                </div>
+              </a>
               <div class="main-content__first-many-card-text">
                 <div class="post-card-content">
-                  <h5 class="post-title">
+                  <h5 class="post-title limit-row">
                     <a href="single.html.htm"
                       >Want fluffy Japanese pancakes but can’t fly to Tokyo?</a
                     >
                   </h5>
-                  <p class="post-desc">
+                  <p class="post-desc limit-row">
                     Beachmaster Elephant Seal Fights off Rival Male, The match
                     is uncompromising
                   </p>
@@ -505,82 +481,26 @@
             <div
               class="main-content__first-many--card border-radius-10 hover-up"
             >
-              <div
-                class="post-thumb thumb-overlay img-hover-slide relative"
-                style="
-                  background-image: url('https://lazi.vn/uploads/photo/lazi_5eed7c083417a_1592622088_83.jpg');
-                "
-              >
-                <a class="img-link" href="single.html.htm"></a>
-              </div>
-              <div class="main-content__first-many-card-text">
-                <div class="post-card-content">
-                  <h5 class="post-title">
-                    <a href="single.html.htm"
-                      >Want fluffy Japanese pancakes but can’t fly to Tokyo?</a
-                    >
-                  </h5>
-                  <p class="post-desc">
-                    Beachmaster Elephant Seal Fights off Rival Male, The match
-                    is uncompromising
-                  </p>
-                  <div class="post-time text-gray-600">
-                    <span class="post-on">27 August</span>
-                  </div>
+              <a
+                href="/dia-com-tam-binh-dan-sai-gon-sao-bay-gio-lai-xa-xi-den-vay-m7yHfeXNVAqq.html"
+                class="main-content__first-many-img"
+                ><div class="main-content__first-many-box">
+                  <img
+                    alt='Dĩa cơm tấm bình dân Sài Gòn, sao bây giờ lại "xa xỉ" đến vậy! '
+                    title='Dĩa cơm tấm bình dân Sài Gòn, sao bây giờ lại "xa xỉ" đến vậy! '
+                    src="https://media.viezone.vn/prod/2021/7/13/small_1626178064841_e5d27b4be6.jpeg"
+                    class="rounded-t object-cover"
+                  />
                 </div>
-              </div>
-            </div>
-          </article>
-          <article class="main-content__first-many">
-            <div
-              class="main-content__first-many--card border-radius-10 hover-up"
-            >
-              <div
-                class="post-thumb thumb-overlay img-hover-slide relative"
-                style="
-                  background-image: url('https://lazi.vn/uploads/photo/lazi_5eed7c083417a_1592622088_83.jpg');
-                "
-              >
-                <a class="img-link" href="single.html.htm"></a>
-              </div>
+              </a>
               <div class="main-content__first-many-card-text">
                 <div class="post-card-content">
-                  <h5 class="post-title">
+                  <h5 class="post-title limit-row">
                     <a href="single.html.htm"
                       >Want fluffy Japanese pancakes but can’t fly to Tokyo?</a
                     >
                   </h5>
-                  <p class="post-desc">
-                    Beachmaster Elephant Seal Fights off Rival Male, The match
-                    is uncompromising
-                  </p>
-                  <div class="post-time text-gray-600">
-                    <span class="post-on">27 August</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </article>
-          <article class="main-content__first-many">
-            <div
-              class="main-content__first-many--card border-radius-10 hover-up"
-            >
-              <div
-                class="post-thumb thumb-overlay img-hover-slide relative"
-                style="
-                  background-image: url('https://lazi.vn/uploads/photo/lazi_5eed7c083417a_1592622088_83.jpg');
-                "
-              >
-                <a class="img-link" href="single.html.htm"></a>
-              </div>
-              <div class="main-content__first-many-card-text">
-                <div class="post-card-content">
-                  <h5 class="post-title">
-                    <a href="single.html.htm"
-                      >Want fluffy Japanese pancakes but can’t fly to Tokyo?</a
-                    >
-                  </h5>
-                  <p class="post-desc">
+                  <p class="post-desc limit-row">
                     Beachmaster Elephant Seal Fights off Rival Male, The match
                     is uncompromising
                   </p>
@@ -592,44 +512,112 @@
             </div>
           </article>
 
+          <article class="main-content__first-many">
+            <div
+              class="main-content__first-many--card border-radius-10 hover-up"
+            >
+              <a
+                href="/dia-com-tam-binh-dan-sai-gon-sao-bay-gio-lai-xa-xi-den-vay-m7yHfeXNVAqq.html"
+                class="main-content__first-many-img"
+                ><div class="main-content__first-many-box">
+                  <img
+                    alt='Dĩa cơm tấm bình dân Sài Gòn, sao bây giờ lại "xa xỉ" đến vậy! '
+                    title='Dĩa cơm tấm bình dân Sài Gòn, sao bây giờ lại "xa xỉ" đến vậy! '
+                    src="https://media.viezone.vn/prod/2021/7/13/small_1626178064841_e5d27b4be6.jpeg"
+                    class="rounded-t object-cover"
+                  />
+                </div>
+              </a>
+              <div class="main-content__first-many-card-text">
+                <div class="post-card-content">
+                  <h5 class="post-title limit-row">
+                    <a href="single.html.htm"
+                      >Want fluffy Japanese pancakes but can’t fly to Tokyo?</a
+                    >
+                  </h5>
+                  <p class="post-desc limit-row">
+                    Beachmaster Elephant Seal Fights off Rival Male, The match
+                    is uncompromising
+                  </p>
+                  <div class="post-time text-gray-600">
+                    <span class="post-on">27 August</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="main-content__first-many">
+            <div
+              class="main-content__first-many--card border-radius-10 hover-up"
+            >
+              <a
+                href="/dia-com-tam-binh-dan-sai-gon-sao-bay-gio-lai-xa-xi-den-vay-m7yHfeXNVAqq.html"
+                class="main-content__first-many-img"
+                ><div class="main-content__first-many-box">
+                  <img
+                    alt='Dĩa cơm tấm bình dân Sài Gòn, sao bây giờ lại "xa xỉ" đến vậy! '
+                    title='Dĩa cơm tấm bình dân Sài Gòn, sao bây giờ lại "xa xỉ" đến vậy! '
+                    src="https://media.viezone.vn/prod/2021/7/13/small_1626178064841_e5d27b4be6.jpeg"
+                    class="rounded-t object-cover"
+                  />
+                </div>
+              </a>
+              <div class="main-content__first-many-card-text">
+                <div class="post-card-content">
+                  <h5 class="post-title limit-row">
+                    <a href="single.html.htm"
+                      >Want fluffy Japanese pancakes but can’t fly to Tokyo?</a
+                    >
+                  </h5>
+                  <p class="post-desc limit-row">
+                    Beachmaster Elephant Seal Fights off Rival Male, The match
+                    is uncompromising
+                  </p>
+                  <div class="post-time text-gray-600">
+                    <span class="post-on">27 August</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
           <!-- End -->
         </div>
+        <div class="divide-section"></div>
         <div id="main-content" class="p-4">
           <div class="main-content__left">
             <div class="main-content__post">
-              <article class="main-content__item hover-up-2 transition-normal">
+              <article class="main-content__item transition-normal">
                 <div class="main-content__item-wrap list-style-2">
                   <div class="main-content__item-img">
-                    <div class="post-thumb relative border-radius-6">
-                      <div
-                        class="
-                          img-hover-slide
-                          border-radius-6
-                          position-relative
-                        "
-                        style="
-                          background-image: url('https://cdn.tgdd.vn//GameApp/-1//huong-dan-tao-facebook-avatar-800x450.jpg');
-                        "
-                      >
-                        <a class="img-link" href="single.html.htm"></a>
+                    <a
+                      href="/thi-tot-nghiep-da-xong-nhung-2k3-chua-cho-ban-ngung-cuoi-JhPrZbUX2kzA.html"
+                      class="main-content__img"
+                      ><div class="main-content__img-box">
+                        <img
+                          alt="Thi tốt nghiệp đã xong nhưng 2k3 chưa cho bạn ngừng cười!"
+                          title="Thi tốt nghiệp đã xong nhưng 2k3 chưa cho bạn ngừng cười!"
+                          src="https://thuthuatnhanh.com/wp-content/uploads/2020/09/hinh-avatar-nam-buon.jpg"
+                          class="rounded object-cover"
+                        />
                       </div>
-                    </div>
+                    </a>
                   </div>
                   <div class="main-content__item-text">
                     <div class="main-content__item-text-wrap">
-                      <!-- <div class="main-content__item-cate">
-                        <a href="category.html.htm"
-                          ><span class="main-content__item-cate-name" text-primary">Food</span></a
-                        >
-                      </div> -->
-                      <h5 class="main-content__item-title">
+                      <h5 class="main-content__item-title limit-row">
                         <a href="single.html.htm"
-                          >Helpful Tips for Working from Home as a Freelancer</a
+                          >Helpful Tips for Workl Tips for Workl Tips for Workl
+                          Tips for Workl Tips for Workl Tips for Workl Tips for
+                          Working from Home as a Freelancer</a
                         >
                       </h5>
-                      <p class="main-content__desc">
+                      <p class="main-content__desc limit-row">
                         Nếu không hài lòng với Windows 11 Insider Preview bạn có
-                        thể dễ dàng quay trở lại Windows 10.
+                        thể dễ dàng quay trởNếu không hài lòng với Windows 11
+                        Insider Preview bạn có thể dễ dàng quay trởNếu không hài
+                        lòng với Windows 11 Insider Preview bạn có thể dễ dàng
+                        quay trở lại Windows 10.
                       </p>
                       <div class="main-content__footer">
                         <div class="main-content__footer-author">
@@ -654,39 +642,32 @@
                   </div>
                 </div>
               </article>
-              <article class="main-content__item hover-up-2 transition-normal">
+              <article class="main-content__item transition-normal">
                 <div class="main-content__item-wrap list-style-2">
                   <div class="main-content__item-img">
-                    <div class="post-thumb relative border-radius-6">
-                      <div
-                        class="
-                          img-hover-slide
-                          border-radius-6
-                          position-relative
-                        "
-                        style="
-                          background-image: url('https://cdn.tgdd.vn//GameApp/-1//huong-dan-tao-facebook-avatar-800x450.jpg');
-                        "
-                      >
-                        <a class="img-link" href="single.html.htm"></a>
+                    <a
+                      href="/thi-tot-nghiep-da-xong-nhung-2k3-chua-cho-ban-ngung-cuoi-JhPrZbUX2kzA.html"
+                      class="main-content__img"
+                      ><div class="main-content__img-box">
+                        <img
+                          alt="Thi tốt nghiệp đã xong nhưng 2k3 chưa cho bạn ngừng cười!"
+                          title="Thi tốt nghiệp đã xong nhưng 2k3 chưa cho bạn ngừng cười!"
+                          src="https://thuthuatnhanh.com/wp-content/uploads/2020/09/hinh-avatar-nam-buon.jpg"
+                          class="rounded object-cover"
+                        />
                       </div>
-                    </div>
+                    </a>
                   </div>
                   <div class="main-content__item-text">
                     <div class="main-content__item-text-wrap">
-                      <!-- <div class="main-content__item-cate">
-                        <a href="category.html.htm"
-                          ><span class="main-content__item-cate-name" text-primary">Food</span></a
-                        >
-                      </div> -->
-                      <h5 class="main-content__item-title">
+                      <h5 class="main-content__item-title limit-row">
                         <a href="single.html.htm"
-                          >Helpful Tips for Working from Home as a Freelancer</a
-                        >
+                          >Helpful Tips for Workl Tips
+                        </a>
                       </h5>
-                      <p class="main-content__desc">
+                      <p class="main-content__desc limit-row">
                         Nếu không hài lòng với Windows 11 Insider Preview bạn có
-                        thể dễ dàng quay trở lại Windows 10.
+                        thể d
                       </p>
                       <div class="main-content__footer">
                         <div class="main-content__footer-author">
@@ -711,39 +692,32 @@
                   </div>
                 </div>
               </article>
-              <article class="main-content__item hover-up-2 transition-normal">
+              <article class="main-content__item transition-normal">
                 <div class="main-content__item-wrap list-style-2">
                   <div class="main-content__item-img">
-                    <div class="post-thumb relative border-radius-6">
-                      <div
-                        class="
-                          img-hover-slide
-                          border-radius-6
-                          position-relative
-                        "
-                        style="
-                          background-image: url('https://cdn.tgdd.vn//GameApp/-1//huong-dan-tao-facebook-avatar-800x450.jpg');
-                        "
-                      >
-                        <a class="img-link" href="single.html.htm"></a>
+                    <a
+                      href="/thi-tot-nghiep-da-xong-nhung-2k3-chua-cho-ban-ngung-cuoi-JhPrZbUX2kzA.html"
+                      class="main-content__img"
+                      ><div class="main-content__img-box">
+                        <img
+                          alt="Thi tốt nghiệp đã xong nhưng 2k3 chưa cho bạn ngừng cười!"
+                          title="Thi tốt nghiệp đã xong nhưng 2k3 chưa cho bạn ngừng cười!"
+                          src="https://thuthuatnhanh.com/wp-content/uploads/2020/09/hinh-avatar-nam-buon.jpg"
+                          class="rounded object-cover"
+                        />
                       </div>
-                    </div>
+                    </a>
                   </div>
                   <div class="main-content__item-text">
                     <div class="main-content__item-text-wrap">
-                      <!-- <div class="main-content__item-cate">
-                        <a href="category.html.htm"
-                          ><span class="main-content__item-cate-name" text-primary">Food</span></a
-                        >
-                      </div> -->
-                      <h5 class="main-content__item-title">
+                      <h5 class="main-content__item-title limit-row">
                         <a href="single.html.htm"
-                          >Helpful Tips for Working from Home as a Freelancer</a
+                          >Helpful Tips for Workl Tips forcer</a
                         >
                       </h5>
-                      <p class="main-content__desc">
+                      <p class="main-content__desc limit-row">
                         Nếu không hài lòng với Windows 11 Insider Preview bạn có
-                        thể dễ dàng quay trở lại Windows 10.
+                        thể dễ dàng quay trở
                       </p>
                       <div class="main-content__footer">
                         <div class="main-content__footer-author">
@@ -768,39 +742,31 @@
                   </div>
                 </div>
               </article>
-              <article class="main-content__item hover-up-2 transition-normal">
+              <article class="main-content__item transition-normal">
                 <div class="main-content__item-wrap list-style-2">
                   <div class="main-content__item-img">
-                    <div class="post-thumb relative border-radius-6">
-                      <div
-                        class="
-                          img-hover-slide
-                          border-radius-6
-                          position-relative
-                        "
-                        style="
-                          background-image: url('https://cdn.tgdd.vn//GameApp/-1//huong-dan-tao-facebook-avatar-800x450.jpg');
-                        "
-                      >
-                        <a class="img-link" href="single.html.htm"></a>
+                    <a
+                      href="/thi-tot-nghiep-da-xong-nhung-2k3-chua-cho-ban-ngung-cuoi-JhPrZbUX2kzA.html"
+                      class="main-content__img"
+                      ><div class="main-content__img-box">
+                        <img
+                          alt="Thi tốt nghiệp đã xong nhưng 2k3 chưa cho bạn ngừng cười!"
+                          title="Thi tốt nghiệp đã xong nhưng 2k3 chưa cho bạn ngừng cười!"
+                          src="https://thuthuatnhanh.com/wp-content/uploads/2020/09/hinh-avatar-nam-buon.jpg"
+                          class="rounded object-cover"
+                        />
                       </div>
-                    </div>
+                    </a>
                   </div>
                   <div class="main-content__item-text">
                     <div class="main-content__item-text-wrap">
-                      <!-- <div class="main-content__item-cate">
-                        <a href="category.html.htm"
-                          ><span class="main-content__item-cate-name" text-primary">Food</span></a
-                        >
-                      </div> -->
-                      <h5 class="main-content__item-title">
+                      <h5 class="main-content__item-title limit-row">
                         <a href="single.html.htm"
-                          >Helpful Tips for Working from Home as a Freelancer</a
-                        >
+                          >Helpful Tips for Workl Tips for Workl Tips for Workl
+                        </a>
                       </h5>
-                      <p class="main-content__desc">
+                      <p class="main-content__desc limit-row">
                         Nếu không hài lòng với Windows 11 Insider Preview bạn có
-                        thể dễ dàng quay trở lại Windows 10.
                       </p>
                       <div class="main-content__footer">
                         <div class="main-content__footer-author">
@@ -825,6 +791,13 @@
                   </div>
                 </div>
               </article>
+            </div>
+            <div class="load-articles">
+              <button class="btn btn-load__more hover-up-0" type="button">
+                <div class="btn-wrap">
+                  <span class="btn-wrap__text">Xem thêm</span>
+                </div>
+              </button>
             </div>
           </div>
           <div class="main-content__right">
@@ -849,11 +822,18 @@
                         main-content__article-img
                       "
                     >
-                      <a class="color-white" href="single.html.htm">
-                        <img
-                          src="https://st.quantrimang.com/photos/image/2020/06/30/TikTok-200-size-80x80-znd.jpg"
-                          alt=""
-                        />
+                      <a
+                        href="/chu-nhan-hit-hongkong1-dong-cam-voi-da-lab-ke-lai-chuyen-khuong-vu-tung-edit-mv-tre-gOIPiGQayrdF.html"
+                        class="main-content__article-item__img"
+                        ><div class="main-content__article-item__box">
+                          <img
+                            alt='Chủ nhân hit "Hongkong1" đồng cảm với Da LAB, kể lại chuyện Khương Vũ từng edit MV trễ'
+                            title='Chủ nhân hit "Hongkong1" đồng cảm với Da LAB, kể lại chuyện Khương Vũ từng edit MV trễ'
+                            src="https://media.viezone.vn/prod/2021/7/13/small_1626204808779_ad13d0c7d7.jpeg"
+                            decoding="async"
+                            class="rounded object-cover"
+                          />
+                        </div>
                       </a>
                     </div>
                     <div class="main-content__article-text">
@@ -888,11 +868,18 @@
                         main-content__article-img
                       "
                     >
-                      <a class="color-white" href="single.html.htm">
-                        <img
-                          src="https://st.quantrimang.com/photos/image/2020/06/30/TikTok-200-size-80x80-znd.jpg"
-                          alt=""
-                        />
+                      <a
+                        href="/chu-nhan-hit-hongkong1-dong-cam-voi-da-lab-ke-lai-chuyen-khuong-vu-tung-edit-mv-tre-gOIPiGQayrdF.html"
+                        class="main-content__article-item__img"
+                        ><div class="main-content__article-item__box">
+                          <img
+                            alt='Chủ nhân hit "Hongkong1" đồng cảm với Da LAB, kể lại chuyện Khương Vũ từng edit MV trễ'
+                            title='Chủ nhân hit "Hongkong1" đồng cảm với Da LAB, kể lại chuyện Khương Vũ từng edit MV trễ'
+                            src="https://media.viezone.vn/prod/2021/7/13/small_1626204808779_ad13d0c7d7.jpeg"
+                            decoding="async"
+                            class="rounded object-cover"
+                          />
+                        </div>
                       </a>
                     </div>
                     <div class="main-content__article-text">
@@ -927,11 +914,18 @@
                         main-content__article-img
                       "
                     >
-                      <a class="color-white" href="single.html.htm">
-                        <img
-                          src="https://st.quantrimang.com/photos/image/2020/06/30/TikTok-200-size-80x80-znd.jpg"
-                          alt=""
-                        />
+                      <a
+                        href="/chu-nhan-hit-hongkong1-dong-cam-voi-da-lab-ke-lai-chuyen-khuong-vu-tung-edit-mv-tre-gOIPiGQayrdF.html"
+                        class="main-content__article-item__img"
+                        ><div class="main-content__article-item__box">
+                          <img
+                            alt='Chủ nhân hit "Hongkong1" đồng cảm với Da LAB, kể lại chuyện Khương Vũ từng edit MV trễ'
+                            title='Chủ nhân hit "Hongkong1" đồng cảm với Da LAB, kể lại chuyện Khương Vũ từng edit MV trễ'
+                            src="https://media.viezone.vn/prod/2021/7/13/small_1626204808779_ad13d0c7d7.jpeg"
+                            decoding="async"
+                            class="rounded object-cover"
+                          />
+                        </div>
                       </a>
                     </div>
                     <div class="main-content__article-text">
@@ -966,11 +960,18 @@
                         main-content__article-img
                       "
                     >
-                      <a class="color-white" href="single.html.htm">
-                        <img
-                          src="https://st.quantrimang.com/photos/image/2020/06/30/TikTok-200-size-80x80-znd.jpg"
-                          alt=""
-                        />
+                      <a
+                        href="/chu-nhan-hit-hongkong1-dong-cam-voi-da-lab-ke-lai-chuyen-khuong-vu-tung-edit-mv-tre-gOIPiGQayrdF.html"
+                        class="main-content__article-item__img"
+                        ><div class="main-content__article-item__box">
+                          <img
+                            alt='Chủ nhân hit "Hongkong1" đồng cảm với Da LAB, kể lại chuyện Khương Vũ từng edit MV trễ'
+                            title='Chủ nhân hit "Hongkong1" đồng cảm với Da LAB, kể lại chuyện Khương Vũ từng edit MV trễ'
+                            src="https://media.viezone.vn/prod/2021/7/13/small_1626204808779_ad13d0c7d7.jpeg"
+                            decoding="async"
+                            class="rounded object-cover"
+                          />
+                        </div>
                       </a>
                     </div>
                     <div class="main-content__article-text">
@@ -1012,11 +1013,18 @@
                         main-content__article-img
                       "
                     >
-                      <a class="color-white" href="single.html.htm">
-                        <img
-                          src="https://st.quantrimang.com/photos/image/2020/06/30/TikTok-200-size-80x80-znd.jpg"
-                          alt=""
-                        />
+                      <a
+                        href="/chu-nhan-hit-hongkong1-dong-cam-voi-da-lab-ke-lai-chuyen-khuong-vu-tung-edit-mv-tre-gOIPiGQayrdF.html"
+                        class="main-content__article-item__img"
+                        ><div class="main-content__article-item__box">
+                          <img
+                            alt='Chủ nhân hit "Hongkong1" đồng cảm với Da LAB, kể lại chuyện Khương Vũ từng edit MV trễ'
+                            title='Chủ nhân hit "Hongkong1" đồng cảm với Da LAB, kể lại chuyện Khương Vũ từng edit MV trễ'
+                            src="https://media.viezone.vn/prod/2021/7/13/small_1626204808779_ad13d0c7d7.jpeg"
+                            decoding="async"
+                            class="rounded object-cover"
+                          />
+                        </div>
                       </a>
                     </div>
                     <div class="main-content__article-text">
@@ -1051,11 +1059,18 @@
                         main-content__article-img
                       "
                     >
-                      <a class="color-white" href="single.html.htm">
-                        <img
-                          src="https://st.quantrimang.com/photos/image/2020/06/30/TikTok-200-size-80x80-znd.jpg"
-                          alt=""
-                        />
+                      <a
+                        href="/chu-nhan-hit-hongkong1-dong-cam-voi-da-lab-ke-lai-chuyen-khuong-vu-tung-edit-mv-tre-gOIPiGQayrdF.html"
+                        class="main-content__article-item__img"
+                        ><div class="main-content__article-item__box">
+                          <img
+                            alt='Chủ nhân hit "Hongkong1" đồng cảm với Da LAB, kể lại chuyện Khương Vũ từng edit MV trễ'
+                            title='Chủ nhân hit "Hongkong1" đồng cảm với Da LAB, kể lại chuyện Khương Vũ từng edit MV trễ'
+                            src="https://media.viezone.vn/prod/2021/7/13/small_1626204808779_ad13d0c7d7.jpeg"
+                            decoding="async"
+                            class="rounded object-cover"
+                          />
+                        </div>
                       </a>
                     </div>
                     <div class="main-content__article-text">
@@ -1090,11 +1105,18 @@
                         main-content__article-img
                       "
                     >
-                      <a class="color-white" href="single.html.htm">
-                        <img
-                          src="https://st.quantrimang.com/photos/image/2020/06/30/TikTok-200-size-80x80-znd.jpg"
-                          alt=""
-                        />
+                      <a
+                        href="/chu-nhan-hit-hongkong1-dong-cam-voi-da-lab-ke-lai-chuyen-khuong-vu-tung-edit-mv-tre-gOIPiGQayrdF.html"
+                        class="main-content__article-item__img"
+                        ><div class="main-content__article-item__box">
+                          <img
+                            alt='Chủ nhân hit "Hongkong1" đồng cảm với Da LAB, kể lại chuyện Khương Vũ từng edit MV trễ'
+                            title='Chủ nhân hit "Hongkong1" đồng cảm với Da LAB, kể lại chuyện Khương Vũ từng edit MV trễ'
+                            src="https://media.viezone.vn/prod/2021/7/13/small_1626204808779_ad13d0c7d7.jpeg"
+                            decoding="async"
+                            class="rounded object-cover"
+                          />
+                        </div>
                       </a>
                     </div>
                     <div class="main-content__article-text">
@@ -1129,11 +1151,18 @@
                         main-content__article-img
                       "
                     >
-                      <a class="color-white" href="single.html.htm">
-                        <img
-                          src="https://st.quantrimang.com/photos/image/2020/06/30/TikTok-200-size-80x80-znd.jpg"
-                          alt=""
-                        />
+                      <a
+                        href="/chu-nhan-hit-hongkong1-dong-cam-voi-da-lab-ke-lai-chuyen-khuong-vu-tung-edit-mv-tre-gOIPiGQayrdF.html"
+                        class="main-content__article-item__img"
+                        ><div class="main-content__article-item__box">
+                          <img
+                            alt='Chủ nhân hit "Hongkong1" đồng cảm với Da LAB, kể lại chuyện Khương Vũ từng edit MV trễ'
+                            title='Chủ nhân hit "Hongkong1" đồng cảm với Da LAB, kể lại chuyện Khương Vũ từng edit MV trễ'
+                            src="https://media.viezone.vn/prod/2021/7/13/small_1626204808779_ad13d0c7d7.jpeg"
+                            decoding="async"
+                            class="rounded object-cover"
+                          />
+                        </div>
                       </a>
                     </div>
                     <div class="main-content__article-text">
@@ -1168,11 +1197,18 @@
                         main-content__article-img
                       "
                     >
-                      <a class="color-white" href="single.html.htm">
-                        <img
-                          src="https://st.quantrimang.com/photos/image/2020/06/30/TikTok-200-size-80x80-znd.jpg"
-                          alt=""
-                        />
+                      <a
+                        href="/chu-nhan-hit-hongkong1-dong-cam-voi-da-lab-ke-lai-chuyen-khuong-vu-tung-edit-mv-tre-gOIPiGQayrdF.html"
+                        class="main-content__article-item__img"
+                        ><div class="main-content__article-item__box">
+                          <img
+                            alt='Chủ nhân hit "Hongkong1" đồng cảm với Da LAB, kể lại chuyện Khương Vũ từng edit MV trễ'
+                            title='Chủ nhân hit "Hongkong1" đồng cảm với Da LAB, kể lại chuyện Khương Vũ từng edit MV trễ'
+                            src="https://media.viezone.vn/prod/2021/7/13/small_1626204808779_ad13d0c7d7.jpeg"
+                            decoding="async"
+                            class="rounded object-cover"
+                          />
+                        </div>
                       </a>
                     </div>
                     <div class="main-content__article-text">
@@ -1214,11 +1250,18 @@
                         main-content__article-img
                       "
                     >
-                      <a class="color-white" href="single.html.htm">
-                        <img
-                          src="https://st.quantrimang.com/photos/image/2020/06/30/TikTok-200-size-80x80-znd.jpg"
-                          alt=""
-                        />
+                      <a
+                        href="/chu-nhan-hit-hongkong1-dong-cam-voi-da-lab-ke-lai-chuyen-khuong-vu-tung-edit-mv-tre-gOIPiGQayrdF.html"
+                        class="main-content__article-item__img"
+                        ><div class="main-content__article-item__box">
+                          <img
+                            alt='Chủ nhân hit "Hongkong1" đồng cảm với Da LAB, kể lại chuyện Khương Vũ từng edit MV trễ'
+                            title='Chủ nhân hit "Hongkong1" đồng cảm với Da LAB, kể lại chuyện Khương Vũ từng edit MV trễ'
+                            src="https://media.viezone.vn/prod/2021/7/13/small_1626204808779_ad13d0c7d7.jpeg"
+                            decoding="async"
+                            class="rounded object-cover"
+                          />
+                        </div>
                       </a>
                     </div>
                     <div class="main-content__article-text">
@@ -1253,11 +1296,18 @@
                         main-content__article-img
                       "
                     >
-                      <a class="color-white" href="single.html.htm">
-                        <img
-                          src="https://st.quantrimang.com/photos/image/2020/06/30/TikTok-200-size-80x80-znd.jpg"
-                          alt=""
-                        />
+                      <a
+                        href="/chu-nhan-hit-hongkong1-dong-cam-voi-da-lab-ke-lai-chuyen-khuong-vu-tung-edit-mv-tre-gOIPiGQayrdF.html"
+                        class="main-content__article-item__img"
+                        ><div class="main-content__article-item__box">
+                          <img
+                            alt='Chủ nhân hit "Hongkong1" đồng cảm với Da LAB, kể lại chuyện Khương Vũ từng edit MV trễ'
+                            title='Chủ nhân hit "Hongkong1" đồng cảm với Da LAB, kể lại chuyện Khương Vũ từng edit MV trễ'
+                            src="https://media.viezone.vn/prod/2021/7/13/small_1626204808779_ad13d0c7d7.jpeg"
+                            decoding="async"
+                            class="rounded object-cover"
+                          />
+                        </div>
                       </a>
                     </div>
                     <div class="main-content__article-text">
@@ -1292,11 +1342,18 @@
                         main-content__article-img
                       "
                     >
-                      <a class="color-white" href="single.html.htm">
-                        <img
-                          src="https://st.quantrimang.com/photos/image/2020/06/30/TikTok-200-size-80x80-znd.jpg"
-                          alt=""
-                        />
+                      <a
+                        href="/chu-nhan-hit-hongkong1-dong-cam-voi-da-lab-ke-lai-chuyen-khuong-vu-tung-edit-mv-tre-gOIPiGQayrdF.html"
+                        class="main-content__article-item__img"
+                        ><div class="main-content__article-item__box">
+                          <img
+                            alt='Chủ nhân hit "Hongkong1" đồng cảm với Da LAB, kể lại chuyện Khương Vũ từng edit MV trễ'
+                            title='Chủ nhân hit "Hongkong1" đồng cảm với Da LAB, kể lại chuyện Khương Vũ từng edit MV trễ'
+                            src="https://media.viezone.vn/prod/2021/7/13/small_1626204808779_ad13d0c7d7.jpeg"
+                            decoding="async"
+                            class="rounded object-cover"
+                          />
+                        </div>
                       </a>
                     </div>
                     <div class="main-content__article-text">
@@ -1331,11 +1388,18 @@
                         main-content__article-img
                       "
                     >
-                      <a class="color-white" href="single.html.htm">
-                        <img
-                          src="https://st.quantrimang.com/photos/image/2020/06/30/TikTok-200-size-80x80-znd.jpg"
-                          alt=""
-                        />
+                      <a
+                        href="/chu-nhan-hit-hongkong1-dong-cam-voi-da-lab-ke-lai-chuyen-khuong-vu-tung-edit-mv-tre-gOIPiGQayrdF.html"
+                        class="main-content__article-item__img"
+                        ><div class="main-content__article-item__box">
+                          <img
+                            alt='Chủ nhân hit "Hongkong1" đồng cảm với Da LAB, kể lại chuyện Khương Vũ từng edit MV trễ'
+                            title='Chủ nhân hit "Hongkong1" đồng cảm với Da LAB, kể lại chuyện Khương Vũ từng edit MV trễ'
+                            src="https://media.viezone.vn/prod/2021/7/13/small_1626204808779_ad13d0c7d7.jpeg"
+                            decoding="async"
+                            class="rounded object-cover"
+                          />
+                        </div>
                       </a>
                     </div>
                     <div class="main-content__article-text">
@@ -1360,102 +1424,594 @@
         </div>
       </section>
       <section id="footer">
-        <canvas id ="chain" width="800" height="800">        </canvas>
+        <!-- <canvas id="chain" width="800" height="800"> </canvas> -->
         <div class="section-box footer-top">
           <div class="footer-wrap">
             <div class="footer-navbox footer-sidenav">
-              <button
-              type="button"
-              class="close-menu"
-              
-            >
-              &times;
-            </button>
+              <button type="button" class="close-menu">&times;</button>
               <a class="footer-nav__logo" href="/">Trang chủ</a>
               <ul class="footer-navigation">
                 <li class="tax-cong-nghe">
-                   <a class="parentitems" href="/cong-nghe"> <img class="lazy loaded" data-src="https://st.quantrimang.com/photos/image/2020/10/05/lang-cong-nghe-size-24x24-znd.svg" src="https://st.quantrimang.com/photos/image/2020/10/05/lang-cong-nghe-size-24x24-znd.svg" alt="❖" data-was-processed="true">Công nghệ </a>
-                   <ul>
-                      <li class="tax-tan-cong-mang"><a href="/tan-cong-mang"> <img class="lazy loaded" data-src="https://st.quantrimang.com/photos/image/2020/10/05/tan-cong-mang-size-24x24-znd.svg" src="https://st.quantrimang.com/photos/image/2020/10/05/tan-cong-mang-size-24x24-znd.svg" alt="❖" data-was-processed="true"> Ứng dụng </a></li>
-                      <li class="tax-chuyen-cong-nghe"><a href="/chuyen-cong-nghe"> <img class="lazy loaded" data-src="https://st.quantrimang.com/photos/image/2020/10/05/chuyen-cong-nghe-size-24x24-znd.svg" src="https://st.quantrimang.com/photos/image/2020/10/05/chuyen-cong-nghe-size-24x24-znd.svg" alt="❖" data-was-processed="true"> Hệ thống </a></li>
-                      <li class="tax-cong-nghe-moi"><a href="/cong-nghe-moi"> <img class="lazy loaded" data-src="https://st.quantrimang.com/photos/image/2020/10/05/cong-nghe-moi-size-24x24-znd.svg" src="https://st.quantrimang.com/photos/image/2020/10/05/cong-nghe-moi-size-24x24-znd.svg" alt="❖" data-was-processed="true"> Game - Trò chơi </a></li>
-                      <li class="tax-ai"><a href="/ai"> <img class="lazy loaded" data-src="https://st.quantrimang.com/photos/image/2020/10/05/tri-tue-nhan-tao-size-24x24-znd.svg" src="https://st.quantrimang.com/photos/image/2020/10/05/tri-tue-nhan-tao-size-24x24-znd.svg" alt="❖" data-was-processed="true"> iPhone </a></li>
-                      <li class="tax-anh-tai-cong-nghe hassub"><a href="/anh-tai-cong-nghe"> <img class="lazy loaded" data-src="https://st.quantrimang.com/photos/image/2020/10/05/anh-tai-cong-nghe-size-24x24-znd.svg" src="https://st.quantrimang.com/photos/image/2020/10/05/anh-tai-cong-nghe-size-24x24-znd.svg" alt="❖" data-was-processed="true"> Android  </a></li>
-                      <li class="tax-binh-luan-cong-nghe"><a href="/binh-luan-cong-nghe"> <img class="lazy loaded" data-src="https://st.quantrimang.com/photos/image/2020/10/05/binh-luan-cong-nghe-size-24x24-znd.svg" src="https://st.quantrimang.com/photos/image/2020/10/05/binh-luan-cong-nghe-size-24x24-znd.svg" alt="❖" data-was-processed="true"> Linux </a></li>
-                      <li class="tax-trac-nghiem-cong-nghe-thong-tin"><a href="/trac-nghiem-cong-nghe-thong-tin"> <img class="lazy loaded" data-src="https://st.quantrimang.com/photos/image/2020/10/05/quiz-cong-nghe-size-24x24-znd.svg" src="https://st.quantrimang.com/photos/image/2020/10/05/quiz-cong-nghe-size-24x24-znd.svg" alt="❖" data-was-processed="true"> Chụp ảnh - Quay phim </a></li>
-                      <li class="tax-trac-nghiem-cong-nghe-thong-tin"><a href="/trac-nghiem-cong-nghe-thong-tin"> <img class="lazy loaded" data-src="https://st.quantrimang.com/photos/image/2020/10/05/quiz-cong-nghe-size-24x24-znd.svg" src="https://st.quantrimang.com/photos/image/2020/10/05/quiz-cong-nghe-size-24x24-znd.svg" alt="❖" data-was-processed="true"> macOs </a></li>
-                      <li class="tax-trac-nghiem-cong-nghe-thong-tin"><a href="/trac-nghiem-cong-nghe-thong-tin"> <img class="lazy loaded" data-src="https://st.quantrimang.com/photos/image/2020/10/05/quiz-cong-nghe-size-24x24-znd.svg" src="https://st.quantrimang.com/photos/image/2020/10/05/quiz-cong-nghe-size-24x24-znd.svg" alt="❖" data-was-processed="true"> Phần cứng </a></li>
-                      <li class="tax-trac-nghiem-cong-nghe-thong-tin"><a href="/trac-nghiem-cong-nghe-thong-tin"> <img class="lazy loaded" data-src="https://st.quantrimang.com/photos/image/2020/10/05/quiz-cong-nghe-size-24x24-znd.svg" src="https://st.quantrimang.com/photos/image/2020/10/05/quiz-cong-nghe-size-24x24-znd.svg" alt="❖" data-was-processed="true"> Kiến thức cơ bản </a></li>
-                   </ul>
+                  <a class="parentitems" href="/cong-nghe">
+                    <img
+                      class="lazy loaded"
+                      src="https://st.quantrimang.com/photos/image/2020/10/05/lang-cong-nghe-size-24x24-znd.svg"
+                      alt="❖"
+                    />Công nghệ
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/tan-cong-mang-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Ứng dụng
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/chuyen-cong-nghe-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Hệ thống
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/cong-nghe-moi-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Game - Trò chơi
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/tri-tue-nhan-tao-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        iPhone
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/anh-tai-cong-nghe-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Android
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/binh-luan-cong-nghe-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Linux
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/quiz-cong-nghe-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Chụp ảnh - Quay phim
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/quiz-cong-nghe-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        macOs
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/quiz-cong-nghe-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Phần cứng
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/quiz-cong-nghe-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Kiến thức cơ bản
+                      </a>
+                    </li>
+                  </ul>
                 </li>
-                <li class="tax-ung-dung active">
-                   <a class="parentitems" href="/ung-dung"> <img class="lazy loaded" data-src="https://st.quantrimang.com/photos/image/2020/10/05/cong-nghe-size-24x24-znd.svg" src="https://st.quantrimang.com/photos/image/2020/10/05/cong-nghe-size-24x24-znd.svg" alt="❖" data-was-processed="true"> Ứng dụng </a>
-                   <ul>
-                      <li class="tax-ung-dung hassub"><a href="/ung-dung"> <img class="lazy loaded" data-src="https://st.quantrimang.com/photos/image/2020/10/05/ung-dung-size-24x24-znd.svg" src="https://st.quantrimang.com/photos/image/2020/10/05/ung-dung-size-24x24-znd.svg" alt="❖" data-was-processed="true"> Chat, Nhắn tin, Gọi điện </a></li>
-                      <li class="tax-he-thong hassub active"><a href="/he-thong"> <img class="lazy loaded" data-src="https://st.quantrimang.com/photos/image/2020/10/05/he-thong-size-24x24-znd.svg" src="https://st.quantrimang.com/photos/image/2020/10/05/he-thong-size-24x24-znd.svg" alt="❖" data-was-processed="true"> Mạng xã hội </a></li>
-                      <li class="tax-game-tro-choi hassub"><a href="/game-tro-choi"> <img class="lazy loaded" data-src="https://st.quantrimang.com/photos/image/2020/10/05/game-tro-choi-size-24x24-znd.svg" src="https://st.quantrimang.com/photos/image/2020/10/05/game-tro-choi-size-24x24-znd.svg" alt="❖" data-was-processed="true"> Phần mềm nhạc </a></li>
-                      <li class="tax-ios hassub"><a href="/ios"> <img class="lazy loaded" data-src="https://st.quantrimang.com/photos/image/2020/10/05/iPhone-size-24x24-znd.svg" src="https://st.quantrimang.com/photos/image/2020/10/05/iPhone-size-24x24-znd.svg" alt="❖" data-was-processed="true"> Tin học văn phòng </a></li>
-                      <li class="tax-android hassub"><a href="/android"> <img class="lazy loaded" data-src="https://st.quantrimang.com/photos/image/2020/10/05/Android-size-24x24-znd.svg" src="https://st.quantrimang.com/photos/image/2020/10/05/Android-size-24x24-znd.svg" alt="❖" data-was-processed="true"> Lưu trữ chia sẻ </a></li>
-                      <li class="tax-linux-os"><a href="/linux-os"> <img class="lazy loaded" data-src="https://st.quantrimang.com/photos/image/2020/10/05/Linux-size-24x24-znd.svg" src="https://st.quantrimang.com/photos/image/2020/10/05/Linux-size-24x24-znd.svg" alt="❖" data-was-processed="true"> Trình duyệt web </a></li>
-                      <li class="tax-dong-ho-thong-minh">
-                        <a href="/dong-ho-thong-minh"> <img class="lazy" data-src="https://st.quantrimang.com/photos/image/2020/10/05/Linux-size-24x24-znd.svg" src="https://st.quantrimang.com/photos/image/2020/10/05/Linux-size-24x24-znd.svg" alt="❖"> Chỉnh sửa ảnh </a></li>
-                      <li class="tax-may-anh-may-quay">
-                        <a href="/may-anh-may-quay"> <img class="lazy" data-src="https://st.quantrimang.com/photos/image/2020/10/05/Linux-size-24x24-znd.svg" src="https://st.quantrimang.com/photos/image/2020/10/05/Linux-size-24x24-znd.svg" alt="❖"> Thiết kế - Đồ họa </a></li>
-                      <li class="tax-mac-os-x hassub"><a href="/mac-os-x"> <img class="lazy" data-src="https://st.quantrimang.com/photos/image/2020/10/05/mac-size-24x24-znd.svg" src="https://st.quantrimang.com/photos/image/2020/10/05/Linux-size-24x24-znd.svg" alt="❖"> Website - Blog </a></li>
-                      <li class="tax-phan-cung hassub"><a href="/phan-cung"> <img class="lazy" data-src="https://st.quantrimang.com/photos/image/2020/10/05/phan-cung-size-24x24-znd.svg" src="https://st.quantrimang.com/photos/image/2020/10/05/Linux-size-24x24-znd.svg" alt="❖"> Bản đồ & định vị </a></li>
-                      <li class="tax-thu-thuat-seo"><a href="/thu-thuat-seo"> <img class="lazy loaded" data-src="https://st.quantrimang.com/photos/image/2020/10/05/thu-thuat-seo-size-24x24-znd.svg" src="https://st.quantrimang.com/photos/image/2020/10/05/thu-thuat-seo-size-24x24-znd.svg" alt="❖" data-was-processed="true"> Nhạc, Phim, Truyện online </a></li>
-                      <li class="tax-kien-thuc-co-ban"><a href="/kien-thuc-co-ban"> <img class="lazy loaded" data-src="https://st.quantrimang.com/photos/image/2020/10/05/kien-thuc-co-ban-size-24x24-znd.svg" src="https://st.quantrimang.com/photos/image/2020/10/05/kien-thuc-co-ban-size-24x24-znd.svg" alt="❖" data-was-processed="true"> Kiến thức cơ bản </a></li>
-                      <li class="tax-raspberry-pi"><a href="/raspberry-pi"> <img class="lazy loaded" data-src="https://st.quantrimang.com/photos/image/2020/10/05/raspberry-pi-icon-size-24x24-znd.svg" src="https://st.quantrimang.com/photos/image/2020/10/05/raspberry-pi-icon-size-24x24-znd.svg" alt="❖" data-was-processed="true"> Chỉnh sửa video </a></li>
-                      <li class="tax-dich-vu-ngan-hang"><a href="/dich-vu-ngan-hang"> <img class="lazy loaded" data-src="https://st.quantrimang.com/photos/image/2020/10/05/dich-vu-ngan-hang-size-24x24-znd.svg" src="https://st.quantrimang.com/photos/image/2020/10/05/dich-vu-ngan-hang-size-24x24-znd.svg" alt="❖" data-was-processed="true"> Thanh toán online </a></li>
-                      <li class="tax-lap-trinh hassub"><a href="/lap-trinh"> <img class="lazy loaded" data-src="https://st.quantrimang.com/photos/image/2020/10/05/lap-trinh-size-24x24-znd.svg" src="https://st.quantrimang.com/photos/image/2020/10/05/lap-trinh-size-24x24-znd.svg" alt="❖" data-was-processed="true"> Phần mềm học tập </a></li>
-                     
-                   </ul>
+                <li>
+                  <a class="parentitems" href="">
+                    <img
+                      class="lazy loaded"
+                      src="https://st.quantrimang.com/photos/image/2020/10/05/cong-nghe-size-24x24-znd.svg"
+                      alt="❖"
+                    />
+                    Ứng dụng
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/ung-dung-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Chat, Nhắn tin, Gọi điện
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/he-thong-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Mạng xã hội
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/game-tro-choi-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Phần mềm nhạc
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/iPhone-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Tin học văn phòng
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/Android-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Lưu trữ chia sẻ
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/Linux-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Trình duyệt web
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/Linux-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Chỉnh sửa ảnh
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/Linux-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Thiết kế - Đồ họa
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/Linux-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Website - Blog
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/Linux-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Bản đồ & định vị
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/thu-thuat-seo-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Nhạc, Phim, Truyện online
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/kien-thuc-co-ban-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Kiến thức cơ bản
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/raspberry-pi-icon-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Chỉnh sửa video
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/dich-vu-ngan-hang-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Thanh toán online
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/lap-trinh-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Phần mềm học tập
+                      </a>
+                    </li>
+                  </ul>
                 </li>
-                <li class="tax-iPhone">
-                   <a class="parentitems" href="/khoa-hoc"> <img class="lazy loaded" data-src="https://st.quantrimang.com/photos/image/2020/10/05/khoa-hoc-size-24x24-znd.svg" src="https://st.quantrimang.com/photos/image/2020/10/05/khoa-hoc-size-24x24-znd.svg" alt="❖" data-was-processed="true"> iPhone </a>
-                   <ul>
-                      <li class="tax-thi-nghiem-khoa-hoc"><a href="/thi-nghiem-khoa-hoc"> <img class="lazy loaded" data-src="https://st.quantrimang.com/photos/image/icon/khoahoc/TestTube-size-24x24-znd.png" src="https://st.quantrimang.com/photos/image/icon/khoahoc/TestTube-size-24x24-znd.png" alt="❖" data-was-processed="true"> Thiết lập cơ bản </a></li>
-                      <li class="tax-kham-pha-khoa-hoc"><a href="/kham-pha-khoa-hoc"> <img class="lazy loaded" data-src="https://st.quantrimang.com/photos/image/icon/khoahoc/earth-size-24x24-znd.png" src="https://st.quantrimang.com/photos/image/icon/khoahoc/earth-size-24x24-znd.png" alt="❖" data-was-processed="true"> Dữ liệu </a></li>
-                      <li class="tax-bi-an-chuyen-la"><a href="/bi-an-chuyen-la"> <img class="lazy loaded" data-src="https://st.quantrimang.com/photos/image/icon/khoahoc/Martian-size-24x24-znd.png" src="https://st.quantrimang.com/photos/image/icon/khoahoc/Martian-size-24x24-znd.png" alt="❖" data-was-processed="true"> Mạng xã hội </a></li>
-                      <li class="tax-suc-khoe hassub"><a href="/suc-khoe"> <img class="lazy loaded" data-src="https://st.quantrimang.com/photos/image/icon/Health-size-24x24-znd.png" src="https://st.quantrimang.com/photos/image/icon/Health-size-24x24-znd.png" alt="❖" data-was-processed="true"> Chụp và xử lý ảnh </a></li>
-                      <li class="tax-khoa-hoc-vu-tru"><a href="/khoa-hoc-vu-tru"> <img class="lazy loaded" data-src="https://st.quantrimang.com/photos/image/icon/khoahoc/WaxingCrescent-size-24x24-znd.png" src="https://st.quantrimang.com/photos/image/icon/khoahoc/WaxingCrescent-size-24x24-znd.png" alt="❖" data-was-processed="true"> Quản lý và chỉnh sửa video </a></li>
-                      <li class="tax-kham-pha-thien-nhien hassub"><a href="/kham-pha-thien-nhien"> <img class="lazy loaded" data-src="https://st.quantrimang.com/photos/image/icon/khoahoc/NaturalFood-size-24x24-znd.png" src="https://st.quantrimang.com/photos/image/icon/khoahoc/NaturalFood-size-24x24-znd.png" alt="❖" data-was-processed="true"> Trình duyệt và Add-on </a></li>
-                      <li class="tax-moi-truong"><a href="/moi-truong"> <img class="lazy" data-src="https://st.quantrimang.com/photos/image/icon/moi-truong-icon-32-size-24x24-znd.png" src="https://st.quantrimang.com/photos/image/2020/10/05/Linux-size-24x24-znd.svg" alt="❖"> Lưu trữ - Đồng bộ </a></li>
-                      <li class="tax-y-hoc hassub"><a href="/y-hoc"> <img class="lazy" data-src="https://st.quantrimang.com/photos/image/icon/khoahoc/hospital-size-24x24-znd.png" src="https://st.quantrimang.com/photos/image/2020/10/05/Linux-size-24x24-znd.svg" alt="❖"> Bản đồ & định vị </a></li>
-                    
-                   </ul>
+                <li>
+                  <a class="parentitems" href="">
+                    <img
+                      class="lazy loaded"
+                      src="https://st.quantrimang.com/photos/image/2020/10/05/khoa-hoc-size-24x24-znd.svg"
+                      alt="❖"
+                    />
+                    iPhone
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/icon/khoahoc/TestTube-size-24x24-znd.png"
+                          alt="❖"
+                        />
+                        Thiết lập cơ bản
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/icon/khoahoc/earth-size-24x24-znd.png"
+                          alt="❖"
+                        />
+                        Dữ liệu
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/icon/khoahoc/Martian-size-24x24-znd.png"
+                          alt="❖"
+                        />
+                        Mạng xã hội
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/icon/Health-size-24x24-znd.png"
+                          alt="❖"
+                        />
+                        Chụp và xử lý ảnh
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/icon/khoahoc/WaxingCrescent-size-24x24-znd.png"
+                          alt="❖"
+                        />
+                        Quản lý và chỉnh sửa video
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/icon/khoahoc/NaturalFood-size-24x24-znd.png"
+                          alt="❖"
+                        />
+                        Trình duyệt và Add-on
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/Linux-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Lưu trữ - Đồng bộ
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/Linux-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Bản đồ & định vị
+                      </a>
+                    </li>
+                  </ul>
                 </li>
-                <li class="tax-he-thong">
-                   <a class="parentitems" href="/dien-may"> <img class="lazy loaded" data-src="https://st.quantrimang.com/photos/image/2020/10/26/dien-may-size-24x24-znd.svg" src="https://st.quantrimang.com/photos/image/2020/10/26/dien-may-size-24x24-znd.svg" alt="❖" data-was-processed="true"> Hệ thống </a>
-                   <ul>
-                      <li class="tax-tivi hassub"><a href="/tivi"> <img class="lazy loaded" data-src="https://st.quantrimang.com/photos/image/2020/10/26/tivi-size-24x24-znd.svg" src="https://st.quantrimang.com/photos/image/2020/10/26/tivi-size-24x24-znd.svg" alt="❖" data-was-processed="true"> Sửa lỗi máy tính </a></li>
-                      <li class="tax-tu-lanh"><a href="/tu-lanh"> <img class="lazy loaded" data-src="https://st.quantrimang.com/photos/image/2020/10/26/tu-lanh-size-24x24-znd.svg" src="https://st.quantrimang.com/photos/image/2020/10/26/tu-lanh-size-24x24-znd.svg" alt="❖" data-was-processed="true"> Giải pháp bảo mật </a></li>
-                      <li class="tax-dieu-hoa"><a href="/dieu-hoa"> <img class="lazy loaded" data-src="https://st.quantrimang.com/photos/image/2020/10/26/dieu-hoa-size-24x24-znd.svg" src="https://st.quantrimang.com/photos/image/2020/10/26/dieu-hoa-size-24x24-znd.svg" alt="❖" data-was-processed="true"> Diệt virus - Spyware </a></li>
-                      <li class="tax-may-giat"><a href="/may-giat"> <img class="lazy loaded" data-src="https://st.quantrimang.com/photos/image/2020/10/26/may-giat-size-24x24-znd.svg" src="https://st.quantrimang.com/photos/image/2020/10/26/may-giat-size-24x24-znd.svg" alt="❖" data-was-processed="true"> Bảo mật máy tính </a></li>
-                      <li class="tax-quat-cac-loai"><a href="/quat-cac-loai"> <img class="lazy loaded" data-src="https://st.quantrimang.com/photos/image/2020/10/26/quat-size-24x24-znd.svg" src="https://st.quantrimang.com/photos/image/2020/10/26/quat-size-24x24-znd.svg" alt="❖" data-was-processed="true"> Windows 10 </a></li>
-                      <li class="tax-may-hut-mui"><a href="/may-hut-mui"> <img class="lazy loaded" data-src="https://st.quantrimang.com/photos/image/2020/10/26/may-hut-mui-size-24x24-znd.svg" src="https://st.quantrimang.com/photos/image/2020/10/26/may-hut-mui-size-24x24-znd.svg" alt="❖" data-was-processed="true"> Thủ thuật Wifi </a></li>
-                      <li class="tax-binh-nuoc-nong-may-nuoc-nong"><a href="/binh-nuoc-nong-may-nuoc-nong"> <img class="lazy loaded" data-src="https://st.quantrimang.com/photos/image/2020/10/26/binh-nong-lanh-size-24x24-znd.svg" src="https://st.quantrimang.com/photos/image/2020/10/26/binh-nong-lanh-size-24x24-znd.svg" alt="❖" data-was-processed="true"> Tăng tốc máy tính </a></li>
-                      <li class="tax-may-cong-cu"><a href="/may-cong-cu"> <img class="lazy loaded" data-src="https://st.quantrimang.com/photos/image/2020/10/26/cong-cu-dung-cu-size-24x24-znd.svg" src="https://st.quantrimang.com/photos/image/2020/10/26/cong-cu-dung-cu-size-24x24-znd.svg" alt="❖" data-was-processed="true"> Hình nền đẹp</a></li>
-                   </ul>
+                <li>
+                  <a class="parentitems" href="">
+                    <img
+                      class="lazy loaded"
+                      src="https://st.quantrimang.com/photos/image/2020/10/26/dien-may-size-24x24-znd.svg"
+                      alt="❖"
+                    />
+                    Hệ thống
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/26/tivi-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Sửa lỗi máy tính
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/26/tu-lanh-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Giải pháp bảo mật
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/26/dieu-hoa-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Diệt virus - Spyware
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/26/may-giat-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Bảo mật máy tính
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/26/quat-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Windows 10
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/26/may-hut-mui-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Thủ thuật Wifi
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/26/binh-nong-lanh-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Tăng tốc máy tính
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/26/cong-cu-dung-cu-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Hình nền đẹp</a
+                      >
+                    </li>
+                  </ul>
                 </li>
-                <li class="tax-phan-cung">
-                   <a class="parentitems" href="/cuoc-song"> <img class="lazy loaded" data-src="https://st.quantrimang.com/photos/image/2020/10/05/cuoc-song-size-24x24-znd.svg" src="https://st.quantrimang.com/photos/image/2020/10/05/cuoc-song-size-24x24-znd.svg" alt="❖" data-was-processed="true"> Phần cứng </a>
-                   <ul>
-                      <li class="tax-ky-nang hassub"><a href="/ky-nang"> <img class="lazy loaded" data-src="https://st.quantrimang.com/photos/image/2020/10/26/ky-nang-size-24x24-znd.svg" src="https://st.quantrimang.com/photos/image/2020/10/26/ky-nang-size-24x24-znd.svg" alt="❖" data-was-processed="true"> Tư vấn mua máy </a></li>
-                      <li class="tax-am-thuc hassub"><a href="/am-thuc"> <img class="lazy loaded" data-src="https://st.quantrimang.com/photos/image/2020/10/26/mon-ngon-moi-ngay-size-24x24-znd.svg" src="https://st.quantrimang.com/photos/image/2020/10/26/mon-ngon-moi-ngay-size-24x24-znd.svg" alt="❖" data-was-processed="true"> Phần cứng PC </a></li>
-                      <li class="tax-nuoi-day-con"><a href="/nuoi-day-con"> <img class="lazy" data-src="https://st.quantrimang.com/photos/image/2020/10/26/nuoi-day-con-size-24x24-znd.svg" src="https://st.quantrimang.com/photos/image/2020/10/05/Linux-size-24x24-znd.svg" alt="❖"> Phần cứng Laptop </a></li>
-                      <li class="tax-nha-cua"><a href="/nha-cua"> <img class="lazy" data-src="https://st.quantrimang.com/photos/image/2020/10/26/cham-soc-nha-cua-size-24x24-znd.svg" src="https://st.quantrimang.com/photos/image/2020/10/05/Linux-size-24x24-znd.svg" alt="❖"> Linh kiện máy tính </a></li>
-                      <li class="tax-kinh-nghiem-du-lich"><a href="/kinh-nghiem-du-lich"> <img class="lazy" data-src="https://st.quantrimang.com/photos/image/2020/10/26/kinh-nghiem-du-lich-size-24x24-znd.svg" src="https://st.quantrimang.com/photos/image/2020/10/05/Linux-size-24x24-znd.svg" alt="❖"> Thiết bị mạng </a></li>
-                      <li class="tax-diy-handmade"><a href="/diy-handmade"> <img class="lazy loaded" data-src="https://st.quantrimang.com/photos/image/2020/10/26/hand-made-size-24x24-znd.svg" src="https://st.quantrimang.com/photos/image/2020/10/26/hand-made-size-24x24-znd.svg" alt="❖" data-was-processed="true"> Máy in </a></li>
-                      <li class="tax-tet-trung-thu"><a href="/tet-trung-thu"> <img class="lazy loaded" data-src="https://st.quantrimang.com/photos/image/2020/10/26/trung-thu-size-24x24-znd.svg" src="https://st.quantrimang.com/photos/image/2020/10/26/trung-thu-size-24x24-znd.svg" alt="❖" data-was-processed="true"> Loa, tai nghe </a></li>
-                      <li class="tax-cuoi-hoi"><a href="/cuoi-hoi"> <img class="lazy loaded" data-src="https://st.quantrimang.com/photos/image/2020/10/26/cuoi-hoi-size-24x24-znd.svg" src="https://st.quantrimang.com/photos/image/2020/10/26/cuoi-hoi-size-24x24-znd.svg" alt="❖" data-was-processed="true"> USB - Ổ Flash </a></li>
-                   </ul>
+                <li>
+                  <a class="parentitems" href="">
+                    <img
+                      class="lazy loaded"
+                      src="https://st.quantrimang.com/photos/image/2020/10/05/cuoc-song-size-24x24-znd.svg"
+                      alt="❖"
+                    />
+                    Phần cứng
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/26/ky-nang-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Tư vấn mua máy
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/26/mon-ngon-moi-ngay-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Phần cứng PC
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/Linux-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Phần cứng Laptop
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/Linux-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Linh kiện máy tính
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/Linux-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Thiết bị mạng
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/26/hand-made-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Máy in
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/26/trung-thu-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Loa, tai nghe
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/26/cuoi-hoi-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        USB - Ổ Flash
+                      </a>
+                    </li>
+                  </ul>
                 </li>
-               
-                <li class="tax-o-to-xe-may"><a class="parentitems" href="/o-to-xe-may"> <img class="lazy" data-src="https://st.quantrimang.com/photos/image/2019/03/25/O-to-xe-may-size-24x24-znd.png" src="https://st.quantrimang.com/photos/image/2020/10/05/Linux-size-24x24-znd.svg" alt="❖"> Cuộc sống</a></li>
-                <li class="tax-tong-hop"><a class="parentitems" href="/tong-hop"> <img class="lazy" data-src="https://st.quantrimang.com/photos/image/icon/News-size-24x24-znd.png" src="https://st.quantrimang.com/photos/image/2020/10/05/Linux-size-24x24-znd.svg" alt="❖"> Tổng hợp </a></li>
-                <li class="tax-tien-ich-online"><a class="parentitems" href="/tien-ich-online"> <img class="lazy" data-src="https://st.quantrimang.com/photos/image/2020/10/07/tien-ich-online-size-24x24-znd.svg" src="https://st.quantrimang.com/photos/image/2020/10/05/Linux-size-24x24-znd.svg" alt="❖"> Tiện ích </a></li>
-             </ul>
+
+                <li>
+                  <a class="parentitems" href="">
+                    <img
+                      class="lazy"
+                      src="https://st.quantrimang.com/photos/image/2020/10/05/Linux-size-24x24-znd.svg"
+                      alt="❖"
+                    />
+                    Cuộc sống</a
+                  >
+                </li>
+                <li>
+                  <a class="parentitems" href="">
+                    <img
+                      class="lazy"
+                      src="https://st.quantrimang.com/photos/image/2020/10/05/Linux-size-24x24-znd.svg"
+                      alt="❖"
+                    />
+                    Tổng hợp
+                  </a>
+                </li>
+                <li>
+                  <a class="parentitems" href="">
+                    <img
+                      class="lazy"
+                      src="https://st.quantrimang.com/photos/image/2020/10/05/Linux-size-24x24-znd.svg"
+                      alt="❖"
+                    />
+                    Tiện ích
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -1503,13 +2059,12 @@
           <div class="copyright">
             Bản quyền © 2003-2021 QuanTriMang.com. Giữ toàn quyền. Không được
             sao chép hoặc sử dụng hoặc phát hành lại bất kỳ nội dung nào thuộc
-            QuanTriMang.com khi chưa được phép.
+            VinabiTechkhi chưa được phép.
           </div>
         </div>
       </section>
       <div class="overlay"></div>
     </section>
-
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="./js/main.js"></script>

@@ -5,28 +5,295 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- font icon -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/all.min.css" />
-    <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/authent.css" />
+    <link rel="stylesheet" href="./css/profile.css" />
+    <link rel="stylesheet" href="./css/modal.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <title>Quangtrimang</title>
+    <title>VinabiTech</title>
   </head>
   <body>
     <section id="main">
       <section id="header">
         <div class="section-box">
           <div class="header-topnav">
-            <a href="/account/login" class="btn-login" data-loaded="true"
-              >Đăng nhập</a
-            >
+            <button class="btn btn-login hover-up-1 modal-sign" type="button">
+              <div class="btn-wrap">
+                <span class="btn-wrap__text">Đăng nhập</span>
+              </div>
+            </button>
+            <!-- <div class="user-setting">
+              <a href="/member" class="user-info">
+                <span class="user-info__avt"
+                  ><img
+                    src="https://st.quantrimang.com/photos/avatars/2021/63760594584260812751-size-32x32-znd.png"
+                /></span>
+                <span class="user-info__name">Minh Phúc</span>
+              </a>
+
+              <div class="drop-wrap">
+                <div class="dropOut">
+                  <div class="triangle"></div>
+                  <ul class="drop-list">
+                    <li class="drop-item">
+                      <a href="">
+                        <span><i class="fa fa-user-circle"></i></span>
+                        <span>Minh phuc</span>
+                      </a>
+                    </li>
+                    <li class="drop-item">
+                      <a href="">
+                        <span><i class="fa fa-pencil"></i></span>
+                        <span>Đăng bài viết mới</span>
+                      </a>
+                    </li>
+                    <li class="drop-item">
+                      <a href="">
+                        <span><i class="fa fa-bookmark"></i></span>
+                        <span>Bài viết đã lưu</span>
+                      </a>
+                    </li>
+                    <li class="drop-item">
+                      <a href="">
+                        <span><i class="fa fa-sign-out"></i></span>
+                        <span>Đăng xuất</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div> -->
           </div>
+
+          <!-- Modal -->
+          <div class="sign-in-modal">
+            <div class="inner--sign-in-modal">
+              <div class="content-info">
+                <div class="content-sign-in">
+                  <button type="button" class="close-x"></button>
+                  <div class="login wrap--content-sign-in">
+                    <div class="modal-header">
+                      <h4 class="login-title">Đăng nhập tài khoản</h4>
+                    </div>
+
+                    <div class="form-register loginBox">
+                      <form class="form form-signup" method="post">
+                        <input type="hidden" name="state" />
+                        <div class="group-input">
+                          <label class="register-title"
+                            >Email <span class="import-star">*</span></label
+                          >
+                          <input
+                            id="email"
+                            name="email"
+                            class="register-input"
+                            type="text"
+                            title="Nhập email của bạn"
+                            placeholder="Nhập email của bạn"
+                            required=""
+                          />
+                          <!-- <p class="mess-validation">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Eius, soluta dolor sit amet consectetur,
+                            adipisicing elit. Eius, soluta.
+                          </p> -->
+                        </div>
+                        <div class="group-input">
+                          <label class="register-title"
+                            >Mật khẩu <span class="import-star">*</span></label
+                          >
+                          <input
+                            id="password"
+                            name="password"
+                            class="register-input"
+                            type="password"
+                            title="Nhập mật khẩu của bạn"
+                            placeholder="Nhập mật khẩu của bạn"
+                            required=""
+                          />
+                          <!-- <p class="mess-validation">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Eius, soluta dolor sit amet consectetur,
+                            adipisicing elit. Eius, soluta.
+                          </p> -->
+                        </div>
+
+                        <p class="forgot-password">
+                          <a href="" class="hover-underline">Quên mật khẩu?</a>
+                        </p>
+                        <div class="form-actions">
+                          <button
+                            id="btnnext"
+                            class="btn btn-authen hover-up-1 modal-sign"
+                            type="button"
+                          >
+                            <div class="btn-wrap">
+                              <span class="btn-wrap__text">Đăng nhập</span>
+                            </div>
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="or-section">
+                      <span class="or-section__hr"></span>
+                      <span class="or-section__name">hoặc</span>
+                      <span class="or-section__hr"></span>
+                    </div>
+                    <div class="login-social">
+                      <p class="login-social__item">
+                        <a class="social-item__icon hover-up fb-auth" href="#"
+                          ><i class="fa fa-facebook-f"></i>
+                        </a>
+                      </p>
+                      <p class="login-social__item">
+                        <a class="social-item__icon hover-up gg-auth" href="#"
+                          ><i class="fa fa-google"></i
+                        ></a>
+                      </p>
+                      <p class="login-social__item">
+                        <a
+                          class="social-item__icon hover-up zalo-auth"
+                          href="#"
+                        ></a>
+                      </p>
+                    </div>
+
+                    <div class="forgot login-footer val-info">
+                      <span>Bạn chưa có tài khoản?</span>
+                      <div class="tabs tab-sign-up hover-text">Đăng ký</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-sign-up">
+                  <button type="button" class="close-x"></button>
+                  <div class="login wrap--content-sign-up">
+                    <div class="modal-header">
+                      <h4 class="login-title">Đăng ký tài khoản</h4>
+                    </div>
+
+                    <div class="form-register registerBox">
+                      <form class="form form-signup" method="post">
+                        <input type="hidden" name="state" />
+                        <div class="group-input">
+                          <label class="register-title"
+                            >Email <span class="import-star">*</span></label
+                          >
+                          <input
+                            id="email"
+                            name="email"
+                            class="register-input"
+                            type="text"
+                            title="Nhập email của bạn"
+                            placeholder="Nhập email của bạn"
+                            required=""
+                          />
+                          <!-- <p class="mess-validation">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Eius, soluta dolor sit amet consectetur,
+                            adipisicing elit. Eius, soluta.
+                          </p> -->
+                        </div>
+
+                        <div class="group-input">
+                          <label class="register-title"
+                            >Mật khẩu <span class="import-star">*</span></label
+                          >
+                          <input
+                            id="password"
+                            name="password"
+                            class="register-input"
+                            type="password"
+                            title="Nhập mật khẩu của bạn"
+                            placeholder="Nhập mật khẩu của bạn"
+                            required=""
+                          />
+                          <!-- <p class="mess-validation">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Eius, soluta dolor sit amet consectetur,
+                            adipisicing elit. Eius, soluta.
+                          </p> -->
+                        </div>
+
+                        <div class="form-actions">
+                          <button
+                            class="btn btn-authen hover-up-1"
+                            type="button"
+                          >
+                            <div class="btn-wrap">
+                              <span class="btn-wrap__text">Đăng ký</span>
+                            </div>
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="or-section">
+                      <span class="or-section__hr"></span>
+                      <span class="or-section__name">hoặc</span>
+                      <span class="or-section__hr"></span>
+                    </div>
+                    <div class="login-social">
+                      <p class="login-social__item">
+                        <a class="social-item__icon hover-up fb-auth" href="#"
+                          ><i class="fa fa-facebook-f"></i>
+                        </a>
+                      </p>
+                      <p class="login-social__item">
+                        <a class="social-item__icon hover-up gg-auth" href="#"
+                          ><i class="fa fa-google"></i>
+                        </a>
+                      </p>
+                      <p class="login-social__item">
+                        <a
+                          class="social-item__icon hover-up zalo-auth"
+                          href="#"
+                        ></a>
+                      </p>
+                    </div>
+
+                    <div class="forgot login-footer val-info">
+                      <span>Bạn đã có tài khoản?</span>
+                      <div class="tabs tab-sign-in active hover-text">
+                        Đăng nhập
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Modal -->
+
           <div class="header-left">
             <h1>
-              <a href="/" id="logo" title="Quantrimang.com">quantrimang.com</a>
+              <a href="/" id="logo" title="VinabiTech">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="216"
+                  height="48"
+                  viewBox="0 0 216 48"
+                >
+                  <image
+                    x="56"
+                    y="1"
+                    width="104"
+                    height="46"
+                    xlink:href="data:img/png;base64,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"
+                  />
+                </svg>
+              </a>
             </h1>
           </div>
           <div class="header-search">
@@ -40,23 +307,29 @@
                   placeholder="Tìm kiếm"
                   autocomplete="off"
                 />
-                <input id="btn-find" type="submit" value="Tìm" />
+                <button id="btn-find" class="btn-find__mobile" type="submit">
+                  <i class="fa fa-search fa-lg btn-find__submit"></i>
+                </button>
               </div>
             </form>
           </div>
-          <a class="toggle menu"></a> <a class="toggle search"></a>
+          <div class="toggle menu-mobile nav-toggle">
+            <a class="toggle-all">
+              <i class="fa fa-bars"></i>
+              <!-- <i class="fa fa-times"></i> -->
+            </a>
+          </div>
+          <a href="#" class="toggle search">
+            <i class="fa fa-search fa-lg"></i>
+            <i class="close-search"></i>
+          </a>
         </div>
-        <a class="toggle search"></a>
       </section>
       <section id="menu">
         <div class="section-box">
           <ul id="topnav" class="menu-navigation">
             <li class="item menu-home">
-              <a href="/"
-                ><img
-                  src="https://st.quantrimang.com/photos/image/icon/home-black-24.svg"
-                  alt="🏠"
-              /></a>
+              <a href="/"><img src="/images/home.svg" alt="🏠" /></a>
             </li>
             <li class="item">
               <a href="/cong-nghe">
@@ -141,7 +414,7 @@
               </a>
             </li>
             <li class="item">
-              <a href="/video">
+              <a href="/category.html">
                 <img
                   src="https://st.quantrimang.com/photos/image/icon/Video-size-24x24-znd.png"
                   alt="❖"
@@ -149,7 +422,12 @@
                 Video
               </a>
             </li>
-            <li class="all-menu"><a class="toggle-all">Tất cả</a></li>
+            <li class="all-menu nav-toggle">
+              <a class="toggle-all">
+                <i class="fa fa-bars"></i>
+                <i class="close-x"></i>
+              </a>
+            </li>
           </ul>
         </div>
       </section>
@@ -193,33 +471,29 @@
                 web trên Firefox
               </h1>
 
-              <div class="main-content__detail-wrap">
-                <div class="detail-wrap__info col-row">
-                  <div>
-                    <div class="detail-wrap__info-content">
-                      <a class="detail-wrap__info-avt" href="#"
-                        ><img
-                          class="detail-wrap__info-img rounded-full"
-                          src="https://st.quantrimang.com/photos/image/2021/07/01/chip-exynos-danh-bai-apple-a14-bionic200.jpg"
-                          alt=""
-                      /></a>
-                      <div class="detail-wrap__info-text">
-                        <span class="info-text__share text-gray-600"
-                          >Đăng bởi</span
-                        >
-                        <a href="author.html"
-                          ><span class="detail-wrap__info-name"
-                            >Barbara Cartland</span
-                          ></a
-                        >
-                        <p class="info-text__date text-gray-600">
-                          15 April 2020
-                        </p>
-                      </div>
+              <div class="main-content__detail-wrap row-x">
+                <div class="detail-wrap__info col-x xl-8 l-6 m-6 c-10">
+                  <div class="detail-wrap__info-content">
+                    <a class="detail-wrap__info-avt" href="#"
+                      ><img
+                        class="detail-wrap__info-img rounded-full"
+                        src="https://st.quantrimang.com/photos/image/2021/07/01/chip-exynos-danh-bai-apple-a14-bionic200.jpg"
+                        alt=""
+                    /></a>
+                    <div class="detail-wrap__info-text">
+                      <span class="info-text__share text-gray-600"
+                        >Đăng bởi</span
+                      >
+                      <a href="author.html"
+                        ><span class="detail-wrap__info-name"
+                          >Barbara Cartland</span
+                        ></a
+                      >
+                      <p class="info-text__date text-gray-600">15 April 2020</p>
                     </div>
                   </div>
                 </div>
-                <div class="detail-wrap__socials col-row">
+                <div class="detail-wrap__socials col-x xl-4 l-6 m-6 c-2">
                   <ul class="social-wrap__list">
                     <li class="social-wrap__item social-wrap__item-media">
                       <span class="social-wrap__item-media--share"
@@ -308,10 +582,10 @@
               <div class="detail-footer">
                 <div class="detail-footer__media">
                   <div class="footer__media-share">
-                    <div class="footer__media-socials col-row">
-                      <div class="footer__media-rating hidden-600">
+                    <div class="footer__media-socials">
+                      <!-- <div class="footer__media-rating hidden-600">
                         helloooooooooooooooooooooooooo
-                      </div>
+                      </div> -->
                       <ul class="social-wrap__list">
                         <li class="social-wrap__item social-wrap__item-media">
                           <span class="social-wrap__item-media--share"
@@ -374,18 +648,30 @@
                           class="box-comment"
                           name="comment"
                           id="comment"
-                          cols="70"
+                          cols="2"
                           rows="3"
                           placeholder="Thêm bình luận"
                         ></textarea>
-                        <div class="btn-submit">
-                          <button type="submit" class="btns">Gửi</button>
-                        </div>
-                        <!-- <div class="btn-submit">
-                          <button type="submit" class="btns">
-                            Đăng nhập để bình luận
+                        <div class="btn-actions">
+                          <!-- <button
+                            class="btn btn-submit hover-up-1"
+                            type="button"
+                          >
+                            <div class="btn-wrap">
+                              <span class="btn-wrap__text">Gửi</span>
+                            </div>
+                          </button> -->
+                          <button
+                            class="btn btn-submit hover-up-1"
+                            type="button"
+                          >
+                            <div class="btn-wrap">
+                              <span class="btn-wrap__text"
+                                >Đăng nhập để bình luận</span
+                              >
+                            </div>
                           </button>
-                        </div> -->
+                        </div>
                       </form>
                     </div>
                   </div>
@@ -399,10 +685,106 @@
                         /></a>
                         <div class="discuss-item__content">
                           <div class="item__content-box">
-                            <span class="content-box__name">Minh Phúc</span
-                            ><span class="content-box__mess">
-                              <p>Hay quá</p>
-                            </span>
+                            <span class="content-box__name">Minh Phúc</span>
+                            <p class="content-box__mess">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Necessitatibus ratione dolor sed recusandae
+                              esse beatae dolores earum magni maxime a?
+                            </p>
+                          </div>
+                          <div class="discuss-action">
+                            <!-- Active like class "like-active" -->
+                            <span class="discuss-action__like">Thích</span>
+                            <span class="off-like" aria-hidden="true"> · </span
+                            ><span class="like off-like" title="Số lượt thích"
+                              ><i class="icon-like"></i> 12 </span
+                            ><span aria-hidden="true"> · </span
+                            ><span class="discuss-action__date">Vừa xong</span>
+                          </div>
+                          <div class="discuss-reply">
+                            <ul class="discuss-show__list">
+                              <li class="show__list-item">
+                                <a class="avatar"
+                                  ><img
+                                    class="rounded-full show__list-item-img"
+                                    src="https://st.quantrimang.com/photos/avatars/2021/63760594584260812751.png"
+                                /></a>
+                                <div class="discuss-item__content">
+                                  <div class="item__content-box">
+                                    <span class="content-box__name"
+                                      >Minh Phúc</span
+                                    >
+                                    <p class="content-box__mess">
+                                      Lorem ipsum dolor sit amet consectetur
+                                      adipisicing elit. Necessitatibus ratione
+                                      dolor sed recusandae esse beatae dolores
+                                      earum magni maxime a?
+                                    </p>
+                                  </div>
+                                  <span class="discuss-action">
+                                    <!-- Active like class "like-active" -->
+                                    <span class="discuss-action__like"
+                                      >Thích</span
+                                    >
+                                    <span class="off-like" aria-hidden="true">
+                                      · </span
+                                    ><span
+                                      class="like off-like"
+                                      title="Số lượt thích"
+                                      ><i class="icon-like"></i> 12 </span
+                                    ><span aria-hidden="true"> · </span
+                                    ><span class="discuss-action__date"
+                                      >Vừa xong</span
+                                    ></span
+                                  >
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="show__list-item">
+                        <a class="avatar"
+                          ><img
+                            class="rounded-full show__list-item-img"
+                            src="https://st.quantrimang.com/photos/avatars/2021/63760594584260812751.png"
+                        /></a>
+                        <div class="discuss-item__content">
+                          <div class="item__content-box">
+                            <span class="content-box__name">Minh Phúc</span>
+                            <p class="content-box__mess">
+                              Lorem ipsum dolor maxime a?
+                            </p>
+                          </div>
+
+                          <span class="discuss-action">
+                            <!-- Active like class "like-active" -->
+                            <span class="discuss-action__like">Thích</span>
+                            <span class="off-like" aria-hidden="true"> · </span
+                            ><span class="like off-like" title="Số lượt thích"
+                              ><i class="icon-like"></i> 12 </span
+                            ><span aria-hidden="true"> · </span
+                            ><span class="discuss-action__date"
+                              >Vừa xong</span
+                            ></span
+                          >
+                        </div>
+                      </li>
+                      <li class="show__list-item">
+                        <a class="avatar"
+                          ><img
+                            class="rounded-full show__list-item-img"
+                            src="https://st.quantrimang.com/photos/avatars/2021/63760594584260812751.png"
+                        /></a>
+                        <div class="discuss-item__content">
+                          <div class="item__content-box">
+                            <span class="content-box__name">Minh Phúc</span>
+                            <p class="content-box__mess">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Necessitatibus ratione dolor sed recusandae
+                              esse beatae dolores earum magni maxime a?
+                            </p>
                           </div>
                           <span class="discuss-action">
                             <!-- Active like class "like-active" -->
@@ -427,72 +809,103 @@
                 <h3 class="main-content__title">Bài viết mới nhất</h3>
               </div>
               <div class="main-content__cards">
-                <ul class="main-content__cards-list">
-                  <li class="main-content__cards-item">
+                <ul class="main-content__cards-list row-x">
+                  <li class="main-content__cards-item col-x xl-4 c-12">
                     <a href="" class="main-content__cards-wrap">
                       <div class="main-content__cards-img">
-                        <img src="https://picsum.photos/500/300/?image=10" />
-                      </div>
-                      <div class="main-content__cards-title">
-                        7 tiện ích mở rộng giúp bảo vệ quyền riêng tư của bạn
-                        khi lướt web trên Firefox
+                        <img
+                          src="https://media.viezone.vn/prod/2021/7/13/small_1626188375074_5a3a0b3641.jpeg"
+                          class="rounded-t object-cover"
+                        />
                       </div>
                     </a>
+                    <div class="main-content__cards-title limit-row">
+                      <a href="">
+                        7 tiện ích mở rộng giúp bảo vệ quyền riêng tư của bạn
+                        khi lướt web trên Firefox
+                      </a>
+                    </div>
                   </li>
-                  <li class="main-content__cards-item">
+                  <li class="main-content__cards-item col-x xl-4 c-12">
                     <a href="" class="main-content__cards-wrap">
                       <div class="main-content__cards-img">
-                        <img src="https://picsum.photos/500/300/?image=10" />
-                      </div>
-                      <div class="main-content__cards-title">
-                        7 tiện ích mở rộng giúp bảo vệ quyền riêng tư của bạn
-                        khi lướt web trên Firefox
+                        <img
+                          src="https://media.viezone.vn/prod/2021/7/13/small_1626188375074_5a3a0b3641.jpeg"
+                          class="rounded-t object-cover"
+                        />
                       </div>
                     </a>
+                    <div class="main-content__cards-title limit-row">
+                      <a href="">
+                        7 tiện ích mở rộng giúp bảo vệ quyền riêng tư của bạn
+                        khi lướt web trên Firefox
+                      </a>
+                    </div>
                   </li>
-                  <li class="main-content__cards-item">
+                  <li class="main-content__cards-item col-x xl-4 c-12">
                     <a href="" class="main-content__cards-wrap">
                       <div class="main-content__cards-img">
-                        <img src="https://picsum.photos/500/300/?image=10" />
-                      </div>
-                      <div class="main-content__cards-title">
-                        7 tiện ích mở rộng giúp bảo vệ quyền riêng tư của bạn
-                        khi lướt web trên Firefox
+                        <img
+                          src="https://media.viezone.vn/prod/2021/7/13/small_1626188375074_5a3a0b3641.jpeg"
+                          class="rounded-t object-cover"
+                        />
                       </div>
                     </a>
+                    <div class="main-content__cards-title limit-row">
+                      <a href="">
+                        7 tiện ích mở rộng giúp bảo vệ quyền riêng tư của bạn
+                        khi lướt web trên Firefox
+                      </a>
+                    </div>
                   </li>
-                  <li class="main-content__cards-item">
+                  <li class="main-content__cards-item col-x xl-4 c-12">
                     <a href="" class="main-content__cards-wrap">
                       <div class="main-content__cards-img">
-                        <img src="https://picsum.photos/500/300/?image=10" />
-                      </div>
-                      <div class="main-content__cards-title">
-                        7 tiện ích mở rộng giúp bảo vệ quyền riêng tư của bạn
-                        khi lướt web trên Firefox
+                        <img
+                          src="https://media.viezone.vn/prod/2021/7/13/small_1626188375074_5a3a0b3641.jpeg"
+                          class="rounded-t object-cover"
+                        />
                       </div>
                     </a>
+                    <div class="main-content__cards-title limit-row">
+                      <a href="">
+                        7 tiện ích mở rộng giúp bảo vệ quyền riêng tư của bạn
+                        khi lướt web trên Firefox
+                      </a>
+                    </div>
                   </li>
-                  <li class="main-content__cards-item">
+                  <li class="main-content__cards-item col-x xl-4 c-12">
                     <a href="" class="main-content__cards-wrap">
                       <div class="main-content__cards-img">
-                        <img src="https://picsum.photos/500/300/?image=10" />
-                      </div>
-                      <div class="main-content__cards-title">
-                        7 tiện ích mở rộng giúp bảo vệ quyền riêng tư của bạn
-                        khi lướt web trên Firefox
+                        <img
+                          src="https://media.viezone.vn/prod/2021/7/13/small_1626188375074_5a3a0b3641.jpeg"
+                          class="rounded-t object-cover"
+                        />
                       </div>
                     </a>
+                    <div class="main-content__cards-title limit-row">
+                      <a href="">
+                        7 tiện ích mở rộng giúp bảo vệ quyền riêng tư của bạn
+                        khi lướt web trên Firefox
+                      </a>
+                    </div>
                   </li>
-                  <li class="main-content__cards-item">
+                  <li class="main-content__cards-item col-x xl-4 c-12">
                     <a href="" class="main-content__cards-wrap">
                       <div class="main-content__cards-img">
-                        <img src="https://picsum.photos/500/300/?image=10" />
-                      </div>
-                      <div class="main-content__cards-title">
-                        7 tiện ích mở rộng giúp bảo vệ quyền riêng tư của bạn
-                        khi lướt web trên Firefox
+                        <img
+                          src="https://media.viezone.vn/prod/2021/7/13/small_1626188375074_5a3a0b3641.jpeg"
+                          class="rounded-t object-cover"
+                        />
                       </div>
                     </a>
+                    <div class="main-content__cards-title limit-row">
+                      <a href="">
+                        7 tiện ích mở rộng giúp bảo vệ quyền riêng tư của bạn
+                        khi lướt web trên Firefoxở rộng giúp bảo vệ quyền riêng
+                        tư của bạn khi lướt web trên Firefox
+                      </a>
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -521,11 +934,18 @@
                         main-content__article-img
                       "
                     >
-                      <a class="color-white" href="single.html.htm">
-                        <img
-                          src="https://st.quantrimang.com/photos/image/2020/06/30/TikTok-200-size-80x80-znd.jpg"
-                          alt=""
-                        />
+                      <a
+                        href="/chu-nhan-hit-hongkong1-dong-cam-voi-da-lab-ke-lai-chuyen-khuong-vu-tung-edit-mv-tre-gOIPiGQayrdF.html"
+                        class="main-content__article-item__img"
+                        ><div class="main-content__article-item__box">
+                          <img
+                            alt='Chủ nhân hit "Hongkong1" đồng cảm với Da LAB, kể lại chuyện Khương Vũ từng edit MV trễ'
+                            title='Chủ nhân hit "Hongkong1" đồng cảm với Da LAB, kể lại chuyện Khương Vũ từng edit MV trễ'
+                            src="https://media.viezone.vn/prod/2021/7/13/small_1626204808779_ad13d0c7d7.jpeg"
+                            decoding="async"
+                            class="rounded object-cover"
+                          />
+                        </div>
                       </a>
                     </div>
                     <div class="main-content__article-text">
@@ -560,11 +980,18 @@
                         main-content__article-img
                       "
                     >
-                      <a class="color-white" href="single.html.htm">
-                        <img
-                          src="https://st.quantrimang.com/photos/image/2020/06/30/TikTok-200-size-80x80-znd.jpg"
-                          alt=""
-                        />
+                      <a
+                        href="/chu-nhan-hit-hongkong1-dong-cam-voi-da-lab-ke-lai-chuyen-khuong-vu-tung-edit-mv-tre-gOIPiGQayrdF.html"
+                        class="main-content__article-item__img"
+                        ><div class="main-content__article-item__box">
+                          <img
+                            alt='Chủ nhân hit "Hongkong1" đồng cảm với Da LAB, kể lại chuyện Khương Vũ từng edit MV trễ'
+                            title='Chủ nhân hit "Hongkong1" đồng cảm với Da LAB, kể lại chuyện Khương Vũ từng edit MV trễ'
+                            src="https://media.viezone.vn/prod/2021/7/13/small_1626204808779_ad13d0c7d7.jpeg"
+                            decoding="async"
+                            class="rounded object-cover"
+                          />
+                        </div>
                       </a>
                     </div>
                     <div class="main-content__article-text">
@@ -599,11 +1026,18 @@
                         main-content__article-img
                       "
                     >
-                      <a class="color-white" href="single.html.htm">
-                        <img
-                          src="https://st.quantrimang.com/photos/image/2020/06/30/TikTok-200-size-80x80-znd.jpg"
-                          alt=""
-                        />
+                      <a
+                        href="/chu-nhan-hit-hongkong1-dong-cam-voi-da-lab-ke-lai-chuyen-khuong-vu-tung-edit-mv-tre-gOIPiGQayrdF.html"
+                        class="main-content__article-item__img"
+                        ><div class="main-content__article-item__box">
+                          <img
+                            alt='Chủ nhân hit "Hongkong1" đồng cảm với Da LAB, kể lại chuyện Khương Vũ từng edit MV trễ'
+                            title='Chủ nhân hit "Hongkong1" đồng cảm với Da LAB, kể lại chuyện Khương Vũ từng edit MV trễ'
+                            src="https://media.viezone.vn/prod/2021/7/13/small_1626204808779_ad13d0c7d7.jpeg"
+                            decoding="async"
+                            class="rounded object-cover"
+                          />
+                        </div>
                       </a>
                     </div>
                     <div class="main-content__article-text">
@@ -638,11 +1072,18 @@
                         main-content__article-img
                       "
                     >
-                      <a class="color-white" href="single.html.htm">
-                        <img
-                          src="https://st.quantrimang.com/photos/image/2020/06/30/TikTok-200-size-80x80-znd.jpg"
-                          alt=""
-                        />
+                      <a
+                        href="/chu-nhan-hit-hongkong1-dong-cam-voi-da-lab-ke-lai-chuyen-khuong-vu-tung-edit-mv-tre-gOIPiGQayrdF.html"
+                        class="main-content__article-item__img"
+                        ><div class="main-content__article-item__box">
+                          <img
+                            alt='Chủ nhân hit "Hongkong1" đồng cảm với Da LAB, kể lại chuyện Khương Vũ từng edit MV trễ'
+                            title='Chủ nhân hit "Hongkong1" đồng cảm với Da LAB, kể lại chuyện Khương Vũ từng edit MV trễ'
+                            src="https://media.viezone.vn/prod/2021/7/13/small_1626204808779_ad13d0c7d7.jpeg"
+                            decoding="async"
+                            class="rounded object-cover"
+                          />
+                        </div>
                       </a>
                     </div>
                     <div class="main-content__article-text">
@@ -667,199 +1108,595 @@
         </div>
       </section>
       <section id="footer">
+        <!-- <canvas id="chain" width="800" height="800"> </canvas> -->
         <div class="section-box footer-top">
           <div class="footer-wrap">
-            <ul class="footer-navigation">
-              <li class="tax-lang-cong-nghe">
-                <a class="category-x" href="/lang-cong-nghe">
-                  Làng Công nghệ
-                </a>
-                <ul>
-                  <li class="tax-tan-cong-mang">
-                    <a href="/tan-cong-mang"> Tấn công mạng </a>
-                  </li>
-                  <li class="tax-chuyen-cong-nghe">
-                    <a href="/chuyen-cong-nghe"> Chuyện công nghệ </a>
-                  </li>
-                  <li class="tax-cong-nghe-moi">
-                    <a href="/cong-nghe-moi"> Công nghệ mới </a>
-                  </li>
-                  <li class="tax-ai">
-                    <a href="/ai"> Trí tuệ nhân tạo (AI) </a>
-                  </li>
-                  <li class="tax-anh-tai-cong-nghe hassub">
-                    <a href="/anh-tai-cong-nghe"> Anh tài công nghệ </a>
-                  </li>
-                  <li class="tax-binh-luan-cong-nghe">
-                    <a href="/binh-luan-cong-nghe"> Bình luận công nghệ </a>
-                  </li>
-                  <li class="tax-trac-nghiem-cong-nghe-thong-tin">
-                    <a href="/trac-nghiem-cong-nghe-thong-tin">
-                      Quiz công nghệ
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="tax-cong-nghe">
-                <a class="category-x" href="/cong-nghe"> Công nghệ </a>
-                <ul>
-                  <li class="tax-ung-dung hassub">
-                    <a href="/ung-dung"> Ứng dụng </a>
-                  </li>
-                  <li class="tax-he-thong hassub">
-                    <a href="/he-thong"> Hệ thống </a>
-                  </li>
-                  <li class="tax-game-tro-choi hassub">
-                    <a href="/game-tro-choi"> Game - Trò chơi </a>
-                  </li>
-                  <li class="tax-ios hassub">
-                    <a href="/ios"> iPhone </a>
-                  </li>
-                  <li class="tax-android hassub">
-                    <a href="/android"> Android </a>
-                  </li>
-                  <li class="tax-linux-os">
-                    <a href="/linux-os"> Linux </a>
-                  </li>
-                  <li class="tax-dong-ho-thong-minh">
-                    <a href="/dong-ho-thong-minh"> Đồng hồ thông minh </a>
-                  </li>
-                  <li class="tax-may-anh-may-quay">
-                    <a href="/may-anh-may-quay"> Chụp ảnh - Quay phim </a>
-                  </li>
-                  <li class="tax-mac-os-x hassub">
-                    <a href="/mac-os-x"> macOS </a>
-                  </li>
-                  <li class="tax-phan-cung hassub">
-                    <a href="/phan-cung"> Phần cứng </a>
-                  </li>
-                  <li class="tax-thu-thuat-seo">
-                    <a href="/thu-thuat-seo"> Thủ thuật SEO </a>
-                  </li>
-                  <li class="tax-kien-thuc-co-ban">
-                    <a href="/kien-thuc-co-ban"> Kiến thức cơ bản </a>
-                  </li>
-                  <li class="tax-raspberry-pi">
-                    <a href="/raspberry-pi"> Raspberry Pi </a>
-                  </li>
-                  <li class="tax-dich-vu-ngan-hang">
-                    <a href="/dich-vu-ngan-hang"> Dịch vụ ngân hàng </a>
-                  </li>
-                  <li class="tax-lap-trinh hassub">
-                    <a href="/lap-trinh"> Lập trình </a>
-                  </li>
-                  <li class="tax-dich-vu-cong-truc-tuyen">
-                    <a href="/dich-vu-cong-truc-tuyen">
-                      Dịch vụ công trực tuyến
-                    </a>
-                  </li>
-                  <li class="tax-dich-vu-nha-mang">
-                    <a href="/dich-vu-nha-mang"> Dịch vụ nhà mạng </a>
-                  </li>
-                  <li class="tax-nha-thong-minh-smarthome">
-                    <a href="/nha-thong-minh-smarthome"> Nhà thông minh </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="tax-khoa-hoc">
-                <a class="category-x" href="/khoa-hoc"> Khoa học </a>
-                <ul>
-                  <li class="tax-thi-nghiem-khoa-hoc">
-                    <a href="/thi-nghiem-khoa-hoc"> Khoa học vui </a>
-                  </li>
-                  <li class="tax-kham-pha-khoa-hoc">
-                    <a href="/kham-pha-khoa-hoc"> Khám phá khoa học </a>
-                  </li>
-                  <li class="tax-bi-an-chuyen-la">
-                    <a href="/bi-an-chuyen-la"> Bí ẩn - Chuyện lạ </a>
-                  </li>
-                  <li class="tax-suc-khoe hassub">
-                    <a href="/suc-khoe"> Chăm sóc Sức khỏe </a>
-                  </li>
-                  <li class="tax-khoa-hoc-vu-tru">
-                    <a href="/khoa-hoc-vu-tru"> Khoa học Vũ trụ </a>
-                  </li>
-                  <li class="tax-kham-pha-thien-nhien hassub">
-                    <a href="/kham-pha-thien-nhien"> Khám phá thiên nhiên </a>
-                  </li>
-                  <li class="tax-moi-truong">
-                    <a href="/moi-truong"> Môi trường </a>
-                  </li>
-                  <li class="tax-y-hoc hassub">
-                    <a href="/y-hoc"> Y học </a>
-                  </li>
-                  <li class="tax-khao-co-hoc">
-                    <a href="/khao-co-hoc"> Khảo cổ học </a>
-                  </li>
-                  <li class="tax-phat-minh-khoa-hoc hassub">
-                    <a href="/phat-minh-khoa-hoc"> Phát minh khoa học </a>
-                  </li>
-                  <li class="tax-cau-chuyen-khoa-hoc">
-                    <a href="/cau-chuyen-khoa-hoc"> Câu chuyện Khoa học </a>
-                  </li>
-                  <li class="tax-khoa-hoc-cong-nghe">
-                    <a href="/khoa-hoc-cong-nghe"> Khoa học công nghệ </a>
-                  </li>
-                  <li class="tax-anh-dep-khoa-hoc">
-                    <a href="/anh-dep-khoa-hoc"> Ảnh đẹp Khoa học </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="tax-dien-may">
-                <a class="category-x" href="/dien-may"> Điện máy </a>
-                <ul>
-                  <li class="tax-tivi hassub">
-                    <a href="/tivi"> Tivi </a>
-                  </li>
-                  <li class="tax-tu-lanh">
-                    <a href="/tu-lanh"> Tủ lạnh </a>
-                  </li>
-                  <li class="tax-dieu-hoa">
-                    <a href="/dieu-hoa"> Điều hòa </a>
-                  </li>
-                  <li class="tax-may-giat">
-                    <a href="/may-giat"> Máy giặt </a>
-                  </li>
-                  <li class="tax-quat-cac-loai">
-                    <a href="/quat-cac-loai"> Quạt các loại </a>
-                  </li>
-                  <li class="tax-may-hut-mui">
-                    <a href="/may-hut-mui"> Máy hút mùi </a>
-                  </li>
-                  <li class="tax-binh-nuoc-nong-may-nuoc-nong">
-                    <a href="/binh-nuoc-nong-may-nuoc-nong">
-                      Bình nước nóng, Máy nước nóng
-                    </a>
-                  </li>
-                  <li class="tax-may-cong-cu">
-                    <a href="/may-cong-cu"> Máy công cụ </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="tax-cuoc-song">
-                <a class="category-x" href="/cuoc-song"> Cuộc sống </a>
-                <ul>
-                  <li class="tax-ky-nang hassub">
-                    <a href="/ky-nang"> Kỹ năng </a>
-                  </li>
-                  <li class="tax-am-thuc hassub">
-                    <a href="/am-thuc"> Món ngon mỗi ngày </a>
-                  </li>
-                  <li class="tax-lam-dep">
-                    <a href="/lam-dep"> Làm đẹp </a>
-                  </li>
-                  <li class="tax-nuoi-day-con">
-                    <a href="/nuoi-day-con"> Nuôi dạy con </a>
-                  </li>
-                  <li class="tax-nha-cua">
-                    <a href="/nha-cua"> Chăm sóc Nhà cửa </a>
-                  </li>
-                  <li class="tax-kinh-nghiem-du-lich">
-                    <a href="/kinh-nghiem-du-lich"> Kinh nghiệm Du lịch </a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
+            <div class="footer-navbox footer-sidenav">
+              <button type="button" class="close-menu">&times;</button>
+              <a class="footer-nav__logo" href="/">Trang chủ</a>
+              <ul class="footer-navigation">
+                <li class="tax-cong-nghe">
+                  <a class="parentitems" href="/cong-nghe">
+                    <img
+                      class="lazy loaded"
+                      src="https://st.quantrimang.com/photos/image/2020/10/05/lang-cong-nghe-size-24x24-znd.svg"
+                      alt="❖"
+                    />Công nghệ
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/tan-cong-mang-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Ứng dụng
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/chuyen-cong-nghe-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Hệ thống
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/cong-nghe-moi-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Game - Trò chơi
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/tri-tue-nhan-tao-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        iPhone
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/anh-tai-cong-nghe-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Android
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/binh-luan-cong-nghe-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Linux
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/quiz-cong-nghe-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Chụp ảnh - Quay phim
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/quiz-cong-nghe-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        macOs
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/quiz-cong-nghe-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Phần cứng
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/quiz-cong-nghe-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Kiến thức cơ bản
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="parentitems" href="">
+                    <img
+                      class="lazy loaded"
+                      src="https://st.quantrimang.com/photos/image/2020/10/05/cong-nghe-size-24x24-znd.svg"
+                      alt="❖"
+                    />
+                    Ứng dụng
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/ung-dung-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Chat, Nhắn tin, Gọi điện
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/he-thong-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Mạng xã hội
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/game-tro-choi-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Phần mềm nhạc
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/iPhone-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Tin học văn phòng
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/Android-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Lưu trữ chia sẻ
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/Linux-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Trình duyệt web
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/Linux-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Chỉnh sửa ảnh
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/Linux-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Thiết kế - Đồ họa
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/Linux-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Website - Blog
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/Linux-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Bản đồ & định vị
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/thu-thuat-seo-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Nhạc, Phim, Truyện online
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/kien-thuc-co-ban-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Kiến thức cơ bản
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/raspberry-pi-icon-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Chỉnh sửa video
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/dich-vu-ngan-hang-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Thanh toán online
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/lap-trinh-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Phần mềm học tập
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="parentitems" href="">
+                    <img
+                      class="lazy loaded"
+                      src="https://st.quantrimang.com/photos/image/2020/10/05/khoa-hoc-size-24x24-znd.svg"
+                      alt="❖"
+                    />
+                    iPhone
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/icon/khoahoc/TestTube-size-24x24-znd.png"
+                          alt="❖"
+                        />
+                        Thiết lập cơ bản
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/icon/khoahoc/earth-size-24x24-znd.png"
+                          alt="❖"
+                        />
+                        Dữ liệu
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/icon/khoahoc/Martian-size-24x24-znd.png"
+                          alt="❖"
+                        />
+                        Mạng xã hội
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/icon/Health-size-24x24-znd.png"
+                          alt="❖"
+                        />
+                        Chụp và xử lý ảnh
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/icon/khoahoc/WaxingCrescent-size-24x24-znd.png"
+                          alt="❖"
+                        />
+                        Quản lý và chỉnh sửa video
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/icon/khoahoc/NaturalFood-size-24x24-znd.png"
+                          alt="❖"
+                        />
+                        Trình duyệt và Add-on
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/Linux-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Lưu trữ - Đồng bộ
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/Linux-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Bản đồ & định vị
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="parentitems" href="">
+                    <img
+                      class="lazy loaded"
+                      src="https://st.quantrimang.com/photos/image/2020/10/26/dien-may-size-24x24-znd.svg"
+                      alt="❖"
+                    />
+                    Hệ thống
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/26/tivi-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Sửa lỗi máy tính
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/26/tu-lanh-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Giải pháp bảo mật
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/26/dieu-hoa-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Diệt virus - Spyware
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/26/may-giat-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Bảo mật máy tính
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/26/quat-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Windows 10
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/26/may-hut-mui-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Thủ thuật Wifi
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/26/binh-nong-lanh-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Tăng tốc máy tính
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/26/cong-cu-dung-cu-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Hình nền đẹp</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="parentitems" href="">
+                    <img
+                      class="lazy loaded"
+                      src="https://st.quantrimang.com/photos/image/2020/10/05/cuoc-song-size-24x24-znd.svg"
+                      alt="❖"
+                    />
+                    Phần cứng
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/26/ky-nang-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Tư vấn mua máy
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/26/mon-ngon-moi-ngay-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Phần cứng PC
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/Linux-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Phần cứng Laptop
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/Linux-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Linh kiện máy tính
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy"
+                          src="https://st.quantrimang.com/photos/image/2020/10/05/Linux-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Thiết bị mạng
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/26/hand-made-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Máy in
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/26/trung-thu-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        Loa, tai nghe
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="https://st.quantrimang.com/photos/image/2020/10/26/cuoi-hoi-size-24x24-znd.svg"
+                          alt="❖"
+                        />
+                        USB - Ổ Flash
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a class="parentitems" href="">
+                    <img
+                      class="lazy"
+                      src="https://st.quantrimang.com/photos/image/2020/10/05/Linux-size-24x24-znd.svg"
+                      alt="❖"
+                    />
+                    Cuộc sống</a
+                  >
+                </li>
+                <li>
+                  <a class="parentitems" href="">
+                    <img
+                      class="lazy"
+                      src="https://st.quantrimang.com/photos/image/2020/10/05/Linux-size-24x24-znd.svg"
+                      alt="❖"
+                    />
+                    Tổng hợp
+                  </a>
+                </li>
+                <li>
+                  <a class="parentitems" href="">
+                    <img
+                      class="lazy"
+                      src="https://st.quantrimang.com/photos/image/2020/10/05/Linux-size-24x24-znd.svg"
+                      alt="❖"
+                    />
+                    Tiện ích
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="footer-bottom">
@@ -906,11 +1743,13 @@
           <div class="copyright">
             Bản quyền © 2003-2021 QuanTriMang.com. Giữ toàn quyền. Không được
             sao chép hoặc sử dụng hoặc phát hành lại bất kỳ nội dung nào thuộc
-            QuanTriMang.com khi chưa được phép.
+            VinabiTechkhi chưa được phép.
           </div>
         </div>
       </section>
+      <div class="overlay"></div>
     </section>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="./js/main.js"></script>
 </html>

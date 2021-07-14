@@ -6,14 +6,16 @@
   max-width: 470px;
   z-index: 682;
   max-width: 100%;
-  width: 480px;
+  width: 100%;
   /* box-shadow: 0 25px 75px rgb(16 30 54 / 25%); */
-  padding: 24px 30px 24px;
+  margin: 24px 0;
+  padding: 0 30px;
+  padding-bottom: 30px;
   overflow: hidden;
-  position: absolute;
+  /* position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
 }
 
 .login-social {
@@ -68,9 +70,7 @@
   font-family: arial;
   max-width: 100%;
 }
-.btn-login {
-  font-weight: 500;
-}
+
 .btn.meta {
   color: #fff;
   background-color: #da251c;
@@ -82,7 +82,7 @@
 .login-actions {
   color: #525252;
   text-align: center;
-  border-top: 1px solid #eee;
+  border-top: 1px solid #e5e7eb;
   padding: 16px 0;
 }
 .login-actions .login-actions__login {
@@ -159,7 +159,7 @@
   padding: 0 16px;
 }
 .or-section__hr {
-  border-top: 1px solid #eee;
+  border-top: 1px solid #e5e7eb;
   flex: 1;
 }
 .forgot-password a {
