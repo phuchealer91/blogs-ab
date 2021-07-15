@@ -29,15 +29,27 @@
 #header .header-left {
   border-bottom: 1px solid #e5e7eb;
 }
-#logo {
+.logo-wrap {
   height: 60px;
+  line-height: 60px;
+}
+.logo-svg {
+  position: relative;
+  left: -42px;
+  vertical-align: middle;
+  width: 216px;
+}
+.logo {
+  height: 100%;
   width: 104px;
-  margin-left: 16px;
   display: block;
-  background: url('/images/logo.svg') no-repeat center center;
-  overflow: hidden;
+  /* background: url('/images/logo.png') no-repeat center center; */
+  /* overflow: hidden; */
   color: initial;
-  text-indent: -300px;
+  /* text-indent: -300px; */
+}
+.logo-svg__mobile {
+  display: none;
 }
 #header .header-search {
   position: absolute;
@@ -445,9 +457,14 @@
   line-height: 30px;
   border: 1px solid #e5e7eb;
   border-width: 1px 0;
-  text-indent: 28px;
+  /* text-indent: 28px; */
   font-size: 0.875rem;
-  background: url('/images/favicon.svg') no-repeat 0 center;
+  /* background: url('/images/favicon.svg') no-repeat 0 center; */
+}
+.detail-breadcrumbs__favicon {
+  width: 48px;
+  height: 24px;
+  vertical-align: middle;
 }
 .info-detail span::after {
   content: '';
@@ -1179,7 +1196,7 @@
   width: 240px;
   margin: 32px auto 0;
   display: block;
-  background: url('/images/logo.svg') no-repeat center;
+  background: url('/images/logo.png') no-repeat center;
   overflow: hidden;
   background-size: auto 48px;
   text-indent: -300px;
@@ -1222,7 +1239,7 @@
 }
 
 .service .service-item:nth-child(2) .service-item__header {
-  background-color: #ef4444;
+  background-color: var(--red-hover);
 }
 .service .service-item__header-content {
   padding: 20px;
@@ -1248,18 +1265,18 @@
 .service-item__body-d {
   font-size: 2rem;
   font-weight: 700;
-  color: #2563eb;
+  color: var(--primary-color);
 }
 .service-item__body-price {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
-  color: #2563eb;
+  color: var(--primary-color);
 }
 .service-item__body-unit {
   font-size: 1.8rem;
   font-weight: 500;
   color: #333;
-  line-height: 1;
+  line-height: 1.2;
 }
 .service-item__body-list {
   margin-top: 16px;
@@ -1273,11 +1290,16 @@
   border-bottom: 0px solid #e5e7eb;
 }
 .btn-service {
-  margin: 12px 0 4px;
+  height: 40px;
+  width: 100%;
+}
+.service .service-item:nth-child(2) .btn-service {
+  background-color: var(--red-hover);
+  height: 40px;
   width: 100%;
 }
 .service-body-free {
-  margin-top: 2px;
+  margin-top: 8px;
 }
 .service-pattern {
   padding: 48px 0;
@@ -1311,6 +1333,7 @@
   margin-top: 8px;
 }
 .btn-ol__about {
+  font-weight: 600;
   margin-top: 16px;
 }
 /* service ques */
@@ -1395,7 +1418,7 @@
   /* overflow: hidden; */
 }
 .footer-sup {
-  border-top: solid 1px #ccc;
+  border-top: solid 2px var(--primary-color);
   line-height: 40px;
   padding: 0 16px;
   background: #f5f5f5;
@@ -1443,7 +1466,7 @@
 .header-sup__logo {
   width: 20%;
   display: block;
-  background: url('/images/logo.svg') no-repeat;
+  background: url('/images/logo.png') no-repeat;
   background-size: contain;
   height: 40px;
 }
@@ -1563,9 +1586,10 @@
   max-width: 1080px;
 }
 .service-contact {
+  border-radius: 4px;
   max-width: 1080px;
   margin: 0 auto;
-  background-color: var(--blue-500);
+  background-color: var(--primary-color);
 }
 .service-contact__wrap {
   padding: 3rem 16px;
@@ -1587,7 +1611,8 @@
   text-align: center;
 }
 .btn-ol.btn-ol__contact {
-  padding: 1rem 4rem;
+  height: 48px;
+  padding: 0 48px;
   font-size: 1.2rem;
 }
 

@@ -129,7 +129,7 @@
 .profile {
   background: #fff;
   border-radius: 6px;
-  padding: 16px 27px;
+  padding: 16px;
   position: relative;
   max-width: 100%;
   z-index: 10;
@@ -142,6 +142,30 @@
   /* top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); */
+}
+.change-password {
+  background: #fff;
+  border-radius: 6px;
+  padding: 16px;
+  position: relative;
+  max-width: 100%;
+  z-index: 10;
+  width: 50%;
+  margin: 0 auto;
+  overflow: hidden;
+  height: 100%;
+  /* position: absolute; */
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+.confirm-info {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 16px 0;
+}
+.confirm-info__email {
+  font-weight: 600;
 }
 .posts-heading {
   display: flex;
@@ -218,10 +242,10 @@
   width: 32px;
   border-radius: 50%;
   font-size: 0.875rem;
-  background-color: #2563eb;
+  background-color: var(--primary-color);
   margin-left: auto;
 }
 .posts-main__delete {
   font-size: 0.875rem;
-  background-color: #ef4444;
+  background-color: var(--red-hover);
 }
