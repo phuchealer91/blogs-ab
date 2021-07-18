@@ -31,15 +31,15 @@
   margin: 24px 0;
 }
 
-.btn.facebook {
+.btns.facebook {
   color: #fff;
   background-color: #3b5998;
 }
-.btn.zalo {
+.btns.zalo {
   color: #fff;
   background-color: #03a5fa;
 }
-.btn.google {
+.btns.google {
   color: #fff;
   background-color: #4285f4;
 }
@@ -71,7 +71,7 @@
   max-width: 100%;
 }
 
-.btn.meta {
+.btns.meta {
   color: #fff;
   background-color: #da251c;
 }

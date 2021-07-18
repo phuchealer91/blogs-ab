@@ -113,11 +113,11 @@ button:focus {
   text-align: center;
   margin-top: 45px;
 }
-@media (min-width: 320px) and (max-width: 600px) {
+/* @media (min-width: 320px) and (max-width: 600px) {
   .val-success-overlay .val-success {
     width: 80%;
   }
-}
+} */
 /* MODAL */
 .sign-in-modal {
   cursor: url('https://png.icons8.com/ios/30/000000/multiply.png'), auto;
@@ -245,7 +245,7 @@ button:focus {
 .form-actions {
   text-align: center;
 }
-.form-actions .btn-login {
+.form-actions .btns-login {
   width: 300px;
 }
 /* .sign-in-modal
@@ -567,10 +567,4 @@ button:focus {
   .close-login
   span:first-child {
   margin-left: 2px;
-}
-@media (min-width: 320px) and (max-width: 600px) {
-  .sign-in-modal .inner--sign-in-modal {
-    min-width: auto;
-    width: 90%;
-  }
 }

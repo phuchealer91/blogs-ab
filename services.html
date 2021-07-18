@@ -1,0 +1,1651 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font icon -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/authent.css" />
+    <link rel="stylesheet" href="./css/profile.css" />
+    <link rel="stylesheet" href="./css/modal.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>VinabiTech</title>
+  </head>
+  <body>
+    <section id="main">
+      <section id="header">
+        <div class="section-box">
+          <div class="header-topnav">
+            <!-- <button class="btns btns-login hover-up-1 modal-sign" type="button">
+              <div class="btns-wrap">
+                <span class="btns-wrap__text">Đăng nhập</span>
+              </div>
+            </button>
+            <div class="user-setting__login">
+              <div class="user-info">
+                <span class="user-info__avt"
+                  ><i class="fa fa-user-circle"></i
+                ></span>
+              </div>
+
+              <div class="drop-wrap">
+                <div class="dropOut">
+                  <div class="triangle"></div>
+                  <ul class="drop-list">
+                    <li class="drop-item modal-signup">
+                      <span>Đăng ký</span>
+                    </li>
+                    <li class="drop-item modal-sign">
+                      <span>Đăng nhập</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div> -->
+
+            <div class="user-setting user-setting__mobile">
+              <div class="user-info">
+                <span class="user-info__avt"
+                  ><img
+                    class="rounded-full object-cover user-info__avt--mobile"
+                    src="https://st.quantrimang.com/photos/avatars/2021/63760594584260812751-size-32x32-znd.png"
+                /></span>
+                <span class="user-info__name">Minh Phúc</span>
+              </div>
+
+              <div class="drop-wrap">
+                <div class="dropOut">
+                  <div class="triangle"></div>
+                  <ul class="drop-list">
+                    <li class="drop-item">
+                      <a href="">
+                        <span><i class="fa fa-user-circle"></i></span>
+                        <span>Minh phuc</span>
+                      </a>
+                    </li>
+                    <li class="drop-item">
+                      <a href="">
+                        <span><i class="fa fa-pencil"></i></span>
+                        <span>Đăng bài viết mới</span>
+                      </a>
+                    </li>
+                    <li class="drop-item">
+                      <a href="">
+                        <span><i class="fa fa-bookmark"></i></span>
+                        <span>Bài viết đã lưu</span>
+                      </a>
+                    </li>
+                    <li class="drop-item">
+                      <a href="">
+                        <span><i class="fa fa-sign-out"></i></span>
+                        <span>Đăng xuất</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="toggle search">
+              <i class="fa fa-search"></i>
+            </a>
+          </div>
+
+          <!-- Modal -->
+          <div class="sign-in-modal">
+            <div class="inner--sign-in-modal">
+              <div class="content-info">
+                <div class="content-sign-in">
+                  <button type="button" class="close-x"></button>
+                  <div class="login wrap--content-sign-in">
+                    <div class="modal-header">
+                      <h4 class="login-title">Đăng nhập tài khoản</h4>
+                    </div>
+
+                    <div class="form-register loginBox">
+                      <form class="form form-signup" method="post">
+                        <input type="hidden" name="state" />
+                        <div class="group-input">
+                          <label class="register-title"
+                            >Email <span class="import-star">*</span></label
+                          >
+                          <input
+                            id="email"
+                            name="email"
+                            class="register-input"
+                            type="text"
+                            title="Nhập email của bạn"
+                            placeholder="Nhập email của bạn"
+                            required=""
+                          />
+                          <!-- <p class="mess-validation">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Eius, soluta dolor sit amet consectetur,
+                            adipisicing elit. Eius, soluta.
+                          </p> -->
+                        </div>
+                        <div class="group-input">
+                          <label class="register-title"
+                            >Mật khẩu <span class="import-star">*</span></label
+                          >
+                          <input
+                            id="password"
+                            name="password"
+                            class="register-input"
+                            type="password"
+                            title="Nhập mật khẩu của bạn"
+                            placeholder="Nhập mật khẩu của bạn"
+                            required=""
+                          />
+                          <!-- <p class="mess-validation">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Eius, soluta dolor sit amet consectetur,
+                            adipisicing elit. Eius, soluta.
+                          </p> -->
+                        </div>
+
+                        <p class="forgot-password">
+                          <a href="" class="hover-underline">Quên mật khẩu?</a>
+                        </p>
+                        <div class="form-actions">
+                          <button
+                            id="btnnext"
+                            class="btns btns-authen hover-up-1 modal-sign"
+                            type="button"
+                          >
+                            <div class="btns-wrap">
+                              <span class="btns-wrap__text">Đăng nhập</span>
+                            </div>
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="or-section">
+                      <span class="or-section__hr"></span>
+                      <span class="or-section__name">hoặc</span>
+                      <span class="or-section__hr"></span>
+                    </div>
+                    <div class="login-social">
+                      <p class="login-social__item">
+                        <a class="social-item__icon hover-up fb-auth" href="#"
+                          ><i class="fa fa-facebook-f"></i>
+                        </a>
+                      </p>
+                      <p class="login-social__item">
+                        <a class="social-item__icon hover-up gg-auth" href="#"
+                          ><i class="fa fa-google"></i
+                        ></a>
+                      </p>
+                      <p class="login-social__item">
+                        <a
+                          class="social-item__icon hover-up zalo-auth"
+                          href="#"
+                        ></a>
+                      </p>
+                    </div>
+
+                    <div class="forgot login-footer val-info">
+                      <span>Bạn chưa có tài khoản?</span>
+                      <div class="tabs tab-sign-up hover-text">Đăng ký</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-sign-up">
+                  <button type="button" class="close-x"></button>
+                  <div class="login wrap--content-sign-up">
+                    <div class="modal-header">
+                      <h4 class="login-title">Đăng ký tài khoản</h4>
+                    </div>
+
+                    <div class="form-register registerBox">
+                      <form class="form form-signup" method="post">
+                        <input type="hidden" name="state" />
+                        <div class="group-input">
+                          <label class="register-title"
+                            >Email <span class="import-star">*</span></label
+                          >
+                          <input
+                            id="email"
+                            name="email"
+                            class="register-input"
+                            type="text"
+                            title="Nhập email của bạn"
+                            placeholder="Nhập email của bạn"
+                            required=""
+                          />
+                          <!-- <p class="mess-validation">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Eius, soluta dolor sit amet consectetur,
+                            adipisicing elit. Eius, soluta.
+                          </p> -->
+                        </div>
+
+                        <div class="group-input">
+                          <label class="register-title"
+                            >Mật khẩu <span class="import-star">*</span></label
+                          >
+                          <input
+                            id="password"
+                            name="password"
+                            class="register-input"
+                            type="password"
+                            title="Nhập mật khẩu của bạn"
+                            placeholder="Nhập mật khẩu của bạn"
+                            required=""
+                          />
+                          <!-- <p class="mess-validation">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Eius, soluta dolor sit amet consectetur,
+                            adipisicing elit. Eius, soluta.
+                          </p> -->
+                        </div>
+
+                        <div class="form-actions">
+                          <button
+                            class="btns btns-authen hover-up-1 modal-signup"
+                            type="button"
+                          >
+                            <div class="btns-wrap">
+                              <span class="btns-wrap__text">Đăng ký</span>
+                            </div>
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="or-section">
+                      <span class="or-section__hr"></span>
+                      <span class="or-section__name">hoặc</span>
+                      <span class="or-section__hr"></span>
+                    </div>
+                    <div class="login-social">
+                      <p class="login-social__item">
+                        <a class="social-item__icon hover-up fb-auth" href="#"
+                          ><i class="fa fa-facebook-f"></i>
+                        </a>
+                      </p>
+                      <p class="login-social__item">
+                        <a class="social-item__icon hover-up gg-auth" href="#"
+                          ><i class="fa fa-google"></i>
+                        </a>
+                      </p>
+                      <p class="login-social__item">
+                        <a
+                          class="social-item__icon hover-up zalo-auth"
+                          href="#"
+                        ></a>
+                      </p>
+                    </div>
+
+                    <div class="forgot login-footer val-info">
+                      <span>Bạn đã có tài khoản?</span>
+                      <div class="tabs tab-sign-in active hover-text">
+                        Đăng nhập
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Modal -->
+
+          <div class="header-left">
+            <div class="logo-wrap">
+              <a href="/" class="logo" title="VinabiTech">
+                <svg
+                  class="logo-svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="103"
+                  height="46"
+                  viewBox="0 0 103 46"
+                >
+                  <image
+                    width="103"
+                    height="46"
+                    xlink:href="data:img/png;base64,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"
+                  />
+                </svg>
+
+                <svg
+                  class="logo-svg__mobile"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="103"
+                  height="46"
+                  viewBox="0 0 103 46"
+                >
+                  <defs>
+                    <image
+                      id="image"
+                      width="103"
+                      height="46"
+                      xlink:href="data:img/png;base64,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"
+                    />
+                  </defs>
+                  <use xlink:href="#image" />
+                  <use xlink:href="#image" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="header-search">
+            <form action="" method="get" id="cse-search-box">
+              <div>
+                <input
+                  type="text"
+                  name=""
+                  size="55"
+                  id="searchBox"
+                  placeholder="Tìm kiếm"
+                  autocomplete="off"
+                />
+                <button id="btns-find" class="btns-find__mobile" type="submit">
+                  <i class="fa fa-search btns-find__submit"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="toggle menu-mobile nav-toggle">
+            <a class="toggle-all">
+              <i class="fa fa-bars"></i>
+              <!-- <i class="fa fa-times"></i> -->
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="menu">
+        <div class="section-box">
+          <ul id="topnav" class="menu-navigation">
+            <li class="item menu-home">
+              <a href="/"><img src="/images/home.svg" alt="🏠" /></a>
+            </li>
+            <li class="item">
+              <a href="/cong-nghe"> Công nghệ </a>
+            </li>
+            <li class="item">
+              <a href="/windows-10-os"> Windows </a>
+            </li>
+            <li class="item">
+              <a href="/ios"> iPhone </a>
+            </li>
+            <li class="item">
+              <a href="/android"> Android </a>
+            </li>
+            <li class="item">
+              <a href="/lang-cong-nghe"> Làng công nghệ </a>
+            </li>
+
+            <li class="item">
+              <a href="/tien-ich-online"> Tiện ích </a>
+            </li>
+            <li class="item">
+              <a href="/ung-dung"> Ứng dụng </a>
+            </li>
+            <li class="item">
+              <a href="/lap-trinh"> Lập trình </a>
+            </li>
+            <li class="item">
+              <a href="/dien-may"> Điện máy </a>
+            </li>
+            <li class="item service-hot">
+              <a href="/category.html"> Dịch vụ </a>
+            </li>
+            <li class="all-menu nav-toggle">
+              <a class="toggle-all">
+                <i class="fa fa-bars"></i>
+                <i class="close-x"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section-box">
+        <div class="service-about">
+          <div class="bg-gray-800 service-pattern">
+            <div class="service-about__wrap">
+              <h2 class="service-about__title">SSD Hosting chất lượng cao</h2>
+
+              <p class="service-about__desc">
+                Điểm đến an toàn và tin cậy cho website của bạn
+              </p>
+              <button class="btns-ol btns-ol__about hover-up" type="button">
+                <div class="btns-wrap">
+                  <span class="btns-wrap__text">Đăng ký tư vấn</span>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="service">
+          <div class="service-ques my-section">
+            <h2 class="heading-title">
+              <span class="heading-title__imp">SSD Hosting</span> là gì?
+            </h2>
+            <div class="service-ques__wrap row-x">
+              <div class="service-ques__img col-x xl-6 m-12 col-row">
+                <img
+                  src="https://happj.net/wp-content/uploads/2020/08/hosting-linux.png"
+                  alt=""
+                />
+              </div>
+              <div class="service-ques__text col-x xl-6 m-12 col-row">
+                <p class="service-ques__desc">
+                  SSD Hosting phù hợp với hầu hết khách hàng đang có nhu cầu sử
+                  dụng dịch vụ lưu trữ website PHP/MySQL. Trong quá trình phát
+                  triển, bạn có thể chủ động nâng cấp lên các gói dịch vụ cao
+                  hơn khi cần thiết một cách nhanh chóng mà không làm ảnh hưởng
+                  đến dữ liệu và thời gian hoạt động của website.
+                </p>
+                <p class="service-ques__desc">
+                  Ngoài ra dịch vụ Hosting Linux hỗ trợ tối đa các mã nguồn mở
+                  thông dụng hiện nay, cùng nhiều gói dịch vụ đa dạng giúp bạn
+                  có thể lựa chọn được dịch vụ phù hợp nhu cầu sử dụng với mức
+                  chi phí hợp lý.
+                </p>
+                <button class="btns btns-about hover-up-1" type="button">
+                  <div class="btns-wrap">
+                    <span class="btns-wrap__text">Bảng giá dịch vụ</span>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="service-benf my-section">
+            <h2 class="heading-title">
+              <span class="heading-title__imp">Đặc điểm </span> nổi bật
+            </h2>
+            <div class="service-benf__main">
+              <div class="service-benf__list row-x">
+                <div class="service-benf__item col-x xl-4 l-6 c-12 col-row">
+                  <div class="service-benf__wrap">
+                    <div class="service-benf__icon">
+                      <img
+                        src="https://happj.net/wp-content/uploads/2020/08/ssd-drive2.png"
+                        alt=""
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="service-benf__content">
+                      <h5 class="service-benf__content-title">
+                        SSD Enterprise
+                      </h5>
+                      <div class="service-benf-divider"></div>
+                      <p class="service-benf__content-desc">
+                        Hệ thống lưu trữ sử dụng hoàn toàn ổ cứng SSD dòng
+                        Enterprise hiệu năng cao để tăng tốc
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="service-benf__item col-x xl-4 l-6 c-12 col-row">
+                  <div class="service-benf__wrap">
+                    <div class="service-benf__icon">
+                      <img
+                        src="https://happj.net/wp-content/uploads/2020/08/ssd-drive2.png"
+                        alt=""
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="service-benf__content">
+                      <h5 class="service-benf__content-title">
+                        TÙY CHỈNH PHIÊN BẢN PHP
+                      </h5>
+                      <div class="service-benf-divider"></div>
+                      <p class="service-benf__content-desc">
+                        Bạn có thể tùy chỉnh phiên bản PHP từ 5.6 đến 7.4 và
+                        toàn quyền bật/tắt các extension cần sử dụng.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="service-benf__item col-x xl-4 l-6 c-12 col-row">
+                  <div class="service-benf__wrap">
+                    <div class="service-benf__icon">
+                      <img
+                        src="https://happj.net/wp-content/uploads/2020/08/ssd-drive2.png"
+                        alt=""
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="service-benf__content">
+                      <h5 class="service-benf__content-title">
+                        CPANEL HOSTING CONTROL
+                      </h5>
+                      <div class="service-benf-divider"></div>
+                      <p class="service-benf__content-desc">
+                        Bảng điều khiển hosting tốt nhất thế giới với nhiều tính
+                        năng hữu ích bảo mật Website và dễ sử dụng.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="service-pro my-section">
+            <h2 class="heading-title">
+              Bảng giá dịch vụ
+              <span class="heading-title__imp">Pro SSD Hosting </span> doanh
+              nghiệp
+              <p class="heading-title__desc">
+                Đăng ký ngay để nhận được nhiều ưu đãi hấp dẫn
+              </p>
+            </h2>
+            <ul class="service-list row-x">
+              <li class="service-item col-x xl-4 l-6 c-12 col-row">
+                <div class="service-item__wrap hover-up">
+                  <div class="service-item__header">
+                    <div class="service-item__header-content">
+                      <h3 class="service-item__header-content-title">
+                        ProSSD#SV
+                      </h3>
+                      <p class="service-item__header-content-desc">
+                        (Giá chưa bao gồm VAT)
+                      </p>
+                    </div>
+                  </div>
+                  <div class="service-item__body">
+                    <div class="service-item__body-content">
+                      <div>
+                        <sup class="service-item__body-d">đ</sup>
+                        <span class="service-item__body-price">30,000</span>
+                        <p class="service-item__body-unit">/ tháng</p>
+                      </div>
+                      <ul class="service-item__body-list">
+                        <li class="service-body__item">1GB Dung lượng SSD</li>
+                        <li class="service-body__item">
+                          Không giới hạn Băng Thông
+                        </li>
+                        <li class="service-body__item">
+                          Không giới hạn Tài khoản FTP
+                        </li>
+                        <li class="service-body__item">1 MySQL</li>
+                        <li class="service-body__item">
+                          Hệ thống quản lý Cpanel
+                        </li>
+                        <li class="service-body__item">
+                          Miễn phí chứng chỉ SSL
+                        </li>
+                        <li class="service-body__item">Sao lưu 7 ngày/lần</li>
+                      </ul>
+
+                      <a
+                        href=""
+                        class="btns btns-service hover-up-1"
+                        type="button"
+                      >
+                        <div class="btns-wrap">
+                          <span class="btns-wrap__text">Đăng ký</span>
+                        </div>
+                      </a>
+                      <p class="service-body-free">
+                        <small>(Miễn phí 1 tháng đầu tiên)</small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="service-item col-x xl-4 l-6 c-12 col-row">
+                <div class="service-item__wrap hover-up">
+                  <div class="service-item__header">
+                    <div class="service-item__header-content">
+                      <h3 class="service-item__header-content-title">
+                        ProSSD#1
+                      </h3>
+                      <p class="service-item__header-content-desc">
+                        (Giá chưa bao gồm VAT)
+                      </p>
+                    </div>
+                  </div>
+                  <div class="service-item__body">
+                    <div class="service-item__body-content">
+                      <div>
+                        <sup class="service-item__body-d">đ</sup>
+                        <span class="service-item__body-price">60,000</span>
+                        <p class="service-item__body-unit">/ tháng</p>
+                      </div>
+                      <ul class="service-item__body-list">
+                        <li class="service-body__item">2GB Dung lượng SSD</li>
+                        <li class="service-body__item">
+                          Không giới hạn Băng Thông
+                        </li>
+                        <li class="service-body__item">
+                          Không giới hạn Tài khoản FTP
+                        </li>
+                        <li class="service-body__item">3 MySQL</li>
+                        <li class="service-body__item">
+                          Hệ thống quản lý Cpanel
+                        </li>
+                        <li class="service-body__item">
+                          Miễn phí chứng chỉ SSL
+                        </li>
+                        <li class="service-body__item">Sao lưu 7 ngày/lần</li>
+                      </ul>
+
+                      <a
+                        href=""
+                        class="btns btns-service hover-up-1"
+                        type="button"
+                      >
+                        <div class="btns-wrap">
+                          <span class="btns-wrap__text">Đăng ký</span>
+                        </div>
+                      </a>
+                      <p class="service-body-free">
+                        <small>(Miễn phí 1 tháng đầu tiên)</small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="service-item col-x xl-4 l-6 c-12 col-row">
+                <div class="service-item__wrap hover-up">
+                  <div class="service-item__header">
+                    <div class="service-item__header-content">
+                      <h3 class="service-item__header-content-title">
+                        ProSSD#2
+                      </h3>
+                      <p class="service-item__header-content-desc">
+                        (Giá chưa bao gồm VAT)
+                      </p>
+                    </div>
+                  </div>
+                  <div class="service-item__body">
+                    <div class="service-item__body-content">
+                      <div>
+                        <sup class="service-item__body-d">đ</sup>
+                        <span class="service-item__body-price">114,000</span>
+                        <p class="service-item__body-unit">/ tháng</p>
+                      </div>
+                      <ul class="service-item__body-list">
+                        <li class="service-body__item">3GB Dung lượng SSD</li>
+                        <li class="service-body__item">
+                          Không giới hạn Băng Thông
+                        </li>
+                        <li class="service-body__item">
+                          Không giới hạn Tài khoản FTP
+                        </li>
+                        <li class="service-body__item">5 MySQL</li>
+                        <li class="service-body__item">
+                          Hệ thống quản lý Cpanel
+                        </li>
+                        <li class="service-body__item">
+                          Miễn phí chứng chỉ SSL
+                        </li>
+                        <li class="service-body__item">Sao lưu 7 ngày/lần</li>
+                      </ul>
+
+                      <a
+                        href=""
+                        class="btns btns-service hover-up-1"
+                        type="button"
+                      >
+                        <div class="btns-wrap">
+                          <span class="btns-wrap__text">Đăng ký</span>
+                        </div>
+                      </a>
+                      <p class="service-body-free">
+                        <small>(Miễn phí 1 tháng đầu tiên)</small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="service-item col-x xl-4 l-6 c-12 col-row">
+                <div class="service-item__wrap hover-up">
+                  <div class="service-item__header">
+                    <div class="service-item__header-content">
+                      <h3 class="service-item__header-content-title">
+                        ProSSD#3
+                      </h3>
+                      <p class="service-item__header-content-desc">
+                        (Giá chưa bao gồm VAT)
+                      </p>
+                    </div>
+                  </div>
+                  <div class="service-item__body">
+                    <div class="service-item__body-content">
+                      <div>
+                        <sup class="service-item__body-d">đ</sup>
+                        <span class="service-item__body-price">114,000</span>
+                        <p class="service-item__body-unit">/ tháng</p>
+                      </div>
+                      <ul class="service-item__body-list">
+                        <li class="service-body__item">5GB Dung lượng SSD</li>
+                        <li class="service-body__item">
+                          Không giới hạn Băng Thông
+                        </li>
+                        <li class="service-body__item">
+                          Không giới hạn Tài khoản FTP
+                        </li>
+                        <li class="service-body__item">10 MySQL</li>
+                        <li class="service-body__item">
+                          Hệ thống quản lý Cpanel
+                        </li>
+                        <li class="service-body__item">
+                          Miễn phí chứng chỉ SSL
+                        </li>
+                        <li class="service-body__item">Sao lưu 7 ngày/lần</li>
+                      </ul>
+
+                      <a
+                        href=""
+                        class="btns btns-service hover-up-1"
+                        type="button"
+                      >
+                        <div class="btns-wrap">
+                          <span class="btns-wrap__text">Đăng ký</span>
+                        </div>
+                      </a>
+                      <p class="service-body-free">
+                        <small>(Miễn phí 1 tháng đầu tiên)</small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="service-item col-x xl-4 l-6 c-12 col-row">
+                <div class="service-item__wrap hover-up">
+                  <div class="service-item__header">
+                    <div class="service-item__header-content">
+                      <h3 class="service-item__header-content-title">
+                        ProSSD#4
+                      </h3>
+                      <p class="service-item__header-content-desc">
+                        (Giá chưa bao gồm VAT)
+                      </p>
+                    </div>
+                  </div>
+                  <div class="service-item__body">
+                    <div class="service-item__body-content">
+                      <div>
+                        <sup class="service-item__body-d">đ</sup>
+                        <span class="service-item__body-price">174,000</span>
+                        <p class="service-item__body-unit">/ tháng</p>
+                      </div>
+                      <ul class="service-item__body-list">
+                        <li class="service-body__item">10GB Dung lượng SSD</li>
+                        <li class="service-body__item">
+                          Không giới hạn Băng Thông
+                        </li>
+                        <li class="service-body__item">
+                          Không giới hạn Tài khoản FTP
+                        </li>
+                        <li class="service-body__item">15 MySQL</li>
+                        <li class="service-body__item">
+                          Hệ thống quản lý Cpanel
+                        </li>
+                        <li class="service-body__item">
+                          Miễn phí chứng chỉ SSL
+                        </li>
+                        <li class="service-body__item">Sao lưu 7 ngày/lần</li>
+                      </ul>
+
+                      <a
+                        href=""
+                        class="btns btns-service hover-up-1"
+                        type="button"
+                      >
+                        <div class="btns-wrap">
+                          <span class="btns-wrap__text">Đăng ký</span>
+                        </div>
+                      </a>
+                      <p class="service-body-free">
+                        <small>(Miễn phí 1 tháng đầu tiên)</small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="service-item col-x xl-4 l-6 c-12 col-row">
+                <div class="service-item__wrap hover-up">
+                  <div class="service-item__header">
+                    <div class="service-item__header-content">
+                      <h3 class="service-item__header-content-title">
+                        ProSSD#5
+                      </h3>
+                      <p class="service-item__header-content-desc">
+                        (Giá chưa bao gồm VAT)
+                      </p>
+                    </div>
+                  </div>
+                  <div class="service-item__body">
+                    <div class="service-item__body-content">
+                      <div>
+                        <sup class="service-item__body-d">đ</sup>
+                        <span class="service-item__body-price">253,000</span>
+                        <p class="service-item__body-unit">/ tháng</p>
+                      </div>
+                      <ul class="service-item__body-list">
+                        <li class="service-body__item">15GB Dung lượng SSD</li>
+                        <li class="service-body__item">
+                          Không giới hạn Băng Thông
+                        </li>
+                        <li class="service-body__item">
+                          Không giới hạn Tài khoản FTP
+                        </li>
+                        <li class="service-body__item">20 MySQL</li>
+                        <li class="service-body__item">
+                          Hệ thống quản lý Cpanel
+                        </li>
+                        <li class="service-body__item">
+                          Miễn phí chứng chỉ SSL
+                        </li>
+                        <li class="service-body__item">Sao lưu 7 ngày/lần</li>
+                      </ul>
+
+                      <a
+                        href=""
+                        class="btns btns-service hover-up-1"
+                        type="button"
+                      >
+                        <div class="btns-wrap">
+                          <span class="btns-wrap__text">Đăng ký</span>
+                        </div>
+                      </a>
+                      <p class="service-body-free">
+                        <small>(Miễn phí 1 tháng đầu tiên)</small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="service-contact">
+        <div class="service-contact__wrap row-x">
+          <div class="service-contact__content col-x xl-8 l-12 c-12">
+            <h3 class="service-contact__title">
+              Liên hệ với Happj bất cứ khi nào bạn cần
+            </h3>
+            <p class="service-contact__desc">
+              Đội ngũ hỗ trợ viên của Happj luôn sẵn sàng tiếp nhận các yêu cầu
+              hỗ trợ, tư vấn từ khách hàng và phản hồi trong thời gian nhanh
+              nhất với tiêu chí hỗ trợ 24/7/365.
+            </p>
+          </div>
+          <div class="service-contact__action col-x xl-4 l-12 c-12">
+            <a href="" class="btns-ol btns-ol__contact hover-up" type="button">
+              <div class="btns-wrap">
+                <span class="btns-wrap__text">Liên hệ ngay</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="service-faq">
+        <h2 class="heading-title">
+          <span class="heading-title__imp">Câu hỏi</span> thường gặp?
+        </h2>
+        <div class="service-faq__wrap row-x">
+          <div class="service-faq__img col-x xl-4 l-12">
+            <img src="/images/faq.svg" alt="" />
+          </div>
+          <div class="service-faq__content col-x xl-8 l-12">
+            <div class="b-faq">
+              <div class="faq__item">
+                <a href="#" class="faq__title js-faq-title">
+                  <div class="faq__spoiler js-faq-rotate">
+                    <span class="faq__symbol">+</span>
+                  </div>
+                  <span class="faq__text"
+                    >Các phiên bản PHP mà SSD Hosting tại Happj đang hỗ
+                    trợ?</span
+                  >
+                </a>
+                <div class="faq__content js-faq-content">
+                  <p>
+                    Hiện tại Happj đang hỗ trợ các phiên bản PHP từ 5.4 đến 7.x
+                    và khách hàng có thể chủ động thay đổi các phiên bản sao cho
+                    phù hợp với nhu cầu sử dụng của mình.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- FAQ SECTION END -->
+            <!-- FAQ SECTION -->
+            <div class="b-faq">
+              <div class="faq__item">
+                <a href="#" class="faq__title js-faq-title">
+                  <div class="faq__spoiler js-faq-rotate">
+                    <span class="faq__symbol">+</span>
+                  </div>
+                  <span class="faq__text"
+                    >Tôi muốn chuyển Hosting từ nhà cung cấp khác về Happj thì
+                    phải làm sao?</span
+                  >
+                </a>
+                <div class="faq__content js-faq-content">
+                  <p>
+                    Để chuyển Hosting về Happj, khách hàng chỉ cần gửi ticket
+                    tới phòng kỹ thuật cung cấp thông tin hosting cũ hoặc link
+                    backup dữ liệu. Đội ngũ kỹ thuật sẽ hỗ trợ bạn chuyển dữ
+                    liệu hoàn toàn miễn phí.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="b-faq">
+              <div class="faq__item">
+                <a href="#" class="faq__title js-faq-title">
+                  <div class="faq__spoiler js-faq-rotate">
+                    <span class="faq__symbol">+</span>
+                  </div>
+                  <span class="faq__text">Addon domain là gì?</span>
+                </a>
+                <div class="faq__content js-faq-content">
+                  <p>
+                    Addon domain là tên miền gián tiếp có thể add thêm vào
+                    hosting ngoài tên miền chính mà khách hàng đã đăng ký ban
+                    đầu để chạy cho các trang web riêng biệt.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="b-faq">
+              <div class="faq__item">
+                <a href="#" class="faq__title js-faq-title">
+                  <div class="faq__spoiler js-faq-rotate">
+                    <span class="faq__symbol">+</span>
+                  </div>
+                  <span class="faq__text"
+                    >Làm sao tôi có thể quản trị Website cũng như cơ sở dữ liệu
+                    trên SSD Hosting của tôi?</span
+                  >
+                </a>
+                <div class="faq__content js-faq-content">
+                  <p>
+                    SSD Hosting tại Happj sử dụng phần mềm quản trị DirectAdmin
+                    – một phần mềm được sử dụng phổ biến nhất trên thế giới giúp
+                    bạn có một giao diện quản lý trực quan, dễ dàng thao tác với
+                    những tính năng vượt trội.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="b-faq">
+              <div class="faq__item">
+                <a href="#" class="faq__title js-faq-title">
+                  <div class="faq__spoiler js-faq-rotate">
+                    <span class="faq__symbol">+</span>
+                  </div>
+                  <span class="faq__text"
+                    >Nếu không đáp ứng được chất lượng dịch vụ thì tôi có được
+                    hoàn tiền không?</span
+                  >
+                </a>
+                <div class="faq__content js-faq-content">
+                  <p>
+                    Happj cam kết hoàn tiền trong vòng 30 ngày kể từ thời điểm
+                    Khách hàng đăng ký dịch vụ hosting nếu khách hàng không hài
+                    lòng về chất lượng.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="b-faq">
+              <div class="faq__item">
+                <a href="#" class="faq__title js-faq-title">
+                  <div class="faq__spoiler js-faq-rotate">
+                    <span class="faq__symbol">+</span>
+                  </div>
+                  <span class="faq__text"
+                    >Dữ liệu Website của tôi có được backup thường xuyên
+                    không?</span
+                  >
+                </a>
+                <div class="faq__content js-faq-content">
+                  <p>
+                    Dữ liệu của khách hàng sử dụng dịch vụ Hosting Linux tại
+                    Happj sẽ luôn được đảm bảo an toàn với cơ chế backup dữ liệu
+                    14 ngày liên tiếp, đặc biệt được tích hợp sẵn plugin của
+                    R1Soft, khách hàng hoàn toàn có thể tự chủ động restore dữ
+                    liệu của mình dựa trên các điểm khôi phục của từng ngày theo
+                    nhu cầu. Hơn thế nữa, hệ thống áp dụng công nghệ CloudLinux
+                    nhằm hạn chế tối đa nguy cơ bị hacker tấn công xâm nhập dữ
+                    liệu qua phương thức ‘Local Attack’
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="footer">
+        <!-- <canvas id="chain" width="800" height="800"> </canvas> -->
+        <div class="section-box footer-top">
+          <div class="footer-wrap">
+            <div class="footer-navbox footer-sidenav">
+              <button type="button" class="close-menu">&times;</button>
+              <a class="footer-nav__logo" href="/">Trang chủ</a>
+              <ul class="footer-navigation">
+                <li class="tax-cong-nghe">
+                  <a class="parentitems" href="/cong-nghe">
+                    <img
+                      class="lazy loaded"
+                      src="/images/công nghệ.png"
+                      alt="❖"
+                    />Công nghệ
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="/images/ứng dụng.png"
+                          alt="❖"
+                        />
+                        Ứng dụng
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="/images/hệ thống.png"
+                          alt="❖"
+                        />
+                        Hệ thống
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="/images/trò chơi.png"
+                          alt="❖"
+                        />
+                        Game - Trò chơi
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="/images/iphone.png"
+                          alt="❖"
+                        />
+                        iPhone
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="/images/android.png"
+                          alt="❖"
+                        />
+                        Android
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="/images/linux.png"
+                          alt="❖"
+                        />
+                        Linux
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="/images/chụp ảnh.png"
+                          alt="❖"
+                        />
+                        Chụp ảnh - Quay phim
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="/images/macos.png"
+                          alt="❖"
+                        />
+                        macOs
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="/images/phần cứng.png"
+                          alt="❖"
+                        />
+                        Phần cứng
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="/images/kiến thức cơ bản.png"
+                          alt="❖"
+                        />
+                        Kiến thức cơ bản
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="parentitems" href="">
+                    <img
+                      class="lazy loaded"
+                      src="/images/ứng dụng to.png"
+                      alt="❖"
+                    />
+                    Ứng dụng
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="/images/chat.png"
+                          alt="❖"
+                        />
+                        Chat, Nhắn tin, Gọi điện
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="/images/mạng xã hội.png"
+                          alt="❖"
+                        />
+                        Mạng xã hội
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="/images/phần mềm nhạc.png"
+                          alt="❖"
+                        />
+                        Phần mềm nhạc
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="/images/tin học văn phòng.png"
+                          alt="❖"
+                        />
+                        Tin học văn phòng
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="/images/lưu trữ chia sẻ.png"
+                          alt="❖"
+                        />
+                        Lưu trữ chia sẻ
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="/images/trình duyệt web.png"
+                          alt="❖"
+                        />
+                        Trình duyệt web
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy"
+                          src="/images/chỉnh sửa ảnh.png"
+                          alt="❖"
+                        />
+                        Chỉnh sửa ảnh
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy"
+                          src="/images/thiết kế đồ họa.png"
+                          alt="❖"
+                        />
+                        Thiết kế - Đồ họa
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy"
+                          src="/images/website - blog.png"
+                          alt="❖"
+                        />
+                        Website - Blog
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy"
+                          src="/images/bản đồ - định vị.png"
+                          alt="❖"
+                        />
+                        Bản đồ & định vị
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="/images/nhạc phim truyên online.png"
+                          alt="❖"
+                        />
+                        Nhạc, Phim, Truyện online
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="/images/kiến thức cơ bản.png"
+                          alt="❖"
+                        />
+                        Kiến thức cơ bản
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="/images/chỉnh sửa video.png"
+                          alt="❖"
+                        />
+                        Chỉnh sửa video
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="/images/thanh toán online.png"
+                          alt="❖"
+                        />
+                        Thanh toán online
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="/images/phần mềm học tập.png"
+                          alt="❖"
+                        />
+                        Phần mềm học tập
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="parentitems" href="">
+                    <img class="lazy loaded" src="/images/iphone.png" alt="❖" />
+                    iPhone
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="/images/thiết lập cơ bản.png"
+                          alt="❖"
+                        />
+                        Thiết lập cơ bản
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img class="lazy loaded" src="/images/" alt="❖" />
+                        Dữ liệu
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="/images/mạng xã hội.png"
+                          alt="❖"
+                        />
+                        Mạng xã hội
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="/images/chụp và xử lý ảnh.png"
+                          alt="❖"
+                        />
+                        Chụp và xử lý ảnh
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="/images/chỉnh sửa video.png"
+                          alt="❖"
+                        />
+                        Quản lý và chỉnh sửa video
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="/images/trình duyệt và add-on.png"
+                          alt="❖"
+                        />
+                        Trình duyệt và Add-on
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy"
+                          src="/images/lưu trữ và đồng bộ.png"
+                          alt="❖"
+                        />
+                        Lưu trữ - Đồng bộ
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy"
+                          src="/images/bản đồ - định vị.png"
+                          alt="❖"
+                        />
+                        Bản đồ & định vị
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="parentitems" href="">
+                    <img
+                      class="lazy loaded"
+                      src="/images/hệ thống.png"
+                      alt="❖"
+                    />
+                    Hệ thống
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="/images/sửa lỗi máy tính.png"
+                          alt="❖"
+                        />
+                        Sửa lỗi máy tính
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="/images/giải pháp bảo mật.png"
+                          alt="❖"
+                        />
+                        Giải pháp bảo mật
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="/images/diệt virus - spyware.png"
+                          alt="❖"
+                        />
+                        Diệt virus - Spyware
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="/images/bảo mật máy tính.png"
+                          alt="❖"
+                        />
+                        Bảo mật máy tính
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="/images/windows 10.png"
+                          alt="❖"
+                        />
+                        Windows 10
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="/images/thủ thuật wifi.png"
+                          alt="❖"
+                        />
+                        Thủ thuật Wifi
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="/images/tăng tốc máy tính.png"
+                          alt="❖"
+                        />
+                        Tăng tốc máy tính
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="/images/hình nền đẹp.png"
+                          alt="❖"
+                        />
+                        Hình nền đẹp</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="parentitems" href="">
+                    <img
+                      class="lazy loaded"
+                      src="/images/phần cứng.png"
+                      alt="❖"
+                    />
+                    Phần cứng
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="/images/tư vấn mua máy.png"
+                          alt="❖"
+                        />
+                        Tư vấn mua máy
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="/images/phần cứng.png"
+                          alt="❖"
+                        />
+                        Phần cứng PC
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img class="lazy" src="/images/phần cứng.png" alt="❖" />
+                        Phần cứng Laptop
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy"
+                          src="/images/linh kiện máy tính.png"
+                          alt="❖"
+                        />
+                        Linh kiện máy tính
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy"
+                          src="/images/thiết bị mạng.png"
+                          alt="❖"
+                        />
+                        Thiết bị mạng
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="/images/máy in.png"
+                          alt="❖"
+                        />
+                        Máy in
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="/images/loa tai nghe.png"
+                          alt="❖"
+                        />
+                        Loa, tai nghe
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          class="lazy loaded"
+                          src="/images/usb.png"
+                          alt="❖"
+                        />
+                        USB - Ổ Flash
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a class="parentitems" href="">
+                    <img class="lazy" src="/images/cuộc sống.png" alt="❖" />
+                    Cuộc sống</a
+                  >
+                </li>
+                <li>
+                  <a class="parentitems" href="">
+                    <img class="lazy" src="/images/tổng hợp.png" alt="❖" />
+                    Tổng hợp
+                  </a>
+                </li>
+                <li>
+                  <a class="parentitems" href="">
+                    <img class="lazy" src="/images/tiện ích.png" alt="❖" />
+                    Tiện ích
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="info-company">
+            <div class="info-company__links">
+              <a href="/support/about">Giới thiệu</a> |
+              <a href="/support/terms">Điều khoản</a> |
+              <a href="/support/privacy">Bảo mật</a> |
+              <a href="/support/help">Hướng dẫn</a> |
+              <a href="/support/apps/">Ứng dụng</a> |
+              <a href="/support/contact">Liên hệ</a> |
+              <a href="/support/ads">Quảng cáo</a> |
+              <a
+                href="https://www.facebook.com/quantrimang.com.vn"
+                rel="nofollow noopener"
+                target="_blank"
+                >Facebook</a
+              >
+              |
+              <a
+                href="https://www.youtube.com/c/quantrimang"
+                rel="nofollow noopener"
+                target="_blank"
+                >Youtube</a
+              >
+              |
+              <a
+                href="//www.dmca.com/Protection/Status.aspx?ID=9d523b74-7299-4834-8990-8c157b6e8fc7"
+                target="_blank"
+                rel="nofollow noreferrer"
+                title="DMCA.com Protection Status"
+                class="dmca-badge"
+                >DMCA</a
+              >
+            </div>
+            <div>
+              Giấy phép số 362/GP-BTTTT. Bộ Thông tin và Truyền thông cấp ngày
+              30/06/2016. Cơ quan chủ quản: CÔNG TY CỔ PHẦN MẠNG TRỰC TUYẾN
+              META. Địa chỉ: 56 Duy Tân, Dịch Vọng Hậu, Cầu Giấy, Hà Nội. Điện
+              thoại: <a>024 2242 6188</a>. Email: info@meta.vn. Chịu trách nhiệm
+              nội dung: Lê Ngọc Lam.
+            </div>
+          </div>
+          <div class="copyright">
+            Bản quyền © 2003-2021 QuanTriMang.com. Giữ toàn quyền. Không được
+            sao chép hoặc sử dụng hoặc phát hành lại bất kỳ nội dung nào thuộc
+            VinabiTechkhi chưa được phép.
+          </div>
+        </div>
+      </section>
+      <div class="overlay"></div>
+    </section>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./js/main.js"></script>
+</html>
