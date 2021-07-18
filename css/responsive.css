@@ -451,6 +451,9 @@
 
     font-weight: 600;
   }
+  .create-post {
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -823,6 +826,7 @@
   .create-post {
     padding: 16px;
   }
+
   .profile-action {
     text-align: center;
   }
