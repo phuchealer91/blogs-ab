@@ -802,7 +802,7 @@
 }
 .social-wrap__item-share .zalo-share::after {
   content: ' ';
-  background: url('images//zalo.png') no-repeat;
+  background: url('../images/zalo.png') no-repeat;
   width: 16px;
   height: 14px;
   position: absolute;
