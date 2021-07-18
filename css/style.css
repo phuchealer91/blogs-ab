@@ -43,7 +43,7 @@
   height: 100%;
   width: 104px;
   display: block;
-  /* background: url('/images/logo.png') no-repeat center center; */
+  /* background: url('images/logo.png') no-repeat center center; */
   /* overflow: hidden; */
   color: initial;
   /* text-indent: -300px; */
@@ -86,7 +86,7 @@
   text-align: center;
   background-color: var(--primary-color);
   color: var(--white-color);
-  /* background: var(--primary-color) url('/images/search.png') no-repeat center;
+  /* background: var(--primary-color) url('images/search.png') no-repeat center;
   color: #fff;
   text-indent: -100px; */
   cursor: pointer;
@@ -473,7 +473,7 @@
   border-width: 1px 0;
   /* text-indent: 28px; */
   font-size: 0.875rem;
-  /* background: url('/images/favicon.svg') no-repeat 0 center; */
+  /* background: url('images/favicon.svg') no-repeat 0 center; */
 }
 .detail-breadcrumbs__favicon {
   width: 48px;
@@ -802,7 +802,7 @@
 }
 .social-wrap__item-share .zalo-share::after {
   content: ' ';
-  background: url('/images//zalo.png') no-repeat;
+  background: url('images//zalo.png') no-repeat;
   width: 16px;
   height: 14px;
   position: absolute;
@@ -984,7 +984,7 @@
 }
 .discuss-action .icon-like {
   margin-left: 3px;
-  background: url('/images/icon-like.png') no-repeat;
+  background: url('images/icon-like.png') no-repeat;
   width: 14px;
   height: 14px;
   font-size: 0.875rem;
@@ -1225,7 +1225,7 @@
   width: 100%;
   margin: 32px auto 0;
   display: block;
-  background: url('/images/logo.png') no-repeat center;
+  background: url('images/logo.png') no-repeat center;
   overflow: hidden;
   background-size: auto 48px;
   text-indent: -300px;
@@ -1501,7 +1501,7 @@
 .header-sup__logo {
   width: 20%;
   display: block;
-  background: url('/images/logo.png') no-repeat;
+  background: url('images/logo.png') no-repeat;
   background-size: contain;
   height: 40px;
 }

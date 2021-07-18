@@ -131,7 +131,7 @@
 }
 .login-social__item .zalo-auth::after {
   content: ' ';
-  background: url('/images/zalo.png') no-repeat;
+  background: url('images/zalo.png') no-repeat;
   width: 16px;
   height: 16px;
   position: absolute;
@@ -141,7 +141,7 @@
 }
 .profile-social__item .zalo-auth::after {
   content: ' ';
-  background: url('/images/zalo.png') no-repeat;
+  background: url('images/zalo.png') no-repeat;
   width: 16px;
   height: 16px;
   position: absolute;
