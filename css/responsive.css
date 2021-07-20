@@ -644,6 +644,16 @@
   .service-about {
     margin-top: 0;
   }
+  .info-company {
+    display: block;
+  }
+  .info-company__media {
+    margin: 12px 0;
+    justify-content: center;
+  }
+  #footer .footer-bottom .copyright {
+    text-align: center;
+  }
 }
 
 @media (max-width: 600px) {

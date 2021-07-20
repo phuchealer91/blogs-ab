@@ -1224,11 +1224,11 @@
   height: 46px;
   width: 100%;
   margin: 32px auto 0;
-  display: block;
-  background: url('images/logo.png') no-repeat center;
+  /* display: block;
+  background: url('../images/logo.png') no-repeat center;
   overflow: hidden;
-  background-size: auto 48px;
-  text-indent: -300px;
+  background-size: auto 48px; */
+  /* text-indent: -300px; */
 }
 
 /* Services */
@@ -1839,4 +1839,19 @@ table.table-box {
   100% {
     box-shadow: 0 0 0 0 transparent;
   }
+}
+
+.info-company {
+  display: flex;
+  justify-content: space-between;
+}
+.info-company__media {
+  display: flex;
+  align-items: center;
+}
+.info-company__media img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin: 0 4px;
 }
