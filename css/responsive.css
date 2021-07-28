@@ -28,10 +28,6 @@
   }
 }
 @media (max-width: 960px) {
-  html,
-  body {
-    font-size: 87.5% !important;
-  }
   .row-x {
     margin-left: -12px;
     margin-right: -12px;
@@ -654,6 +650,17 @@
   #footer .footer-bottom .copyright {
     text-align: center;
   }
+  .bottom-left__wrap {
+    border-right: 0;
+    padding-right: 0;
+  }
+  .section-right__footer {
+    margin-top: 20px;
+  }
+  .bottom-left__serve,
+  .bottom-left__serve-qr {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 600px) {
@@ -910,5 +917,20 @@
   .login-social__item .zalo-auth::after {
     left: 10px;
     top: 10px;
+  }
+  .bottom-left__serve,
+  .bottom-left__serve-qr {
+    justify-content: flex-start;
+  }
+  .right-content__fb,
+  .right-content__email,
+  .right-content__phone {
+    margin-bottom: 12px;
+  }
+  .right-partner__logo {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    grid-gap: 12px;
   }
 }
